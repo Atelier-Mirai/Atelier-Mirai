@@ -1,0 +1,21 @@
+// Web Fonts
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap&subset=japanese');
+
+// common
+@import "wa_no_iro";
+@import "mixin";
+@import "reset";
+@import "body";
+@import "header";
+@import "footer";
+
+// top page
+@import "hero";
+@import "title";
+@import "service";
+
+// site page
+@import "intro";
+@import "submenu";
+@import "table";
+@import "form";

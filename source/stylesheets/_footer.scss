@@ -1,0 +1,18 @@
+/* フッター */
+footer {
+  // grid-row: foot;
+  grid-area: foot;
+  justify-self: center;
+  align-self: center;
+  font-size: 15px;
+}
+
+/* フッターのバー */
+body::after {
+  content: "";
+  background-color: $sakurairo;
+  // grid-column: 1 / -1;
+  // grid-row: foot;
+  grid-area: foot;
+  z-index: -1;
+}

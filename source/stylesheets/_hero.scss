@@ -1,0 +1,38 @@
+/* ヒーローイメージ */
+.hero {
+  // grid-column: 1 / -1;
+  // grid-row: title / span 2;
+  grid-area: title;
+  @media(min-width: 320px) {
+    img {
+      height: 448px; // iPhone SE
+    }
+  }
+  @media(min-width: 375px) {
+    img {
+      height: 547px; // iPhone 6/7/8
+    }
+  }
+  @media(min-width: 414px) {
+    img {
+      height: 616px; // iPhone 6+/7+/8+/XS/11/11/11Pro
+    }
+  }
+
+  img {
+    object-fit: cover;
+    vertical-align: bottom;
+    // filter: brightness(70%);
+    z-index: -1;             // filter適用すると、重なり順が上に来るので、
+                             // z-indexで重なり順を下にする
+    position: relative;      // Safari で z-index 適用させるため
+  }
+}
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  .hero {
+    grid-area: title;
+    margin-top: -20px;
+  }
+}

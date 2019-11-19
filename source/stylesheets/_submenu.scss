@@ -1,0 +1,50 @@
+.site .submenu {
+  grid-area: submenu;
+  aside {
+    border: solid 1px $sumi;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    h2 {
+      border-bottom: solid 1px $sumi;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      color: $sumireiro;
+      font-weight: normal;
+    }
+    p {
+      font-size: 14px;
+    }
+    &.profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    ul {
+      grid-area: submenu;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 10px;
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    a {
+      @include link_style;
+      &:hover {
+        text-decoration: underline;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+  /* デスクトップ版 */
+  @media(min-width: 768px) {
+    margin-top: -20px;
+  }
+}

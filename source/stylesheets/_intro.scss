@@ -1,0 +1,62 @@
+/* 各講座の紹介文 */
+article.intro {
+  grid-area: intro;
+  & > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+  }
+  figure {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+  }
+  p {
+    line-height: 2;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+    // dt {
+    //   grid-column: 1;
+    // }
+    // dd {
+    //   grid-column: 2;
+    // }
+  }
+  li {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+    a {
+      font-size: large;
+      text-align: center;
+    }
+    figure {
+      float: none;
+      width: 70%;
+    }
+  }
+  dd {
+    margin-bottom: 15px;
+  }
+}
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  article.intro {
+    margin-top: -20px;
+    margin-right: 20px;
+    h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .site::before {
+    margin-top: -20px;
+  }
+}

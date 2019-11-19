@@ -1,0 +1,75 @@
+/* ヘッダー */
+header.header {
+  // grid-row: head;
+  grid-area: head;
+  justify-self: center;
+  align-self: center;
+  a {
+    text-decoration: none;
+    font-size: 40px;
+    color: $konjiki;
+  }
+  width: 100%;
+  // padding-bottom: 20px;
+  .logo {
+    img {
+      width: 44px;
+      height: 44px;
+      vertical-align: text-bottom;
+    }
+    text-align: center;
+  }
+}
+
+body.site header.header {
+  border-bottom: 1px solid $sumireiro;
+}
+
+
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  header.header {
+    justify-self: start;
+    display: grid;
+    grid-template:
+      "logo nav" auto /
+       auto auto;
+
+    .logo {
+      grid-area: logo;
+      text-align: left;
+    }
+    .nav {
+      grid-area: nav;
+      align-items: end;
+    }
+  }
+}
+
+/* ナビゲーションメニュー */
+nav.nav {
+  // grid-row: head;
+  grid-area: head;
+  justify-self: center;
+  align-self: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    text-align: center;
+    li a {
+      @include link_style($font-size: 12px);
+    }
+  }
+}
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  nav.nav {
+    justify-self: end;
+    align-self: center;
+  }
+}

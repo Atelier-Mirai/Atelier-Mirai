@@ -1,0 +1,48 @@
+/* タイトル */
+.title {
+  // grid-row: title;
+  grid-area: title;
+  align-self: top;
+  // color: $sakurairo;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-shadow: 0 0 5px $amairo;
+  margin: 1.5rem 1.5rem;
+  text-align: center;
+}
+
+/* サブタイトル */
+.subtitle {
+  // grid-row: sub;
+  grid-area: title;
+  align-self: end;
+  text-align: right;
+  font-size: 14px;
+  color: lighten($sumi, 20%);
+  text-shadow: 5px 5px 5px $sakurairo;
+  margin: 0.75rem;
+}
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  .title {
+    // grid-column: 2 / span 2;
+    align-self: start;
+    // max-width: 240px;
+    text-align: left;
+    font-size: 22px;
+    img {
+      width: 50%;
+    }
+  }
+
+  .subtitle {
+    // grid-column: 4 / span 4;
+    align-self: end;
+    img {
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+}

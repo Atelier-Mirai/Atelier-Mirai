@@ -1,0 +1,34 @@
+/* お問い合わせフォーム */
+form {
+  p {
+    margin-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  input[type="submit"] {
+    background: $yamatogaki;
+    border: none;
+    color: $geppaku;
+    font-size: 16px;
+    letter-spacing: 6px;
+  }
+
+  select {
+    font-size: 24px;
+  }
+
+  @media (min-width: 768px) {
+    input[type="submit"] {
+      width: 250px;
+    }
+  }
+}

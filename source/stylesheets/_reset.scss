@@ -1,0 +1,15 @@
+/* 基本設定 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width:  100%;
+  height: auto;
+}
+
+/* テキストの自動拡大を無効化 */
+body {
+  text-size-adjust: none;
+}

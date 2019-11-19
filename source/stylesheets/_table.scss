@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+  th,
+  td {
+    border: solid 1px $sumi;
+    padding: 20px;
+  }
+
+  th {
+    width: 7em;
+    text-align: center;
+    background: $kaki;
+    color: $geppaku;
+  }
+
+  td {
+    background: $amairo;
+  }
+}

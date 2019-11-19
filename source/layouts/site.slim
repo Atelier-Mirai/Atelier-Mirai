@@ -1,0 +1,19 @@
+doctype html
+html lang='ja'
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title
+      = current_page.data.title || "アトリヱ未來"
+
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    = stylesheet_link_tag "style"
+    = favicon_tag 'images/favicon.png'
+
+  body.site
+    = partial 'header'
+    = yield
+    .submenu
+      = partial "service"
+      = partial "profile"
+    = partial 'footer'

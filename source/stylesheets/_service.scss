@@ -1,0 +1,36 @@
+/* ご案内 */
+section.service {
+  grid-area: service;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 10px;
+  h2 {
+    grid-column: 1 / -1;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  a {
+    @include link_style;
+    &:hover {
+      text-decoration: underline;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      margin-top: 0.4rem;
+      font-size: 12px;
+    }
+  }
+}
+
+/* デスクトップ版 */
+@media(min-width: 768px) {
+  section.service {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+}
