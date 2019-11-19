@@ -47,5 +47,5 @@ configure :build do
   end
 
   # アセットファイルの URL にハッシュを追加
-  activate :asset_hash
+  # activate :asset_hash
 end
