@@ -2,11 +2,12 @@
 header.header {
   // grid-row: head;
   grid-area: head;
+  margin-top: 20px;
   justify-self: center;
   align-self: center;
   a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 36px;
     color: $konjiki;
   }
   width: 100%;
@@ -58,7 +59,7 @@ nav.nav {
     padding: 0;
     display: grid;
     grid-auto-flow: column;
-    column-gap: 20px;
+    column-gap: 10px;
     text-align: center;
     li a {
       @include link_style($font-size: 12px);
