@@ -6,6 +6,13 @@ article.intro {
     margin-bottom: 1em;
     display: block;
   }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
   figure {
     width: 40%;
     float: right;
@@ -14,30 +21,29 @@ article.intro {
   p {
     line-height: 2;
   }
-  ul {
+  ul.portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
     list-style-type: none;
-    // dt {
-    //   grid-column: 1;
-    // }
-    // dd {
-    //   grid-column: 2;
-    // }
-  }
-  li {
-    font-size: 1.05rem;
-    margin-bottom: 5px;
-    a {
-      font-size: large;
-      text-align: center;
-    }
-    figure {
-      float: none;
-      width: 70%;
+    // margin-block-start: 0;
+    padding-inline-start: 0;
+    li {
+      justify-content: center;
+      align-items: center;
+      font-size: 1.05rem;
+      margin-bottom: 5px;
+      a {
+        font-size: large;
+        text-align: center;
+      }
+      figure {
+        float: none;
+        width: calc(100% - 40px);
+      }
     }
   }
+
   dd {
     margin-bottom: 15px;
   }
@@ -54,6 +60,29 @@ article.intro {
     }
     p {
       font-size: 18px;
+    }
+
+    ul.portfolio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      list-style-type: none;
+      li {
+        font-size: 1.05rem;
+        margin-bottom: 5px;
+        a {
+          font-size: large;
+          text-align: center;
+        }
+        figure {
+          float: none;
+          width: 70%;
+        }
+      }
+    }
+
+    dd {
+      margin-bottom: 15px;
     }
   }
   .site::before {
