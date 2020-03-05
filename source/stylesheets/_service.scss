@@ -2,14 +2,23 @@
 section.service {
   grid-area: service;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 10px;
-  h2 {
+  grid-template-columns: 1fr;
+  grid-template-row: 1fr 1fr;
+  grid-row-gap: 10px;
+
+  .information {
     grid-column: 1 / -1;
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    letter-spacing: 2px;
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: normal;
+      text-align: center;
+    }
   }
 
   a {
@@ -30,6 +39,12 @@ section.service {
 /* デスクトップ版 */
 @media(min-width: 768px) {
   section.service {
+    .information {
+      h2 {
+        margin-bottom: 1rem;
+      }
+      margin-bottom: 1rem;
+    }
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
   }
