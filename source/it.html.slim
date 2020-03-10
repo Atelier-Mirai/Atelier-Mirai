@@ -7,6 +7,11 @@ css:
     font-size: larger;
     margin: 0 0 50px 0;
   }
+  .items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
 article.intro
 
@@ -17,19 +22,37 @@ article.intro
 
   ol
     li
-      | 秋月電子で組み立てキットを購入 電子工作して楽しむ
+      | 組み立てキットを購入 電子工作して楽しむ
+      .items-wrapper
+        .w-100
+          = link_to 'http://akizukidenshi.com/catalog/g/gK-00907/', target: "_blank" do
+            = image_tag "K-00907.jpg"
+            | ゲルマラジオキット
 
-      = link_to 'http://akizukidenshi.com/catalog/g/gK-00907/', target: "_blank" do
-        = image_tag "K-00907.jpg", class: 'w-50'
-        | ゲルマラジオキット
+        .w-100
+          = link_to 'http://akizukidenshi.com/catalog/g/gK-09045/', target: "_blank" do
+            = image_tag "K-09045.jpg"
+            | 電光掲示時計キット
 
-      = link_to 'http://akizukidenshi.com/catalog/g/gK-09045/', target: "_blank" do
-        = image_tag "K-09045.jpg", class: 'w-50'
-        | 電光掲示時計キット
+        .w-100
+          = link_to 'http://akizukidenshi.com/catalog/g/gK-12335/', target: "_blank" do
+            = image_tag "K-12335.jpg"
+            | ６桁多機能マイコン時計キット
 
-      = link_to 'http://akizukidenshi.com/catalog/g/gK-12335/', target: "_blank" do
-        = image_tag "K-12335.jpg", class: 'w-50'
-        | ６桁多機能マイコン時計キット
+        .w-100
+          = link_to 'https://www.elekit.co.jp/product/TK-738', target: "_blank" do
+            = image_tag "TK738.png"
+            | デジタルアラーム時計 〜 時報機能がついて便利
+
+        .w-100
+          = link_to 'https://www.elekit.co.jp/product/AW-864', target: "_blank" do
+            = image_tag "AW-864.jpg"
+            | PICA Tower(ピカ・タワー) 〜 C言語のプログラミング学習にピッタリ
+
+        .w-100
+          = link_to 'https://www.elekit.co.jp/product/MR-002', target: "_blank" do
+            = image_tag "MR-002.jpg"
+            | ライントレースカー センサー搭載、はんだ付け工作入門にオススメ
 
       dt 価格
       dd 1000円〜5000円
@@ -39,7 +62,7 @@ article.intro
       dd
         | 電子工作を楽しみ、形ある思い出が残ります。
         br
-        | (一応)実用性もあるので良いかも。
+        | 実用性もあるので良いかも。
 
     li
       | ITパスポートを取得しよう
