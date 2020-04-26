@@ -1,6 +1,9 @@
 # 自動再読み込み
 activate :livereload
 
+# 相対URLを使う
+activate :relative_assets
+
 # ベンダープリフィックス付与
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"

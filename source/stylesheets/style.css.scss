@@ -2,23 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap&subset=japanese');
 
 // utility
-@import "utilities/spacing";
+@import "utility/utility";
 
-// common
-@import "wa_no_iro";
-@import "mixin";
-@import "reset";
-@import "body";
-@import "header";
-@import "footer";
+// foundation
+@import "foundation/foundation";
 
-// top page
-@import "hero";
-@import "title";
-@import "service";
+// layout
+@import "layout/layout";
 
-// site page
-@import "intro";
-@import "submenu";
-@import "table";
-@import "form";
+// object
+@import "object/object";
