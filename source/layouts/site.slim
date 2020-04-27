@@ -17,7 +17,7 @@ html
     link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
 
     / jQuery
-    script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    script src="https://code.jquery.com/jquery-3.1.1.min.js"
 
     / IE Buster
     script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js"
@@ -25,13 +25,16 @@ html
     / stylesheet の読み込み (style.cssを読み込む)
     = stylesheet_link_tag "style"
 
+    / Fomantic UI
+    = javascript_include_tag "semantic.min"
+
     / JavaScript (site.jsを読み込む)
     = javascript_include_tag "site"
-    
+
   body.site
-    = partial 'header'
+    / = partial 'header'
     = yield
-    .submenu
-      = partial "service"
-      = partial "profile"
-    = partial 'footer'
+    / .submenu
+    /   = partial "service"
+    /   = partial "profile"
+    / = partial 'footer'
