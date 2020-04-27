@@ -6,14 +6,30 @@ html
     title
       = current_page.data.title || "アトリヱ未來"
 
+    / ファビコンの指定
     = favicon_tag 'favicon.ico'
     link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"
 
-    meta content="情報技術(IT)を夢の掛け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。" name="description"
+    / 検索エンジン用にサイトの紹介文章
+    meta name="description" content="情報技術(IT)を夢の掛け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。"
 
-    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.30.0/css/all.css"
-    = stylesheet_link_tag "style"
+    / fontawesome
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+
+    / jQuery
+    script src="https://code.jquery.com/jquery-3.5.0.min.js"
+
+    / IE Buster
     script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js"
+
+    / stylesheet の読み込み (style.cssを読み込む)
+    = stylesheet_link_tag "style"
+
+    / Fomantic UI
+    = javascript_include_tag "semantic.min"
+
+    / JavaScript (site.jsを読み込む)
+    = javascript_include_tag "site"
 
   body.top
     = partial 'header'
