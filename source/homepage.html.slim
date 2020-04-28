@@ -2,23 +2,6 @@
 title: 'Homepage - Semantic'
 ---
 
-/ link[rel="stylesheet" type="text/css" href="../dist/components/reset.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/site.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/container.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/grid.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/header.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/image.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/menu.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/divider.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/dropdown.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/segment.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/button.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/list.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/icon.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/sidebar.css"]
-/ link[rel="stylesheet" type="text/css" href="../dist/components/transition.css"]
-/ style[type="text/css"]
-
 scss:
   .hidden.menu {
     display: none;
@@ -50,7 +33,7 @@ scss:
     }
   }
   .ui.vertical.stripe {
-    padding: 8em 0em;
+    // padding: 8em 0em;
     h3 {
       font-size: 2em;
     }
@@ -64,7 +47,7 @@ scss:
       clear: both;
     }
     p {
-      font-size: 1.33em;
+    //   font-size: 1.33em;
     }
     .horizontal.divider {
       margin: 3em 0em;
@@ -153,8 +136,9 @@ javascript:
           | Log in
       .item
         a.ui.primary.button
-          | Sign Up
-.ui.vertical.inverted.yellow.sidebar.menu
+          | desktopでしたにスクロールすると出てくる
+
+.ui.vertical.yellow.sidebar.menu
   a.active.item
     | Home
   a.item
@@ -166,115 +150,440 @@ javascript:
   a.item
     | Login
   a.item
-    | Signupaa
+    | iPhone用 サイドメニュー
+
+scss:
+  .billboard {
+    background-image: image-url('aruitasakinimirukeshiki.jpg') !important;
+    background-size: cover !important;
+    // min-height: 227px !important;
+  }
+
+
+scss:
+  .main.menu {
+    margin-top: 4em;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+      box-shadow 3.5s ease,
+      padding 3.5s ease
+    ;
+  }
+
+javascript:
+  $(function(){
+    // fix main menu to page on passing
+    $('.main.menu').visibility({
+      type: 'fixed'
+    });
+    $('.overlay').visibility({
+      type: 'fixed',
+      offset: 80
+    });
+    // lazy load images
+    $('.image').visibility({
+      type: 'image',
+      transition: 'vertical flip in',
+      duration: 500
+    });
+    // show dropdown on hover
+    $('.main.menu  .ui.dropdown').dropdown({
+      on: 'hover'
+    });
+    // show dropdown on hover
+    $('.ui.dropdown').dropdown({
+      on: 'hover'
+    });
+  });
+
+/ .ui.main.text.container
+/   h1.ui.header Sticky Example
+/   p This example shows how to use lazy loaded images, a sticky menu, and a simple text container
 
 .pusher
-  .ui.inverted.vertical.masthead.center.aligned.segment
+  .ui.vertical.masthead.center.aligned.segment style="min-height: 100px;"
     .ui.container
-      .ui.large.secondary.inverted.pointing.menu
+      .ui.large.secondary.pointing.menu style="border-bottom: none;"
+        // iPhone 用ハンバーガーメニュー
         a.toc.item
           i.sidebar.icon
-        a.active.item
-          | Home
+
         a.item
-          | Work
-        a.item
-          | Company
-        a.item
-          | Careers
+          h1.header.item#logo.active
+            = image_tag 'logo.png'
+            | アトリヱ未來
+
         .right.item
-          a.ui.inverted.button
-            | Log in
-          a.ui.inverted.button
-            | Sign Up
-    .ui.text.container
-      h1.ui.inverted.header
-        |  Imagine-a-Company
+          a.item
+            |
+          a.item
+            | 通常メニュー
+          a.item
+            | Company
+          a.item
+            i.graduation.cap.icon
+            | 學ぶ
+          .ui.dropdown.item
+            | Options
+            i.dropdown.icon
+            .menu
+              a.item Small
+              a.item Medium
+              a.item Large
+          a.ui.yellow.button
+            i.paper.plane.icon
+            | お問い合わせ
+
+  .ui.vertical.masthead.center.aligned.segment.billboard.mb-4
+    .ui.container.left.aligned
+      h2.ui.header
+        | 情報技術を
+        span.ui.large.yellow.text.ml-1.mr-1
+          | 夢
+        | の架け橋に
       h2
-        | Do whatever you want when you want to.
-      .ui.huge.primary.button
+        | Webサイト作成やITを學ぶあなたの爲に
+      .ui.huge.yellow.button
         | Get Started
         i.right.arrow.icon
-  .ui.vertical.stripe.segment
+    .ui.container.right.aligned style="align-self: flex-end;"
+      p.ui.medium.yellow.text style="padding-top: 500px;"
+        | あるいた先にみる景色
+
+
+  .ui.m-5
     .ui.middle.aligned.stackable.grid.container
-      .row
-        .eight.wide.column
-          h3.ui.header
-            | We Help Companies and Companions
+      .ui.positive.icon.message
+        i.leaf.icon
+        .content
+          .ui.large.header
+            | お知らせ
           p
-            | We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.
-          h3.ui.header
-            | We Make Bananas That Can Dance
-          p
-            | Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
-        .six.wide.right.floated.column
-          img.ui.large.bordered.rounded.image[src="assets/images/wireframe/white-image.png"]
-      .row
-        .center.aligned.column
-          a.ui.huge.button
-            | Check Them Out
-  .ui.vertical.stripe.quote.segment
-    .ui.equal.width.stackable.internally.celled.grid
-      .center.aligned.row
-        .column
-          h3
-            | "What a Company"
-          p
-            | That is what they all say about us
-        .column
-          h3
-            | "I shouldn't have gone with their competitor."
-          p
-            img.ui.avatar.image[src="assets/images/avatar/nan.jpg"]
-            b
-              | Nan
-            |  Chief Fun Officer Acme Toys
-  .ui.vertical.stripe.segment
+            | Webサイトをリニューアルいたしました。
+
+  .ui.center.aligned.my-5.py-5. style="background: #fffaf0 !important;"
     .ui.text.container
-      h3.ui.header
-        | Breaking The Grid, Grabs Your Attention
+      h2.ui.header
+        i.graduation.cap.icon
+        | 無料体験レッスンのご案内
       p
-        | Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
-      a.ui.large.button
-        | Read More
-      h4.ui.horizontal.header.divider
-        a[href="#"]
-          | Case Studies
-      h3.ui.header
-        | Did We Tell You About Our Bananas?
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+    .ui.container.center.aligned.mt-4
+      button.ui.huge.yellow.button お申し込みはこちら
+
+  .ui.vertical.stripe.segment
+    .ui.text.container.mb-4
+      h2.ui.massive.header
+        i.graduation.cap.icon.mr-3
+        | COURSES
       p
-        | Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
-      a.ui.large.button
-        | I'm Still Quite Interested
-  .ui.inverted.vertical.footer.segment
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+
     .ui.container
-      .ui.stackable.inverted.divided.equal.height.stackable.grid
-        .three.wide.column
-          h4.ui.inverted.header
-            | About
-          .ui.inverted.link.list
-            a.item[href="#"]
-              | Sitemap
-            a.item[href="#"]
-              | Contact Us
-            a.item[href="#"]
-              | Religious Ceremonies
-            a.item[href="#"]
-              | Gazebo Plans
-        .three.wide.column
-          h4.ui.inverted.header
-            | Services
-          .ui.inverted.link.list
-            a.item[href="#"]
-              | Banana Pre-Order
-            a.item[href="#"]
-              | DNA FAQ
-            a.item[href="#"]
-              | How To Access
-            a.item[href="#"]
-              | Favorite X-Men
-        .seven.wide.column
-          h4.ui.inverted.header
-            | Footer Header
+      .ui.cards
+        .wide.card
+          .content
+            = image_tag 'macbook.jpg', class: 'left floated small long ui image'
+            .header
+              | Webサイトを作って欲しい
+            .meta
+              | iPhoneにも対応
+            .description
+              | ホームページ作成のご依頼を承ります。
+            = link_to 'https://www.yahoo.co.jp', class: 'ui right floated tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+        .wide.card
+          .content
+            = image_tag 'html5_css3.png', class: 'left floated small long ui image'
+            .header
+              | HTML / CSS を学びたい
+            .meta
+              | プログラミング基礎の習得にも最適です
+            .description
+              | 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。
+            = link_to 'https://www.yahoo.co.jp', class: 'ui right floated tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+        .wide.card
+          .content
+            = image_tag 'ruby_and_rails.png', class: 'left floated small long ui image'
+            .header
+              | Webプログラミングを学びたい
+            .meta
+              | 本格的なプログラミングの世界へ
+            .description
+              | データベース利用の本格的なプログラミング、Ruby on Rails の講座です。
+            = link_to 'https://www.yahoo.co.jp', class: 'ui right floated tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+        .wide.card
+          .content
+            = image_tag 'qualification.png', class: 'left floated small long ui image'
+            .header
+              | ITの資格を取りたい
+            .meta
+              | 一般教養として、自己研鑽として
+            .description
+              | 「ITパスポート」や「応用情報技術者」など国家資格取得のための講座です。
+            = link_to 'https://www.yahoo.co.jp', class: 'ui right floated tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+
+  .ui.sakura.center.aligned.my-5.py-5
+    .ui.text.container.mb-3
+      h2.ui.massive.header
+        i.graduation.cap.icon
+        | CONTENTS
+      p
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+
+
+    .ui.four.column.doubling.stackable.grid.container
+      .column
+        .ui.tertiary.transparent.card
+          .content
+            = image_tag 'macbook.jpg', class: 'ui left floated midium rounded circle image'
+            .center.aligned.header
+              | こんてんと
+            .description
+              | ホームページ作成のご依頼を承ります。
+            .ui.center.aligned.mt-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui teal button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+      .column
+        .ui.tertiary.transparent.card
+          .content
+            = image_tag 'macbook.jpg', class: 'ui left floated midium rounded circle image'
+            .center.aligned.header
+              | こんてんと
+            .description
+              | ホームページ作成のご依頼を承ります。
+            .ui.center.aligned.mt-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui teal button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+      .column
+        .ui.tertiary.transparent.card
+          .content
+            = image_tag 'macbook.jpg', class: 'ui left floated midium rounded circle image'
+            .center.aligned.header
+              | こんてんと
+            .description
+              | ホームページ作成のご依頼を承ります。
+            .ui.center.aligned.mt-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui teal button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+      .column
+        .ui.tertiary.transparent.card
+          .content
+            = image_tag 'macbook.jpg', class: 'ui left floated midium rounded circle image'
+            .center.aligned.header
+              | こんてんと
+            .description
+              | ホームページ作成のご依頼を承ります。
+            .ui.center.aligned.mt-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui teal button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+
+  .ui.center.aligned.my-5.py-5
+    .ui.text.container.mb-3
+      h2.ui.massive.header
+        i.graduation.cap.icon
+        | CLASSROOMS
+      p
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+        | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+
+
+    .ui.three.column.doubling.stackable.grid.container
+      .column
+        .ui.card
+          .content.px-0
+            .center.aligned.header.mb-3
+              | ○○○校
+            = image_tag 'macbook.jpg', class: 'ui midium image'
+            .left.aligned.header.mt-3.px-3
+              | こんてんと
+            .description.px-3
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+            .ui.left.aligned.mt-3.px-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui tertiary button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+      .column
+        .ui.card
+          .content.px-0
+            .center.aligned.header.mb-3
+              | ○○○校
+            = image_tag 'macbook.jpg', class: 'ui midium image'
+            .left.aligned.header.mt-3.px-3
+              | こんてんと
+            .description.px-3
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+            .ui.left.aligned.mt-3.px-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui tertiary button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+      .column
+        .ui.card
+          .content.px-0
+            .center.aligned.header.mb-3
+              | ○○○校
+            = image_tag 'macbook.jpg', class: 'ui midium image'
+            .left.aligned.header.mt-3.px-3
+              | こんてんと
+            .description.px-3
+              | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+            .ui.left.aligned.mt-3.px-3
+              = link_to 'https://www.yahoo.co.jp', class: 'ui tertiary button' do
+                i.right.arrow.icon.mr-2
+                | もっと詳しく
+
+  .ui.geppaku.center.aligned.grid.my-5.py-5
+    .five.wide.column
+      = image_tag 'TK738.png', class: "ui medium right floated image"
+    .eleven.wide.column
+      .ui.text.container.mb-3
+        .ui.small.header
+          | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+          | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+        .ui.grid
+          .eight.wide.column
+            = link_to 'https://www.yahoo.co.jp', class: 'ui yellow button' do
+              i.right.arrow.icon.mr-2
+              | 無料体験申し込み
+          .eight.wide.column
+            = link_to 'https://www.yahoo.co.jp', class: 'ui voilet button' do
+              i.right.arrow.icon.mr-2
+              | 無料体験申し込み
+        .ui.transparent.segment
           p
-            | Extra space for a call to action inside the footer that could help re-engage users.
+            span.ui.large.text
+              | お問い合わせ：
+              span.ui.red.text.mr-3
+                | 0120-000-000
+            span.ui.medium.text
+              | 受付時間：平日 7:00-21:00 / 土日祝 8:00-21:00
+          p
+            | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+
+  .ui.six.column.doubling.stackable.grid.container.mb-5
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman1.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman2.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman3.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman1.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman2.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+    .column.p-1
+      .ui.tertiary.transparent.card.p-0
+        .content.p-0
+          = image_tag 'woman3.jpg', class: 'ui small long bordered image p-2'
+          .header.mt-3
+            | TEACHER'S NAME
+          .description
+            | せんせいのなまえ
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+
+
+  .ui.two.column.grid.container
+    .column
+      .ui.grid
+        .nine.wide.column
+          span.ui.blue.text
+            | EVENT
+          .ui.large.header.mb-0
+            | TEACHER'S NAME
+          .meta.mb-2
+            | 11月12日
+          .description
+            | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+        .seven.wide.column
+          = image_tag 'woman1.jpg', class: 'ui small long right floated image'
+    .column
+      .ui.grid
+        .nine.wide.column
+          span.ui.blue.text
+            | EVENT
+          .ui.large.header.mb-0
+            | TEACHER'S NAME
+          .meta.mb-2
+            | 11月12日
+          .description
+            | あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波
+          .mt-3
+            = link_to 'https://www.yahoo.co.jp', class: 'ui tertiary teal button' do
+              i.right.arrow.icon.mr-2
+              | 詳細を見る
+        .seven.wide.column
+          = image_tag 'woman2.jpg', class: 'ui small long right floated image'
+
+= partial 'footer'

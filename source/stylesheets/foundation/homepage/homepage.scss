@@ -2,16 +2,69 @@
 
 @import "button.min";
 @import "container.min";
+@import "card";
 @import "divider.min";
 @import "dropdown.min";
 @import "grid.min";
 @import "header.min";
 @import "icon";
-@import "image.min";
+@import "image";
 @import "list.min";
 @import "menu.min";
+@import "message";
 @import "reset.min";
 @import "segment.min";
-@import "sidebar.min";
+@import "sidebar";
 @import "site";
+@import "text";
 @import "transition.min";
+
+.wide {
+  width: 450px !important;
+}
+
+.ui.small.long.images .image,
+.ui.small.long.images img,
+.ui.small.long.images svg,
+.ui.small.long.image {
+  width: 240px;
+  height: auto;
+  font-size: 1rem;
+}
+
+img.rounded.circle {
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+
+.ui.sakura {
+  background: $sakurairo !important;
+}
+
+.ui.geppaku {
+  background: $geppaku !important;
+}
+
+.ui.transparent {
+  background: transparent !important;
+}
+
+.ui.squared.segment {
+  border-radius: 0;
+}
+.ui.shobuiro.segment {
+  background: $shobuiro !important;
+  color: transparent !important;
+}
+
+.ui.tertiary.card,
+.ui.cards > .tertiary.card {
+  box-shadow: none;
+}
+
+
+
+.ui.transparent.card,
+.ui.cards > .transparent.card {
+  background: transparent;
+}
