@@ -1,0 +1,32 @@
+// iPhone 用ハンバーガーメニュー
+.ui.vertical.masthead.center.aligned.segment style="min-height: 100px;"
+  .ui.container
+    .ui.large.secondary.pointing.menu style="border-bottom: none;"
+      a.toc.item
+        i.sidebar.icon
+
+      a.item
+        h1.header.item#logo.active
+          = image_tag 'logo.png'
+          | アトリヱ未來
+
+      .right.item
+        a.item
+          |
+        a.item
+          | 通常メニュー
+        a.item
+          | Company
+        a.item
+          i.graduation.cap.icon
+          | 學ぶ
+        .ui.dropdown.item
+          | Options
+          i.dropdown.icon
+          .menu
+            a.item Small
+            a.item Medium
+            a.item Large
+        a.ui.yellow.button
+          i.paper.plane.icon
+          | お問い合わせ

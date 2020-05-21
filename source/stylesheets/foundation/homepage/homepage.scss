@@ -1,23 +1,26 @@
+@import "wa_no_iro";
+@import "reset";
 @import "variables";
 
-@import "button.min";
-@import "container.min";
+@import "button";
+@import "container";
 @import "card";
-@import "divider.min";
-@import "dropdown.min";
-@import "grid.min";
-@import "header.min";
+@import "divider";
+@import "dropdown";
+@import "grid";
+@import "header";
 @import "icon";
 @import "image";
-@import "list.min";
-@import "menu.min";
+@import "list";
+@import "menu";
 @import "message";
-@import "reset.min";
-@import "segment.min";
+@import "segment";
 @import "sidebar";
 @import "site";
 @import "text";
-@import "transition.min";
+@import "transition";
+
+@import "home";
 
 .wide {
   width: 450px !important;
@@ -61,8 +64,6 @@ img.rounded.circle {
 .ui.cards > .tertiary.card {
   box-shadow: none;
 }
-
-
 
 .ui.transparent.card,
 .ui.cards > .transparent.card {

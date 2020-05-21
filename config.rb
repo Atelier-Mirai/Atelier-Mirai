@@ -1,9 +1,6 @@
 # 自動再読み込み
 activate :livereload
 
-# 相対URLを使う
-activate :relative_assets
-
 # ベンダープリフィックス付与
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -13,6 +10,10 @@ end
 set :layout, 'site'
 page 'index.html', layout: 'top'
 page 'no_layout.html', layout: false
+
+# 相対URLを使う
+activate :relative_assets
+set :relative_links, true
 
 # ビルド時の設定
 configure :build do
@@ -25,7 +26,9 @@ configure :build do
   # # イメージ 圧縮
   activate :imageoptim
   # アセットファイルの URL にハッシュを追加
-  # activate :asset_hash
+  activate :asset_hash
+  # テキストファイルの gzip 圧縮
+  activate :gzip
 end
 
 # Slim の設定
@@ -36,5 +39,9 @@ set :slim, {
   # 属性のショートカット
   # Slim コード中、「&text name="user"」と書くと、
   # <input type="text" name="user"> とレンダリングされる。
-  shortcut: {'&' => {tag: 'input', attr: 'type'}, '#' => {attr: 'id'}, '.' => {attr: 'class'}}
+  shortcut: {
+    '&' => {tag: 'input', attr: 'type' },
+    '#' => {attr: 'id'},
+    '.' => {attr: 'class'}
+  }
 }
