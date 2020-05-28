@@ -32,6 +32,9 @@ html
     = javascript_include_tag "site"
 
   body.top
-    / = partial 'header'
-    = yield
-    / = partial 'footer'
+    = partial 'scroll_header_menu'
+    = partial 'iPhone_menu'
+    = partial 'main_menu'
+    .pusher
+      = yield
+    = partial 'footer'

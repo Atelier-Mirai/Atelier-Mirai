@@ -1,0 +1,82 @@
+---
+title: アトリヱ未來
+---
+
+figure.hero
+  = image_tag 'aruitasakinimirukeshiki.jpg', alt: 'あるいた先にみる景色'
+h1.title
+  = image_tag 'catch_copy.png', alt: '情報技術を夢の架け橋に'
+  br
+  | Webサイト作成やITを学ぶあなたの爲に
+p.subtitle.copyright
+  | あるいた先にみる景色
+  button.ui.primary.button
+    | Save
+  button.ui.button
+    | Discard
+
+section.service
+  article.information
+    h2
+      | ご案内
+    p
+      / | 「天の理(ことわり)を地に下ろす」- 「工学」
+      / br
+      | 母なる大地からすくっと芽生えて天へと伸びる一本の木。
+      | アトリヱ未來は、愛する人生を生きるあなたを応援します。
+  article
+    a href='web.html'
+      figure
+        = image_tag 'macbook.jpg'
+      h3 Webサイトを作って欲しい
+      p ホームページ作成のご依頼を承ります。
+  article
+    a href='html.html'
+      figure
+        = image_tag 'html5_css3.png'
+      h3 HTML / CSS を学びたい
+      p 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。
+  article
+    a href='rails.html'
+      figure
+        = image_tag 'ruby_and_rails.png'
+      h3 Webプログラミングを学びたい
+      p データベース利用の本格的なプログラミング、Ruby on Rails の講座です。
+  article
+    a href='qualification.html'
+      figure
+        = image_tag 'qualification.png'
+      h3 ITの資格を取りたい
+      p 「ITパスポート」や「応用情報技術者」など国家資格取得のための講座です。
+
+/ h1 KichinSink
+/ = link_to "Top", "index.html"
+/ = link_to "Read Documentation", "https://middlemanapp.com/basics/templating_language/", target: "_blank"
+/ = tag :img, src: "images/chiyo.gif"
+/ = image_tag "chiyo.gif"
+/ = image_tag 'chiyo.gif', width: 35, class: 'logo', alt: '千代紙(ロゴ)'
+/ - content_tag :p, class: "stuff" do
+/   |  こんにちは
+/ = mail_to 'fake@faker.com', "Fake Email Link", cc: "test@demo.com"
+/ - form_tag '/destroy', class: 'destroy-form', method: 'delete' do
+/   - field_set_tag do
+/     p
+/       = label_tag :username, class: 'first'
+/       = text_field_tag :username, value: 'username'
+/     p
+/       = label_tag :password, class: 'first'
+/       = password_field_tag :password, value: 'password'
+/     p
+/       = label_tag :strategy
+/ = select_tag :strategy, options: {delete: 'del', destroy: 'D'},
+/                      selected: 'del'
+/     p
+/       = check_box_tag :confirm_delete
+/   - field_set_tag(class: 'buttons') do
+/     = submit_tag "削除"
+/ = lorem.sentences 5
+/ = lorem.date
+/ = image_tag lorem.image('200x100')
+/ = image_tag lorem.image('200x100', background_color: '333', color: 'fff')
+/ = image_tag lorem.image('200x100', random_color: true)
+/ = image_tag lorem.image('200x100', text: 'Hello')

@@ -1,0 +1,102 @@
+---
+title: Webプログラミングを学ぶ
+---
+
+.ui.fluid.container
+  .billboard
+    = image_tag 'sunflower_1920x300.jpg'
+    .catch_phrase
+      h1
+        | Webプログラミング を 学ぶ
+      p.lead
+        | Ruby
+        br.mobile.only
+        | iPhoneにも対応
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header Webプログラミングを学ぶ
+      p
+        | HTML/CSSを用いたWebサイト作成から一歩進んで、データベースを用いた本格的なプログラミングを学んでいきます。
+        br
+        | 利用者からの文章や写真の投稿や、会員登録、検索などが可能な、クックパッドや食べログのようなサイトも作成可能です。
+
+      h2.ui.header
+        | Ruby と
+        br.mobile.only
+        | Ruby on Rails
+      p 柔軟でパワフルな書き味から人気の高い国産言語Ruby(ルビー)と、フルスタックのフレームワーク Ruby on Rails(ルビーオンレイルズ) の技術を習得します。
+
+    .six.wide.right.floated.column
+      = image_tag "ruby_and_rails.png", class: "ui large bordered rounded image"
+
+.ui.text.container.mt-5
+  h2.ui.header 講座内容のご案内
+  p
+    | これまでに、多くの方々に学んでいただいております Webプログラミング講座。
+    br
+    | ここではその内容をご案内いたします。
+
+  h2.ui.horizontal.header.divider
+    .amairo.text 講座内容 ご案内
+
+  h2 対面での講座
+  p
+    | プログラミングを習得されたいあなたへ向けて、独学でも学べるよう、多数のオンライン講座もございますが、
+    | 分からない点、疑問点を気軽に聞ける対面での講座は、学習意欲の維持や、技術習得の観点から、お勧めです。
+
+  h2 Ruby on Rails とは
+  p
+    | アトリヱ未來では、HTML 講座 と、 Ruby on Rails による Webアプリ開発講座のご提供が可能です。
+    | HTML 講座 と Webアプリ開発講座の違いですが、
+    | HTML 講座 は、あらかじめ用意された文書を表示する普通のWebサイト(ホームページ)を作成されたい方向け。
+    | Webアプリ開発講座は、さらに一歩進んで、利用者からの入力を反映するような、動的なWebサイトの開発を行います。
+
+  / h2 費用や学習期間
+  / p
+  /   | HTML講座は、比較的習得が容易で、初めての方にお勧めです。
+  /   | 学習期間ですが、週一回二時間、おおよそ二ヶ月あれば、
+  /   | 基礎的なWebサイト(このサイトもそうです)の作成は習得可能かと思います。
+  / p
+  /   | 学習費用ですが、概ね一回二時間で３０００円〜４０００円をみていただければと思っておりますが、
+  /   | ご予算に応じてご相談に応じます。
+
+  h2 学びの形
+  p
+    | 受講形態ですが、パソコン教室というよりは、
+    | 喫茶店やファミリーレストランのようなところでの、
+    | 家庭教師のようなイメージを持っていただければ良いかと思いますし、
+    | お友達もご一緒にということであれば、
+    | 公共施設や会議室を借りてのグループレッスンも可能です。
+
+  h2 お近くの喫茶店でミニ講座も
+  p
+    | もしご都合がよろしければ、喫茶店等で、お打ち合わせや、
+    | パソコンをお持ちでしたら、簡単な開発環境の整備やミニ講座も可能です。
+
+  h2 テキストはこちら
+  .ui.link.cards style="justify-content: center;"
+    .card
+      .image
+        = link_to "https://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%99%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AERuby%E5%85%A5%E9%96%80-%E8%A8%80%E8%AA%9E%E4%BB%95%E6%A7%98%E3%81%8B%E3%82%89%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA%E3%83%BB%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E6%8A%80%E6%B3%95%E3%81%BE%E3%81%A7-Software-Design-plus%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/dp/4774193976/ref=tmm_other_meta_binding_swatch_0?_encoding=UTF8&qid=1590575632&sr=1-3" , target: "_blank" do
+          = image_tag 'pro_ruby.jpg'
+      .content
+        .header
+          | プロを目指す人のためのRuby入門
+        .description
+          | Rubyの文法をサンプルコードで学び、例題でプログラミングの流れを体験できる解説書です。
+          br
+          | Rubyの特徴(他プログラミング言語との違い)、テスト駆動開発やデバッグのやり方など開発現場で必要になる知識を解説しています。
+          | 本書の内容を理解すれば、開発の現場で必要とされるRuby関連の知識を一通り習得できます。
+
+    .card
+      .image
+        = link_to "https://www.amazon.co.jp/%E7%8F%BE%E5%A0%B4%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B-Ruby-Rails-5%E9%80%9F%E7%BF%92%E5%AE%9F%E8%B7%B5%E3%82%AC%E3%82%A4%E3%83%89-%E5%A4%A7%E5%A0%B4%E5%AF%A7%E5%AD%90/dp/4839962227/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1590575632&sr=1-2" , target: "_blank" do
+          = image_tag 'rubyonrails.jpg'
+      .content
+        .header
+          | 現場で使える Ruby on Rails 5速習実践ガイド
+        .description
+          | Ruby on RailsでどのようにWebアプリを作るのかという基礎から、現場のニーズに合わせてどのように機能を追加していくのか、テストはどのように行うのか、複数人で開発していく場合の方法といった実践的なトピックまで、幅広くカバーしています。
+          | Railsアプリの基本から実践的なノウハウまで、纏まった一冊です。

@@ -5,28 +5,32 @@
       a.toc.item
         i.sidebar.icon
 
+          / = link_to '/index.html' do
+
       a.item
-        h1.header.item#logo.active
-          = image_tag 'logo.png'
-          | アトリヱ未來
+        = link_to '/index.html' do
+          h1.header.item#logo.active
+            = image_tag 'logo.png'
+            | アトリヱ未來
 
       .right.item
-        a.item
-          |
-        a.item
-          | 通常メニュー
-        a.item
-          | Company
-        a.item
-          i.graduation.cap.icon
-          | 學ぶ
+        = link_to '/about.html', class: 'item' do
+          | サイトについて
+        = link_to '/web.html', class: 'item' do
+          | Web作成依頼
         .ui.dropdown.item
-          | Options
+          i.graduation.cap.icon
+          | ITを學ぶ
           i.dropdown.icon
           .menu
-            a.item Small
-            a.item Medium
-            a.item Large
-        a.ui.yellow.button
-          i.paper.plane.icon
-          | お問い合わせ
+            = link_to '/html.html', class: 'item' do
+              | HTML / CSS
+            = link_to '/ruby.html', class: 'item' do
+              | Webプログラミング
+            = link_to '/qualification.html', class: 'item' do
+              | IT資格
+            = link_to '/c.html', class: 'item' do
+              | Ｃ言語
+        = link_to '/contact.html', class: 'ui yellow button' do
+            i.paper.plane.icon
+            | お問い合わせ

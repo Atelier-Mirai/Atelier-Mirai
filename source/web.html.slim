@@ -1,66 +1,126 @@
 ---
-title: Webサイトを作って欲しい
+title: Webサイト作成依頼
+users: [
+  { family_name: 'yamada', given_name: 'taro'},
+  { family_name: 'yamada', given_name: 'jiro'},
+  { family_name: 'yamada', given_name: 'saburo'}
+]
 ---
 
-article.intro
-  h1 Webサイトを作って欲しい
+/ .ui.fluid.container
+/   .billboard
+/     = image_tag 'sakura_1920x300.jpg'
+/     .catch_phrase
+/       h1
+/         | Webサイト作成依頼
+/       p.lead
+/         | レスポンシブデザインで
+/         br.mobile.only
+/         | iPhoneにも対応
 
-  figure
-    = image_tag "macbook.jpg", alt: "Webサイトを作って欲しい"
+// billboard
+= partial 'billboard', locals: { image: 'sakura_1920x300.jpg',
+                                 catch: 'Webサイト作成依頼',
+                                 lead: 'レスポンシブデザインで iPhoneにも対応' }
 
-  h2 個人、中小企業向けのWebサイト、お作りいたします。
+hr
+= some_method
+hr
+= table_body
+
+= table_user current_page.data.users
+
+hr
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header 個人、中小企業向けのWebサイト、お作りいたします。
+      p
+        | 個人や地域のサークル活動、個人事業主様や中小企業様向けにWebサイトの作成を承ります。
+        br
+        | 名刺代わりにご活用ください。
+
+      h2.ui.header
+        | レスポンシブデザインで
+        br.mobile.only
+        | iPhoneにも対応
+      p Webサイト閲覧は、従前はコンピュータからのアクセスが中心でしたが、iPhone, iPad といった、モバイル端末からのアクセスが急増しています。画面の小さなモバイル端末からの快適な閲覧体験をレスポンシブデザインにて、実現いたします。
+    .six.wide.right.floated.column
+      = image_tag "macbook.jpg", class: "ui large bordered rounded image"
+
+  / .row
+  /   .center.aligned.column
+  /     a.ui.huge.button Check Them Out
+
+.ui.text.container.mt-5
+  h2.ui.header これまでに作成したWebサイトのご紹介
   p
-    | 個人や地域のサークル活動、個人事業主様や中小企業様向けにWebサイトの作成を承ります。
+    | これまでに、趣味のサイトから企業サイトまで様々なウェブサイトを作成して参りました。
     br
-    | 名刺代わりにご活用ください。
+    | ここではその一部をご紹介いたします。
 
-    / = link_to 'products_advanced_search_path', target: "_blank"
-    /   = image_tag "search.png"
-    /   | 高度な検索
+  h2.ui.horizontal.header.divider
+    / a href="#"  作成サイト ご紹介
+    .amairo.text 作成サイト ご紹介
+  / h2.ui.header Did We Tell You About Our Bananas?
+  / p Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
+  / a.ui.large.button I'm Still Quite Interested
 
+.ui.container.mt-5
+  = link_to 'https://shogi-5jk.herokuapp.com', target: '_blank', class: 'ui horizontal two cards' do
+    .image
+        = image_tag '5JK.jpg'
+    .content
+      .header
+        | 将棋サークル
+      .description
+        | 将棋の対局した棋譜や、会員の方からのさまざまな文章や画像の投稿が可能なサークル用掲示板です。
+        br
+        | 棋譜データの保存等、データベースを用いた本格的なプログラミングが可能なフレームワーク Ruby on Rails を利用しています。
 
-  h2 作品例
-  p
-    | これまでに作成したWebサイトの一例です。
-  ul.portfolio
-    li
-      figure
-        = link_to 'https://shogi-5jk.herokuapp.com', target: '_blank'
-          figcaption 趣味の将棋サークル
-          = image_tag '5jk.png'
-      p 将棋の棋譜や文章・画像の投稿等可能な掲示板。Ruby on Rails を用いています。
-
-    li
-      figure
+    .card
+      .image
         = link_to 'https://isewan.herokuapp.com', target: '_blank'
-          figcaption 伊勢湾カップ公式サイト
           = image_tag 'isewan.png'
-      p 知多市新舞子を舞台に毎年夏に行われるウィンドサーフィンの祭典です。
+      .content
+        .header 伊勢湾カップ公式サイト
+        .description
+          | 知多市新舞子を舞台に毎年夏に行われるウィンドサーフィンの祭典。全国各地から卓越した技術を持つ選手200名が集い、その腕を競います。
+          br
+          | 大会写真の閲覧が可能な他、管理者としてログインすると、文章や画像、大会日程等の編集が行えるよう、創られています。
+    .card
+      .image
+        = link_to 'https://homemade-reform.com', target: '_blank'
+          = image_tag 'reiwa-reform.jpg'
+      .content
+        .header 株式会社ホームメイド
+        .description
+          | 岐阜市で建築リフォームを営む企業さまのサイトです。
+          br
+          | 既存のWebサイトがiPhoneに対応しておらず、また大量の施工事例をお客様に分かりやすくお伝えしたいとのことで、事例の絞り込み機能も実装しております。
 
-    li
-      figure
-        = link_to 'https://www.homemade-reform.com', target: '_blank'
-          figcaption 株式会社ホームメイド
-          = image_tag 'homemade.png'
-      p 岐阜市で建築リフォームを営む企業さま向けのサイトです。
+    .card
+      .image
+        = link_to 'https://noel-consul.co.jp', target: '_blank'
+          = image_tag 'noel_s.jpg'
+      .content
+        .header 株式会社ノエル・コンサルサポート
+        .description
+          | 名古屋市の社会保険労務士の方のサイトです。
+          br
+          | 既存のWebサイトの移行に併せ、iPhoneへの対応、YouTube動画の掲載を行いました。
 
-    / li
-    /   figure
-    /     = link_to 'https://noel-consul.co.jp', target: '_blank'
-    /       figcaption 株式会社ノエル
-    /       = image_tag 'noel.png'
-    /   p 名古屋市の社会保険労務士の方のサイトです(作成中)
+.ui.text.container.mt-5
 
-  h2 費用や制作期間
+  h2 料金や制作期間について
   p
-    | 数ページからなる基本的なWebサイトの作成でしたら、おおよそ１０万円から作成いたしております。
+    | Webサイトの作成料金や期間は、そのサイトのもつ性格やページ数等、様々な要素があり、一概に申し上げることは困難ですが、トップページと数点の下層ページからなる基本的なWebサイトでございましたら、文章や画像等はご提供頂いた場合、概ね数万円から作成いたしております。
     | 作成期間は一ヶ月を目安にしていただければと思います。
-    br
-    | (ご予算に応じて作成いたします。また、文章や画像等はご提供ください。)
 
   h2 お打ち合わせ
   p
-    | ご希望のサイト等、お近くの喫茶店等で、お打ち合わせをさせていただければと思います。
+    | お作りになりたいサイトのイメージなど、お近くの喫茶店で、お打ち合わせをさせていただければと思います。またご予算面でもご相談に乗りますので、
     | お気軽に
-    = link_to 'お問い合わせ', 'contact.html'
+    = link_to 'お問い合わせ', '/contact.html'
     | ください。
