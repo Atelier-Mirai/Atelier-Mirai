@@ -126,11 +126,6 @@ title: HTML / CSS を学ぶ
         | また、メニュー項目など、Webサイトで共通する部分も容易に管理できます。
 
   = partial 'course_introduction'
-  / = partial 'courses_partial/face_to_face'
-  / = partial 'courses_partial/study_expenses'
-  / = partial 'courses_partial/learning_style'
-  / = partial 'courses_partial/participant_introduction'
-  / = partial 'courses_partial/preparatory_meeting'
 
   h2 テキストはこちら
   .ui.link.cards style="justify-content: center;"
@@ -144,3 +139,5 @@ title: HTML / CSS を学ぶ
     = partial 'other_course', locals: data.course[3]
     = partial 'other_course', locals: data.course[4]
     = partial 'other_course', locals: data.course[5]
+
+= partial 'a_gem_of_a_book'
