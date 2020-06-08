@@ -6,5 +6,5 @@
     p
       | プログラミング技術習得に役立つ珠玉の名著のご紹介です。
   .ui.eight.column.doubling.stackable.grid.container
-    - (0...data.book.count).to_a.shuffle[...8].each do |i|
+    - (0...data.book.count).to_a.shuffle[0...8].each do |i|
       = partial 'book_intro', locals: data.book[i]
