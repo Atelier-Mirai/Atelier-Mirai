@@ -1,18 +1,7 @@
-/* フッター */
-footer {
-  // grid-row: foot;
-  grid-area: foot;
-  justify-self: center;
-  align-self: center;
-  font-size: 15px;
-}
+/*=============================================================================
+  フッター
+=============================================================================*/
 
-/* フッターのバー */
-body::after {
-  content: "";
-  background-color: $sakurairo;
-  // grid-column: 1 / -1;
-  // grid-row: foot;
-  grid-area: foot;
-  z-index: -1;
+.ui.vertical.footer.segment {
+  padding: 2.5rem 0;
 }

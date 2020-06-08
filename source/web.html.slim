@@ -1,36 +1,9 @@
 ---
 title: Webサイト作成依頼
-users: [
-  { family_name: 'yamada', given_name: 'taro'},
-  { family_name: 'yamada', given_name: 'jiro'},
-  { family_name: 'yamada', given_name: 'saburo'}
-]
 ---
 
-/ .ui.fluid.container
-/   .billboard
-/     = image_tag 'sakura_1920x300.jpg'
-/     .catch_phrase
-/       h1
-/         | Webサイト作成依頼
-/       p.lead
-/         | レスポンシブデザインで
-/         br.mobile.only
-/         | iPhoneにも対応
-
 // billboard
-= partial 'billboard', locals: { image: 'sakura_1920x300.jpg',
-                                 catch: 'Webサイト作成依頼',
-                                 lead: 'レスポンシブデザインで iPhoneにも対応' }
-
-hr
-= some_method
-hr
-= table_body
-
-= table_user current_page.data.users
-
-hr
+= partial 'billboard', locals: data.course[1]
 
 .ui.middle.aligned.stackable.grid.container.mt-5
   .row
@@ -68,54 +41,18 @@ hr
   / a.ui.large.button I'm Still Quite Interested
 
 .ui.container.mt-5
-  = link_to 'https://shogi-5jk.herokuapp.com', target: '_blank', class: 'ui horizontal two cards' do
-    .image
-        = image_tag '5JK.jpg'
-    .content
-      .header
-        | 将棋サークル
-      .description
-        | 将棋の対局した棋譜や、会員の方からのさまざまな文章や画像の投稿が可能なサークル用掲示板です。
-        br
-        | 棋譜データの保存等、データベースを用いた本格的なプログラミングが可能なフレームワーク Ruby on Rails を利用しています。
+  .ui.cards
+    = partial 'portfolio', locals: data.portfolio[0]
+    = partial 'portfolio', locals: data.portfolio[1]
+    = partial 'portfolio', locals: data.portfolio[2]
+    = partial 'portfolio', locals: data.portfolio[3]
 
-    .card
-      .image
-        = link_to 'https://isewan.herokuapp.com', target: '_blank'
-          = image_tag 'isewan.png'
-      .content
-        .header 伊勢湾カップ公式サイト
-        .description
-          | 知多市新舞子を舞台に毎年夏に行われるウィンドサーフィンの祭典。全国各地から卓越した技術を持つ選手200名が集い、その腕を競います。
-          br
-          | 大会写真の閲覧が可能な他、管理者としてログインすると、文章や画像、大会日程等の編集が行えるよう、創られています。
-    .card
-      .image
-        = link_to 'https://homemade-reform.com', target: '_blank'
-          = image_tag 'reiwa-reform.jpg'
-      .content
-        .header 株式会社ホームメイド
-        .description
-          | 岐阜市で建築リフォームを営む企業さまのサイトです。
-          br
-          | 既存のWebサイトがiPhoneに対応しておらず、また大量の施工事例をお客様に分かりやすくお伝えしたいとのことで、事例の絞り込み機能も実装しております。
-
-    .card
-      .image
-        = link_to 'https://noel-consul.co.jp', target: '_blank'
-          = image_tag 'noel_s.jpg'
-      .content
-        .header 株式会社ノエル・コンサルサポート
-        .description
-          | 名古屋市の社会保険労務士の方のサイトです。
-          br
-          | 既存のWebサイトの移行に併せ、iPhoneへの対応、YouTube動画の掲載を行いました。
 
 .ui.text.container.mt-5
 
   h2 料金や制作期間について
   p
-    | Webサイトの作成料金や期間は、そのサイトのもつ性格やページ数等、様々な要素があり、一概に申し上げることは困難ですが、トップページと数点の下層ページからなる基本的なWebサイトでございましたら、文章や画像等はご提供頂いた場合、概ね数万円から作成いたしております。
+    | Webサイトの作成料金や期間は、そのサイトのもつ性格やページ数等、様々な要素があり、一概に申し上げることは困難ですが、トップページと数点の下層ページからなる基本的なWebサイトでございましたら、文章や画像等をご提供頂いた場合、概ね数万円から作成いたしております。
     | 作成期間は一ヶ月を目安にしていただければと思います。
 
   h2 お打ち合わせ
@@ -124,3 +61,11 @@ hr
     | お気軽に
     = link_to 'お問い合わせ', '/contact.html'
     | ください。
+
+.ui.container.mt-5
+  h2.ui.header ご案内
+  .ui.four.column.doubling.stackable.grid.container
+    = partial 'other_course', locals: data.course[2]
+    = partial 'other_course', locals: data.course[3]
+    = partial 'other_course', locals: data.course[4]
+    = partial 'other_course', locals: data.course[5]

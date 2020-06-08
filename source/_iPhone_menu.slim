@@ -1,13 +1,21 @@
 .ui.vertical.yellow.sidebar.menu
-  a.active.item
-    | Home
-  a.item
-    | Work
-  a.item
-    | Company
-  a.item
-    | Careers
-  a.item
-    | Login
-  a.item
-    | iPhone用 サイドメニュー
+  = link_to '/index.html', class: 'active item' do
+    i.home.icon
+    | アトリヱ未來
+  = link_to '/about.html', class: 'item' do
+    i.seedling.icon
+    | ご案内
+  = link_to '/web.html', class: 'item' do
+    i.globe.icon
+    | Web作成依頼
+  = link_to '/html.html', class: 'item' do
+    | HTML / CSS
+  = link_to '/ruby.html', class: 'item' do
+    | Webプログラミング
+  = link_to '/qualification.html', class: 'item' do
+    | IT資格
+  = link_to '/c.html', class: 'item' do
+    | Ｃ言語
+  = link_to '/contact.html', class: 'item' do
+    i.paper.plane.icon
+    | お問い合わせ

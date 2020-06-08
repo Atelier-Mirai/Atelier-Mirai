@@ -2,12 +2,30 @@
 title: '情報技術を夢の掛け橋に - アトリヱ未來'
 ---
 
-= partial 'billboard'
+= partial 'hero'
 = partial 'notice'
-= partial 'web_site_creation'
+= partial 'website_creation'
 = partial 'courses'
-= partial 'contents'
-= partial 'classrooms'
-= partial 'query'
-= partial 'teachers'
-= partial 'events'
+/ = partial 'contents'
+/ = partial 'classrooms'
+/ = partial 'query'
+/ = partial 'teachers'
+/ = partial 'events'
+
+.ui.container.mt-5
+  .ui.text.container.my-4
+    h2.ui.big.header
+      i.book.icon.mr-3
+      | プログラミング書籍のご紹介
+    p
+      | プログラミング技術習得に役立つ珠玉の名著のご紹介です。
+  .ui.eight.column.doubling.stackable.grid.container
+    - (0...data.book.count).to_a.shuffle[...8].each do |i|
+      = partial 'book_intro', locals: data.book[i]
+
+  / .ui.text.container.m-0
+  .ui.right.aligned.grid
+    .sixteen.wide.column
+      = link_to '/books.html', class: 'ui tertiary teal button' do
+        i.right.arrow.icon
+        | もっと見る

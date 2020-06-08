@@ -1,0 +1,12 @@
+.wide.card
+  .content
+    = image_tag image, class: 'left floated small long ui image'
+    .header
+      = "#{title}"
+    .meta
+      = "#{desc}"
+    .description
+      = "#{lead}"
+    = link_to url, class: 'ui right floated tertiary teal button' do
+      i.right.arrow.icon.mr-2
+      | 詳細を見る

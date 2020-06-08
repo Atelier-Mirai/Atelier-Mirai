@@ -1,11 +1,11 @@
 .ui.fluid.container
   .billboard
-    = image_tag image
+    = image_tag billboard_image
     .catch_phrase
       h1
-        = "#{catch}"
+        = "#{title}"
       p.lead
-        - a, b = "#{lead}".split(" ")
+        - a, b = "#{desc}".split(" ")
         = a
         br.mobile.only
         = b

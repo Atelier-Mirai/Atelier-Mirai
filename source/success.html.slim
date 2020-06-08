@@ -2,28 +2,32 @@
 title: 問い合わせ完了
 ---
 
-article.intro
+/ billboard
+= partial 'billboard', locals: data.course[8]
 
-  h1
-    | お問い合わせを受け賜りました
-  p
-    | お問い合わせ ありがとうございます。
-    br
-    | 一両日中にご連絡差し上げますので、
-    br
-    | しばらくお待ちください。
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header お問い合わせを承りました。
+      p
+        | お問い合わせ ありがとうございます。
+        br
+        | 一両日中にご連絡差し上げますので、
+        br
+        | しばらくお待ちください。
+      p
+        | 万一、返信がない場合、
+        br
+        | お問い合わせが届いていないおそれもございます。
+        br
+        | その際は、大変お手数をおかけいたしますが、
+        br
+        a href="mailto:contact@atelier-mirai.net"
+          | contact@atelier-mirai.net
+        br
+        | まで、再度お問い合わせ頂けますでしょうか。
+        br
+        | よろしくお願いいたします。
 
-  p style="line-height: 1.2rem; margin-left: 2rem;"
-    small
-      | 万一、返信がない場合、
-      br
-      | お問い合わせが届いていないおそれもございます。
-      br
-      | その際は、大変お手数をおかけいたしますが、
-      br
-      a href="mailto:contact@atelier-mirai.net"
-        | contact@atelier-mirai.net
-      br
-      | まで、再度お問い合わせ頂けますでしょうか。
-      br
-      | よろしくお願いいたします。
+    .six.wide.right.floated.column
+      = image_tag "nature_road.jpg", class: "ui large bordered rounded image"

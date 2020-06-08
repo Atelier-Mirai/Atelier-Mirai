@@ -2,33 +2,29 @@
 title: アトリヱ未來について
 ---
 
-article.intro
-  h1 アトリヱ未來の願い
-  p
-     | パソコン、スマートフォン、AIと、わたくしたちは情報技術(IT)に囲まれた生活を送っています。
-     br
-     | 技術の産物としての社会ではなく、「イキイキと輝いて生きる」、その一助としての技術であれ。
-     br
-     | その願いから、ITの基礎を学び、技術を支える基盤を知り、ご自身の人生に活用し、イキイキと生きていって欲しい。
-     br
-     | そこから見えてくる新しい世界をお届けできたらと願っております。
+/ billboard
+= partial 'billboard', locals: data.course[0]
 
-  / h1 ITって何？
-  / p
-  /   | 日本語にすると、情報技術(Information Technology) 。
-  /   br
-  /   | コンピュータの仕組みを学び、ご自身でプログラミング技術を身に付けていきます。
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header アトリヱ未來の願い
+      p
+        | パソコン、スマートフォン、AIと、わたくしたちは情報技術(IT)に囲まれた生活を送っています。
+        br
+        | 技術の産物としての社会ではなく、「イキイキと輝いて生きる」、その一助としての技術であれ。
+        br
+        | その願いから、ITの基礎を学び、技術を支える基盤を知り、ご自身の人生に活用し、イキイキと生きていって欲しい。
+        br
+        | そこから見えてくる新しい世界をお届けできたらと願っております。
 
-  h1 イラストについて
-  figure
-    = image_tag 'aruitasakinimirukeshiki.jpg'
-  p
-    | 絵の表題は、「あるいた先にみる景色」
-    br
-    | 中央の生命の樹に導かれるように、一歩一歩あるいていった先に何が見えてくるのでしょうか。
-    br
-    | 画家の方に、祈りを込めて描いていただいたものです。
-
-  &text name="user"
-
-  / input#name.input placeholder="お名前" required="" type="text" name="name" autocomplete="name"
+      h2.ui.header
+        | イラストについて
+      p
+        | 絵の表題は、「あるいた先にみる景色」
+        br
+        | 中央の生命の樹に導かれるように、一歩一歩あるいていった先に何が見えてくるのでしょうか。
+        br
+        | 画家の方に、祈りを込めて描いていただいたものです。
+    .six.wide.right.floated.column
+      = image_tag "aruitasakinimirukeshiki.jpg", class: "ui large bordered rounded image"

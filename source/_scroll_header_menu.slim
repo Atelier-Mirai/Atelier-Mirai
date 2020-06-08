@@ -1,18 +1,29 @@
 .ui.large.top.fixed.hidden.menu
   .ui.container
     .right.menu
-      a.active.item
-        | Home
-      a.item
-        | Work
-      a.item
-        | Company
-      a.item
-        | Careers
+      = link_to '/index.html', class: 'active item' do
+        i.home.icon
+        | アトリヱ未來
+      = link_to '/about.html', class: 'item' do
+        i.seedling.icon
+        | ご案内
+      = link_to '/web.html', class: 'item' do
+        i.globe.icon
+        | Web作成依頼
+      .ui.dropdown.item
+        i.graduation.cap.icon
+        | ITを學ぶ
+        i.dropdown.icon
+        .menu
+          = link_to '/html.html', class: 'item' do
+            | HTML / CSS
+          = link_to '/ruby.html', class: 'item' do
+            | Webプログラミング
+          = link_to '/qualification.html', class: 'item' do
+            | IT資格
+          = link_to '/c.html', class: 'item' do
+            | Ｃ言語
       .item
-        a.ui.button
-          | Log in
-      .item
-        a.ui.yellow.button
-          i.paper.plane.icon
-          | お問い合わせ
+        = link_to '/contact.html', class: 'ui yellow button' do
+            i.paper.plane.icon
+            | お問い合わせ

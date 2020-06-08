@@ -1,0 +1,182 @@
+---
+title: プログラミング 書籍紹介
+---
+
+/ billboard
+= partial 'billboard', locals: data.course[6]
+
+
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header プログラミング 書籍紹介
+      p
+        | 初心者向けから上級者向けまで、
+        | プログラミングを習得するための珠玉の32冊のご紹介です。
+
+      h2.ui.header
+        |
+        br.mobile.only
+        |
+      p
+
+    .six.wide.right.floated.column
+      = image_tag "book_640x426.jpg", class: "ui large bordered rounded image"
+
+/ .ui.text.container.mt-5
+/   h2.ui.header 講座内容のご案内
+/   p
+/     | これまでに、多くの方々に学んでいただいております Webプログラミング講座。
+/     br
+/     | ここではその内容をご案内いたします。
+/
+/   h2.ui.horizontal.header.divider
+/     .amairo.text HTML / CSS
+
+
+
+.ui.text.container
+  .ui.bg-kyohiiro.sakurairo.button#ruby ruby
+
+.ui.container
+  .ui.centered.cards
+    - data.book.shuffle.each do |book|
+      = partial 'book_horizontal', locals: book
+/
+/
+/ .ui.container.mt-5
+/   h2.ui.header ご案内
+/   .ui.four.column.doubling.stackable.grid.container
+/     = partial 'other_course', locals: data.course[0]
+/     = partial 'other_course', locals: data.course[1]
+/     = partial 'other_course', locals: data.course[3]
+/     = partial 'other_course', locals: data.course[4]
+
+<div id="user" data-id="1234567890" data-user="johndoe" data-date-of-birth>John Doe</div>
+
+javascript:
+
+  const el = document.querySelector('#user');
+  const books = document.querySelectorAll('.book');
+  console.log('books.length', books.length)
+  for(let i = 0; i < books.length; i++) {
+    let book = books[i]
+    // console.log('genre', book.dataset.genre)
+    console.log('i', i)
+    console.log('genre', book.dataset['genre'])
+    if (book.dataset['genre'] === 'ruby') {
+      book.classList.add('hidden')
+    } else {
+      book.classList.add('not_hidden')
+    }
+  }
+
+  // el.id === 'user'
+  // el.dataset.id === '1234567890'
+  // el.dataset.user === 'johndoe'
+  // el.dataset.dateOfBirth === ''
+  console.log('#id', el.id)
+  console.log('id', el.dataset.id)
+  console.log('id', el.dataset['id'])
+
+  if (el.dataset['id'] === '1234567890') {
+    el.classList.add('hidden')
+  }
+
+
+  console.log('user', el.dataset.user)
+  console.log('user', el.dataset['user'])
+  console.log('birth', el.dataset.dateOfBirth)
+  console.log('birth', el.dataset['dateOfBirth'])
+
+  // データ属性の設定
+  el.dataset.dateOfBirth = '1960-10-03';
+  // 結果: el.dataset.dateOfBirth === 1960-10-03
+  console.log(el.dataset.dateOfBirth)
+  console.log('birth', el.dataset['dateOfBirth'])
+
+  delete el.dataset.dateOfBirth;
+  // 結果: el.dataset.dateOfBirth === undefined
+  console.log(el.dataset.dateOfBirth)
+  console.log('birth', el.dataset['dateOfBirth'])
+
+  // 'someDataAttr' in el.dataset === false
+  el.dataset.someDataAttr = 'mydata';
+  // 結果: 'someDataAttr' in el.dataset === true
+  console.log('attr', el.dataset.someDataAttr)
+  console.log('attr', el.dataset['someDataAttr'])
+
+
+  // let books = document.querySelectorAll('.book')
+  console.log('books.count', books.length)
+
+  let genre_displayer = function(){
+    // for(let i = 0; i < book_elements.length; i++){
+    for(let i = 0; i < 3; i++){
+      let book = books[i]
+      console.log(book)
+
+      // console.log(book.dataset[genre])
+      console.log(book.genre)
+      // alert(elm.dataset[genre])
+      // if (book.dataset[genre] != 'ruby') {
+      //   book.classList.add('hidden')
+      // }
+    }
+  }
+  // イベントリスナ
+  window.addEventListener('load', genre_displayer);
+
+javascript:
+  const scroll_animation_class      = 'sa';
+  const scroll_animation_show_class = 'show';
+  const trigger_margin_dafault      = 300;
+
+  let scroll_animation_elements = document.querySelectorAll(`.${scroll_animation_class}`);
+
+  let scroll_animation_function = function() {
+    // 表示タイミング位置を指定
+    // 例) data-sa_margin="200"
+    // その要素が画面の下から200px上に上がって来たら表示する
+    let data_margin  = `${scroll_animation_class}_margin`;
+    // 表示タイミングの基準の要素を指定
+    // 例) data-sa_trigger="#elem1"
+    // #elem1の出現と同時に、その要素も表示させる
+    let data_trigger = `${scroll_animation_class}_trigger`;
+    // 表示タイミング時間を指定
+    // 例) data-sa_delay="500"
+    // 500ms 後にその要素を表示する
+    let data_delay   = `${scroll_animation_class}_delay`;
+
+    // saクラスの要素を対象に処理を行う
+    for(let i = 0; i < scroll_animation_elements.length; i++){
+      let elm = scroll_animation_elements[i];
+
+      // もしdata-sa_marginに値があれば、その数値に置き換える
+      let trigger_margin = trigger_margin_dafault;
+      if (elm.dataset[data_margin] != null) {
+        trigger_margin = parseInt(elm.dataset[data_margin]);
+      }
+
+      // data-sa_trigger属性に値があれば指定の要素、無ければその要素自身の位置を判定基準にする
+      let show_position = 0;
+      if (elm.dataset[data_trigger]) {
+        show_position = document.querySelector(elm.dataset[data_trigger]).getBoundingClientRect().top + trigger_margin;
+      } else {
+        show_position = elm.getBoundingClientRect().top + trigger_margin;
+      }
+
+      // data-sa_delay があれば、その時間だけずらして表示する。
+      if (window.innerHeight > show_position) {
+        let delay = (elm.dataset[data_delay]) ? elm.dataset[data_delay] : 0;
+        setTimeout(function(index) {
+          scroll_animation_elements[index].classList.add(scroll_animation_show_class);
+        }.bind(null, i), delay);
+      }
+    }
+  }
+
+  // イベントリスナ
+  window.addEventListener('load', scroll_animation_function);
+  window.addEventListener('scroll', scroll_animation_function);

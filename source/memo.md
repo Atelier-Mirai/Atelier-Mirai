@@ -62,9 +62,18 @@ Feature 特性：サービス紹介
 ぺらいち
 
 Googleキーワードプランナー
+Googleトレンド
+Googleサジェスト機能
+グーグルサジェスト キーワード一括DLツール
+aramakijake.jp
 
 # 講師紹介
 
 # お薦め書籍
+
+# link
+Qiita
+GitHub
+...
 
 # プログラミング習得への道

@@ -1,0 +1,22 @@
+- image: 5JK.jpg
+  title: 将棋サークル
+  desc:  対局した棋譜や、会員の方からのさまざまな文章や画像の投稿が可能なサークル用掲示板です。
+         棋譜データの保存等、データベースを用いた本格的なプログラミングが可能なフレームワーク Ruby on Rails を利用しています。
+  url:   https://shogi-5jk.herokuapp.com
+
+- image: isewan.png
+  title: 伊勢湾カップ公式サイト
+  desc:  知多市新舞子を舞台に毎年夏に行われるウィンドサーフィンの祭典。
+         全国各地から卓越した技術を持つ選手200名が集い、その腕を競います。
+  url:   https://isewan.herokuapp.com
+
+- image: reiwa-reform.jpg
+  title: 株式会社ホームメイド
+  desc:  岐阜市で建築リフォームを営む企業さまのサイトです。 既存のWebサイトがiPhoneに対応しておらず、また大量の施工事例をお客様に分かりやすくお伝えしたいとのことで、事例の絞り込み機能も実装しております。
+  url:   https://homemade-reform.com
+
+- image: noel_s.jpg
+  title: 株式会社ノエル・コンサルサポート
+  desc:  名古屋市の社会保険労務士の方のサイトです。 既存のWebサイトの移行に併せ、iPhoneへの対応、YouTube動画の掲載を行いました。
+  url:   https://noel-consul.co.jp
+  

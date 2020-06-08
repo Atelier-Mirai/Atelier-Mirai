@@ -2,16 +2,8 @@
 title: C言語を学ぶ
 ---
 
-.ui.fluid.container
-  .billboard
-    = image_tag 'tibet_mountain_1920x300.jpg'
-    .catch_phrase
-      h1
-        | Ｃ言語を学ぶ
-      p.lead
-        | お子様から大人まで、プログラミング入門にもお薦め。
-        br.mobile.only
-        | 組み込み系など、電子工作も楽しめます。
+/ billboard
+= partial 'billboard', locals: data.course[5]
 
 .ui.middle.aligned.stackable.grid.container.mt-5
   .row
@@ -81,42 +73,13 @@ title: C言語を学ぶ
 
   h2 テキストはこちら
   .ui.link.cards style="justify-content: center;"
-    .card
-      .image
-        = link_to "https://www.amazon.co.jp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%B3%E3%82%AF/dp/479815038X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1590585117&sr=8-1" , target: "_blank" do
-          = image_tag 'c_ehon.jpg'
-      .content
-        .header
-          | Cの絵本 第2版 C言語が好きになる新しい9つの扉
-        .description
-          | プログラムのことを何も知らなくても勉強が始められるように考えられた、とてもやさしい入門書です。難しいと言われるC言語のポインタについても無理なくハードルを越えられるように配慮しました。本書を読むのにプログラム言語の知識は一切不要です。もっとも親しみやすいC言語の入門書。
+    = partial 'book', locals: data.book[6]
+    = partial 'book', locals: data.book[7]
 
-    .card
-      .image
-        = link_to "https://www.amazon.co.jp/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%AE%E7%B5%B5%E6%9C%AC-%E7%AC%AC2%E7%89%88-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%8C%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%AA%E3%82%8B%E6%96%B0%E3%81%97%E3%81%849%E3%81%A4%E3%81%AE%E6%89%89-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A2%E3%83%B3%E3%82%AF/dp/4798159379/ref=pd_bxgy_img_2/357-1216686-9978804?_encoding=UTF8&pd_rd_i=4798159379&pd_rd_r=bcc48524-9154-4464-a57b-ebf3644059ef&pd_rd_w=m6KOA&pd_rd_wg=A5AaI&pf_rd_p=f9b7301a-70fe-4140-bc13-8df64a58b673&pf_rd_r=TTZS2DCEV8YB3HMT0FGT&psc=1&refRID=TTZS2DCEV8YB3HMT0FGT" , target: "_blank" do
-          = image_tag 'algorithm_no_ehon.jpg'
-      .content
-        .header
-          | アルゴリズムの絵本 第2版 プログラミングが好きになる新しい9つの扉
-        .description
-          | 本書はアルゴリズムとプログラムロジックの基本を通じて、
-          | プログラミング（＝コードを書く）の実際を学んでいただけます。
-          | アルゴリズムは、与えられたさまざまな課題をプログラムで効率良く解く、
-          | 「解法」のことです。
-          | 効果的なコードを書くための第一歩を踏み出すことができます。
-
-/ コンピュータの仕組み、プログラミングといった技術系から、知的財産権や財務会計に至るまで
-
-/ IT系の国家資格として、ITパスポート、基本情報技術者、応用情報技術者、高度試験各種がございますが、
-/ ITパスポートは、最も易しい試験となります。
-/ 他の試験が、コンピュータ技術者としての資質・能力評価を目的としているのに対し、
-/ ITパスポートは、一般学生や社会人向けに、IT利活用のための基礎知識の有無を問う内容です。
-/ 試験も記述式ではなく、４つの選択肢から正解を選ぶ方式ですので、
-/ 初心者の方であっても概ね３０時間の学習時間があれば合格できる水準です。
-/
-/ 指導の雰囲気としては、家庭教師のような形態を想像していただければわかりやすいかと思います。
-/ 平日の夜に、週一二回、二時間ほど、喫茶店や公共施設等でテキストの解説や、試験問題の回答などを行います。
-/ 指導料ですが、概ね一回あたり３０００円〜４０００円をみて頂ければと思います。
-/
-/ 使用予定のテキストです。
-/ https://www.amazon.co.jp/キタミ式イラストIT塾-ITパスポート-平成31-01年-りゅうじ-ebook/dp/B07L9M35B3/ref=sr_1_4?__mk_ja_JP=カタカナ&keywords=ITパスポート&qid=1572145771&sr=8-4
+.ui.container.mt-5
+  h2.ui.header ご案内
+  .ui.four.column.doubling.stackable.grid.container
+    = partial 'other_course', locals: data.course[1]
+    = partial 'other_course', locals: data.course[2]
+    = partial 'other_course', locals: data.course[3]
+    = partial 'other_course', locals: data.course[4]

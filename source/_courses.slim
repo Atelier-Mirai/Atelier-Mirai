@@ -1,4 +1,5 @@
-.ui.vertical.stripe.segment
+/ .ui.vertical.stripe.segment
+.ui.container
   .ui.text.container.mb-4
     h2.ui.big.header
       i.graduation.cap.icon.mr-3
@@ -10,63 +11,7 @@
 
   .ui.container
     .ui.cards
-      / .wide.card
-      /   .content
-      /     = image_tag 'macbook.jpg', class: 'left floated small long ui image'
-      /     .header
-      /       | Webサイトを作って欲しい
-      /     .meta
-      /       | iPhoneにも対応
-      /     .description
-      /       | ホームページ作成のご依頼を承ります。
-      /     = link_to '/web.html', class: 'ui right floated tertiary teal button' do
-      /       i.right.arrow.icon.mr-2
-      /       | 詳細を見る
-      .wide.card
-        .content
-          = image_tag 'html5_css3.png', class: 'left floated small long ui image'
-          .header
-            | HTML / CSS を学びたい
-          .meta
-            | プログラミング基礎の習得にも最適です
-          .description
-            | 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。
-          = link_to '/html.html', class: 'ui right floated tertiary teal button' do
-            i.right.arrow.icon.mr-2
-            | 詳細を見る
-      .wide.card
-        .content
-          = image_tag 'ruby_and_rails.png', class: 'left floated small long ui image'
-          .header
-            | Webプログラミングを学びたい
-          .meta
-            | 本格的なプログラミングの世界へ
-          .description
-            | データベース利用の本格的なプログラミング、Ruby on Rails の講座です。
-          = link_to '/ruby.html', class: 'ui right floated tertiary teal button' do
-            i.right.arrow.icon.mr-2
-            | 詳細を見る
-      .wide.card
-        .content
-          = image_tag 'qualification.png', class: 'left floated small long ui image'
-          .header
-            | ITの資格を取りたい
-          .meta
-            | 一般教養として、自己研鑽として
-          .description
-            | 「ITパスポート」や「応用情報技術者」など国家資格取得のための講座です。
-          = link_to '/qualification.html', class: 'ui right floated tertiary teal button' do
-            i.right.arrow.icon.mr-2
-            | 詳細を見る
-      .wide.card
-        .content
-          = image_tag 'the_c_programming_language.png', class: 'left floated small long ui image'
-          .header
-            | Ｃ言語を学びたい
-          .meta
-            | 基本情報技術者 資格取得にもお薦めです
-          .description
-            | 組み込み系など、様々なシステム開発に用いられるＣ言語。その基本を学びます。
-          = link_to '/c_lang.html', class: 'ui right floated tertiary teal button' do
-            i.right.arrow.icon.mr-2
-            | 詳細を見る
+      = partial 'course', locals: data.course[1]
+      = partial 'course', locals: data.course[2]
+      = partial 'course', locals: data.course[3]
+      = partial 'course', locals: data.course[4]

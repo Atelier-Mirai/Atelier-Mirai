@@ -1,0 +1,15 @@
+.column
+  .ui.tertiary.transparent.card
+    .content
+      / = image_tag image, class: 'ui left floated midium rounded image'
+      = image_tag image, class: 'ui small long bordered image'
+      / .center.aligned.header
+      .header.mt-3
+        = "#{title}"
+      .description
+        = "#{desc}"
+      .ui.center.aligned.mt-3
+        / = link_to url, class: 'ui teal button' do
+        = link_to url, class: 'ui right floated tertiary teal button' do
+          i.right.arrow.icon.mr-2
+          | もっと詳しく
