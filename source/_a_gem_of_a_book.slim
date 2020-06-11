@@ -8,3 +8,9 @@
   .ui.eight.column.doubling.stackable.grid.container
     - (0...data.book.count).to_a.shuffle[0...8].each do |i|
       = partial 'book_intro', locals: data.book[i]
+
+  .ui.right.aligned.grid
+    .sixteen.wide.column
+      = link_to '/books.html', class: 'ui tertiary teal button' do
+        i.right.arrow.icon
+        | もっと見る

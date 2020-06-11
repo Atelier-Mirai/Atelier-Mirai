@@ -14,44 +14,13 @@ title: プログラミング 書籍紹介
       p
         | 初心者向けから上級者向けまで、
         | プログラミングを習得するための珠玉の32冊のご紹介です。
-
-      h2.ui.header
-        |
-        br.mobile.only
-        |
-      p
-
     .six.wide.right.floated.column
       = image_tag "book_640x426.jpg", class: "ui large bordered rounded image"
 
-/ .ui.text.container.mt-5
-/   h2.ui.header 講座内容のご案内
-/   p
-/     | これまでに、多くの方々に学んでいただいております Webプログラミング講座。
-/     br
-/     | ここではその内容をご案内いたします。
-/
-/   h2.ui.horizontal.header.divider
-/     .amairo.text HTML / CSS
-
-
-
-.ui.text.container
-  .ui.bg-kyohiiro.sakurairo.button#ruby ruby
-
 .ui.container
   .ui.centered.cards
-    - data.book.shuffle.each do |book|
+    - data.book.each.with_index(1) do |book, index|
       = partial 'book_horizontal', locals: book
-/
-/
-/ .ui.container.mt-5
-/   h2.ui.header ご案内
-/   .ui.four.column.doubling.stackable.grid.container
-/     = partial 'other_course', locals: data.course[0]
-/     = partial 'other_course', locals: data.course[1]
-/     = partial 'other_course', locals: data.course[3]
-/     = partial 'other_course', locals: data.course[4]
 
 <div id="user" data-id="1234567890" data-user="johndoe" data-date-of-birth>John Doe</div>
 
@@ -66,7 +35,7 @@ javascript:
     console.log('i', i)
     console.log('genre', book.dataset['genre'])
     if (book.dataset['genre'] === 'ruby') {
-      book.classList.add('hidden')
+      book.classList.add('hidden_test')
     } else {
       book.classList.add('not_hidden')
     }

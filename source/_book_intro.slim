@@ -1,45 +1,14 @@
-- url = "https://www.amazon.co.jp/gp/product/#{isbn}/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4802611897&linkCode=as2&tag=ateliermirai-22&linkId=5f8f2cc56c291796b67ada71fe167c16"
-- image = "//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=#{isbn}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ateliermirai-22"
-- img = "///ir-jp.amazon-adsystem.com/e/ir?t=ateliermirai-22&l=am2&o=9&a=#{isbn}"
+- url = "https://www.amazon.co.jp/gp/product/#{isbn}/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=#{isbn}&linkCode=as2&tag=ateliermira05-22&linkId=d9a444d6a2c93e24e44eb0b3bd6d3981"
+- image = "//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=#{isbn}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ateliermira05-22"
+- img = "//ir-jp.amazon-adsystem.com/e/ir?t=ateliermira05-22&l=am2&o=9&a=#{isbn}"
 
-/ .card
-/   .image
-/     a href="#{url}" target="_blank"
-/       img border="0" src="#{image}" width="300px"
-/     img alt="" border="0" height="1" src="#{img}" style=("border:none !important; margin:0px !important; width: 1px !important;") width="1"
-/   .content
-/     .header
-/       = "#{title}"
-/     .description
-/       = "#{desc}".gsub(" ", "\n<br>\n")
 
-/ .card
-/   .image style="background: none;"
-/     = image_tag image, style:"width: 120px; height: 170px;"
-/   .content style="margin-left: -30px;"
-/     .header
-/       = "#{title}"
-/     .description.ellipsis
-/       = "#{desc}".gsub(" ", "\n<br>\n")
+/ <a target="_blank" href="https://www.amazon.co.jp/gp/product/4802611897/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4802611897&linkCode=as2&tag=ateliermira05-22&linkId=d9a444d6a2c93e24e44eb0b3bd6d3981">
+/   <img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4802611897&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ateliermira05-22" >
+/ </a>
+/ <img src="//ir-jp.amazon-adsystem.com/e/ir?t=ateliermira05-22&l=am2&o=9&a=4802611897" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-/ .column.p-1
-/   .ui.tertiary.transparent.card.p-0
-/     .content.p-0
-/       = image_tag image, class: 'ui small long bordered image p-2'
-/       .header.mt-3
-/         = "#{title}"
-/       .description
-/         | せんせいのなまえ
-/       .mt-3
-/         = link_to 'https://www.yahoo.co.jp', class: 'ui violet button' do
-/           i.right.arrow.icon.mr-2
-/           | 詳細を見る
-
-/ .ui.container.mt-5
-/   .ui.cards
 .column
-  = link_to url, class: 'ui card'
+  = link_to url, class: 'ui card', target: '_blank'
     .image
       = image_tag image
-    / .content
-    /   .header = "#{title}"
