@@ -22,8 +22,6 @@ title: プログラミング 書籍紹介
     - data.book.shuffle.each do |book|
       = partial 'book_horizontal', locals: book
 
-<div id="user" data-id="1234567890" data-user="johndoe" data-date-of-birth>John Doe</div>
-
 javascript:
 
   const el = document.querySelector('#user');
@@ -31,8 +29,6 @@ javascript:
   console.log('books.length', books.length)
   for(let i = 0; i < books.length; i++) {
     let book = books[i]
-    // console.log('genre', book.dataset.genre)
-    console.log('i', i)
     console.log('genre', book.dataset['genre'])
     if (book.dataset['genre'] === 'ruby') {
       book.classList.add('hidden_test')
@@ -40,45 +36,6 @@ javascript:
       book.classList.add('not_hidden')
     }
   }
-
-  // el.id === 'user'
-  // el.dataset.id === '1234567890'
-  // el.dataset.user === 'johndoe'
-  // el.dataset.dateOfBirth === ''
-  console.log('#id', el.id)
-  console.log('id', el.dataset.id)
-  console.log('id', el.dataset['id'])
-
-  if (el.dataset['id'] === '1234567890') {
-    el.classList.add('hidden')
-  }
-
-
-  console.log('user', el.dataset.user)
-  console.log('user', el.dataset['user'])
-  console.log('birth', el.dataset.dateOfBirth)
-  console.log('birth', el.dataset['dateOfBirth'])
-
-  // データ属性の設定
-  el.dataset.dateOfBirth = '1960-10-03';
-  // 結果: el.dataset.dateOfBirth === 1960-10-03
-  console.log(el.dataset.dateOfBirth)
-  console.log('birth', el.dataset['dateOfBirth'])
-
-  delete el.dataset.dateOfBirth;
-  // 結果: el.dataset.dateOfBirth === undefined
-  console.log(el.dataset.dateOfBirth)
-  console.log('birth', el.dataset['dateOfBirth'])
-
-  // 'someDataAttr' in el.dataset === false
-  el.dataset.someDataAttr = 'mydata';
-  // 結果: 'someDataAttr' in el.dataset === true
-  console.log('attr', el.dataset.someDataAttr)
-  console.log('attr', el.dataset['someDataAttr'])
-
-
-  // let books = document.querySelectorAll('.book')
-  console.log('books.count', books.length)
 
   let genre_displayer = function(){
     // for(let i = 0; i < book_elements.length; i++){
