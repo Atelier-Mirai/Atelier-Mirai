@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # 静的サイトジェネレータ Middleman
-gem 'middleman'
+gem 'middleman', '4.3.7'
 # ベンダープリフィックス 自動付与する
 gem 'middleman-autoprefixer'
 # ファイル更新の際、ブラウザを再読み込みする
@@ -12,5 +12,3 @@ gem 'slim'
 gem "middleman-imageoptim"
 # HTML圧縮を行う
 gem "middleman-minify-html"
-
-gem "nokogiri"
