@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # 静的サイトジェネレータ Middleman
-gem 'middleman', '4.3.7'
+gem 'middleman'
 # ベンダープリフィックス 自動付与する
 gem 'middleman-autoprefixer'
 # ファイル更新の際、ブラウザを再読み込みする

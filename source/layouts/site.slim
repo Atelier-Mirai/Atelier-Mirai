@@ -6,18 +6,25 @@ html
     title
       = current_page.data.title || "アトリヱ未來"
 
-    / ファビコンの指定
+    / ファビコンの指定 https://ao-system.net/favicongenerator/
     = favicon_tag 'favicon.ico'
-    link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"
+    = favicon_link_tag 'apple-touch-icon-180x180.png',
+                    rel:   'apple-touch-icon',
+                    sizes: '180x180',
+                    type:  'image/png'
+    / link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"
 
     / 検索エンジン用にサイトの紹介文章
     meta name="description" content="情報技術(IT)を夢の掛け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。"
 
     / fontawesome
-    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
 
     / jQuery
     script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    / Fomantic-UI
+    link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css"
+    script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"
 
     / IE Buster
     script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js"

@@ -1,17 +1,12 @@
-- url = "https://www.amazon.co.jp/gp/product/#{isbn}/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=#{isbn}&linkCode=as2&tag=ateliermira05-22&linkId=d9a444d6a2c93e24e44eb0b3bd6d3981"
-- image = "//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=#{isbn}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ateliermira05-22"
-- img = "//ir-jp.amazon-adsystem.com/e/ir?t=ateliermira05-22&l=am2&o=9&a=#{isbn}"
+- url   = isbn.to_s.to_amazon_url
+- image = isbn.to_s.to_amazon_image
 
-= link_to url, class: 'ui horizontal book card', target: '_blank', data: {genre: "#{genre}"}
+= link_to url, class: 'ui horizontal book card', target: '_blank', data: { genre: "#{genre}" }
   .image style="background: none;"
     = image_tag image, style:"width: 120px; height: 170px;"
   .content style="margin-left: -30px;"
     .header style="font-weight: normal;"
       = "#{title}"
-    / .description.ellipsis
     .description style="text-indent: 1rem"
       - "#{desc}".split("\n").each do |desc|
         = content_tag('p', desc)
-
-/ h2
-/   = "#{title}"
