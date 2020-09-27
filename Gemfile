@@ -9,6 +9,9 @@ gem 'middleman-livereload'
 # テンプレートエンジンはSlimを使用する
 gem 'slim'
 # イメージ圧縮を行う
-gem "middleman-imageoptim"
+gem 'middleman-imageoptim'
 # HTML圧縮を行う
-gem "middleman-minify-html"
+gem 'middleman-minify-html'
+
+# html_builder用
+gem 'nokogiri'

@@ -15,31 +15,62 @@ class String
   end
 end
 
-def book_intro(isbn)
-  url   = isbn.to_s.to_amazon_url
-  image = isbn.to_s.to_amazon_image
+def book_intro(book, format: :simple)
+  url   = book.isbn.to_s.to_amazon_url
+  image = book.isbn.to_s.to_amazon_image
+  title = book.title
+  desc  = book.desc
 
-  content_tag :div, class: 'column' do
-    link_to url, class: 'ui card', target: '_blank' do
-      content_tag :div, class: 'image' do
-        image_tag image
+  case format
+  when :simple
+    content_tag :div, class: 'column' do
+      link_to url, class: 'ui card', target: '_blank' do
+        content_tag :div, class: 'image' do
+          image_tag image
+        end
+      end
+    end
+  when :description
+    link_to url, class: 'ui horizontal card', target: '_blank' do
+      markup do |m|
+        m.div(class: 'image', style: "background: none;") do
+          m << image_tag(image, style:"width: 150px; height: auto;")
+        end
+        m.div(class: 'content') do
+          m.div(class: 'ui header') do
+            m << title
+          end
+          m.div(class: 'description') do
+            desc.split("\n").each_with_index do |d, i|
+              m.p do
+                m << d
+              end
+            end
+          end
+        end
+      end
+    end
+  when :large_description
+    link_to url, class: 'ui card', target: '_blank', style: 'text-decoration: none;' do
+      markup do |m|
+        m.div(class: 'image') do
+          m << image_tag(image, style:"width: 300px; height: auto;")
+        end
+        m.div(class: 'content') do
+          m.div(class: 'header') do
+            m << title
+          end
+          m.div(class: 'description') do
+            desc.split("\n").each do |d|
+              m.p do
+                m << d
+              end
+            end
+          end
+        end
       end
     end
   end
-end
-
-
-def chirashi_tag(title: , filename: )
-  "<div class='col-xs-12 col-md-4'>" +
-    "<div class='card leaflet'>" +
-      "<a href=\"/pdf/#{filename}.pdf\">" +
-        "<img src=\"/pdf/thumbnail/#{filename}.jpg\" class='card-img-top w-100' alt=\"\">" +
-      "</a>" +
-      "<div class='card-footer'>" +
-          "#{title}" +
-      "</div>" +
-    "</div>" +
-  "</div>".html_safe
 end
 
 def table_body

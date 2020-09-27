@@ -64,9 +64,9 @@ title: C言語を学ぶ
   = partial 'course_introduction'
 
   h2 テキストはこちら
-  .ui.link.cards style="justify-content: center;"
-    = partial 'book', locals: data.book[6]
-    = partial 'book', locals: data.book[7]
+  .ui.link.cards
+    = book_intro(data.book[6], format: :large_description)
+    = book_intro(data.book[7], format: :large_description)
 
 .ui.container.mt-5
   h2.ui.header ご案内

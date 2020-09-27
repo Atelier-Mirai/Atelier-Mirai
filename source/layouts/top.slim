@@ -6,9 +6,12 @@ html
     title
       = current_page.data.title || "アトリヱ未來"
 
-    / ファビコンの指定
+    / ファビコンの指定 https://ao-system.net/favicongenerator/
     = favicon_tag 'favicon.ico'
-    link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"
+    = favicon_tag 'apple-touch-icon-180x180.png',
+                  rel:   'apple-touch-icon',
+                  sizes: '180x180',
+                  type:  'image/png'
 
     / 検索エンジン用にサイトの紹介文章
     meta name="description" content="情報技術(IT)を夢の掛け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。"

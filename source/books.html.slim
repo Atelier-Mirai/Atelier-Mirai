@@ -5,8 +5,6 @@ title: プログラミング 書籍紹介
 / billboard
 = partial 'billboard', locals: data.course[6]
 
-
-
 .ui.middle.aligned.stackable.grid.container.mt-5
   .row
     .eight.wide.column
@@ -20,7 +18,8 @@ title: プログラミング 書籍紹介
 .ui.container
   .ui.centered.cards
     - data.book.shuffle.each do |book|
-      = partial 'book_horizontal', locals: book
+      / = partial 'book_horizontal', locals: book
+      = book_intro(book, format: :description)
 
 javascript:
 

@@ -8,7 +8,7 @@
   .ui.eight.column.doubling.stackable.grid.container
     - (0...data.book.count).to_a.shuffle[0...8].each do |i|
       / = partial 'book_intro', locals: data.book[i]
-      = book_intro(data.book[i].isbn)
+      = book_intro(data.book[i])
 
   .ui.right.aligned.grid
     .sixteen.wide.column
