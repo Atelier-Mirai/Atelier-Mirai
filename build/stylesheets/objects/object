@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*=============================================================================
+  ページをまたいで使われる各種パーツを定義するクラス
+=============================================================================*/
+h1#logo {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2.5rem;
+  color: #e6b422 !important;
+  padding: 0.5rem !important; }
+  h1#logo:hover {
+    color: #eecb67 !important; }
+  h1#logo img {
+    margin-right: 0.5rem;
+    width: 48px;
+    height: 48px; }
+
+/* ヒーローイメージ */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 2fr 1fr; }
+  .hero .picture {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center; }
+    .hero .picture img {
+      object-fit: cover;
+      vertical-align: bottom; }
+  .hero .catch_phrase {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: top;
+    margin-top: 2rem; }
+    .hero .catch_phrase .sub_phrase {
+      font-size: 1.75rem;
+      margin: 1rem; }
+  .hero .get_started {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: 2rem; }
+  .hero .the_name_of_the_picture {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    align-self: end; }
+    .hero .the_name_of_the_picture p {
+      color: #2ca9e1;
+      text-align: right;
+      text-shadow: 1px 1px 1px #def3de;
+      font-size: 1.1rem;
+      padding: 1rem; }
+
+/* デスクトップ版 */
+@media (min-width: 768px) {
+  .hero {
+    grid-area: title;
+    margin-top: -20px; } }
+
+#website_creation {
+  margin: 3rem 0;
+  padding: 5rem 0;
+  background: #fff9c7; }
+
+/*=============================================================================
+  フッター
+=============================================================================*/
+.ui.vertical.footer.segment {
+  padding: 2.5rem 0; }
+
+/*=============================================================================
+  入力フォーム用 スタイルシート
+  CSS疑似クラスを活用した、モダンでインタラクティブなフォームの作り方 より
+  https://ics.media/entry/200413/
+=============================================================================*/
+.pseudo-class-form.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px; }
+  .pseudo-class-form.wrapper fieldset {
+    border: 0;
+    padding: 0; }
+  .pseudo-class-form.wrapper p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    position: relative; }
+    .pseudo-class-form.wrapper p:focus-within label.name {
+      transform: translateY(0) scale(0.8); }
+  .pseudo-class-form.wrapper label.name {
+    display: block;
+    order: 1;
+    transition: transform 0.2s;
+    transform: translateY(32px) scale(1);
+    transform-origin: 0 100%;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .pseudo-class-form.wrapper label.name {
+        transform: translateY(34px) scale(1); } }
+  .pseudo-class-form.wrapper input,
+  .pseudo-class-form.wrapper textarea {
+    order: 2;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+    background: rgba(255, 255, 255, 0.5); }
+    .pseudo-class-form.wrapper input:invalid,
+    .pseudo-class-form.wrapper textarea:invalid {
+      box-shadow: none; }
+      .pseudo-class-form.wrapper input:invalid ~ .error.message,
+      .pseudo-class-form.wrapper textarea:invalid ~ .error.message {
+        display: block; }
+      .pseudo-class-form.wrapper input:invalid ~ .success.message,
+      .pseudo-class-form.wrapper textarea:invalid ~ .success.message {
+        display: none; }
+    .pseudo-class-form.wrapper input:valid ~ .error.message,
+    .pseudo-class-form.wrapper textarea:valid ~ .error.message {
+      display: none; }
+    .pseudo-class-form.wrapper input:valid ~ .success.message,
+    .pseudo-class-form.wrapper textarea:valid ~ .success.message {
+      display: block; }
+    .pseudo-class-form.wrapper input::placeholder,
+    .pseudo-class-form.wrapper textarea::placeholder {
+      color: transparent; }
+    .pseudo-class-form.wrapper input:placeholder-shown ~ .error.message, .pseudo-class-form.wrapper input:placeholder-shown ~ .success.message,
+    .pseudo-class-form.wrapper textarea:placeholder-shown ~ .error.message,
+    .pseudo-class-form.wrapper textarea:placeholder-shown ~ .success.message {
+      display: none; }
+    .pseudo-class-form.wrapper input:not(:placeholder-shown) ~ label.name,
+    .pseudo-class-form.wrapper textarea:not(:placeholder-shown) ~ label.name {
+      transform: translateY(0) scale(0.8); }
+  .pseudo-class-form.wrapper textarea ~ label.name {
+    padding-left: 7px; }
+  .pseudo-class-form.wrapper .message {
+    padding: 0 8px 8px 8px;
+    position: absolute;
+    bottom: -36px;
+    z-index: -1;
+    font-size: 0.9rem; }
+    .pseudo-class-form.wrapper .message.error {
+      color: red; }
+    .pseudo-class-form.wrapper .message.success {
+      color: green; }
+  .pseudo-class-form.wrapper input[required] ~ label.name::after,
+  .pseudo-class-form.wrapper textarea[required] ~ label.name::after {
+    content: '※';
+    color: red; }
+  .pseudo-class-form.wrapper p.required {
+    display: block;
+    text-align: right;
+    margin-bottom: 0; }
+  .pseudo-class-form.wrapper #submit {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: green;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s; }
+    .pseudo-class-form.wrapper #submit:disabled {
+      background-color: #999;
+      color: #ddd;
+      cursor: not-allowed; }
+    .pseudo-class-form.wrapper #submit:not(:disabled):hover {
+      opacity: 0.8; }
