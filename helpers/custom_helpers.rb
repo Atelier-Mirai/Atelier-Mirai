@@ -73,6 +73,69 @@ def book_intro(book, format: :simple)
   end
 end
 
+# .ui.fluid.container
+#   .billboard
+#     = image_tag billboard_image
+#     .catch_phrase
+#       h1
+#         = "#{title}"
+#       p.lead
+#         - a, b = "#{desc}".split(" ")
+#         = a
+#         br.mobile.only
+#         = b
+
+def billboard(course)
+  markup do |m|
+    m.div(class: 'ui fluid container') do
+      m.div(class: 'billboard') do
+        m << image_tag(course.billboard_image)
+        m.div(class: 'catch_phrase') do
+          m.h1 << course.title
+          m.p(class: 'lead') do
+            a, b = course.desc.split(' ')
+            m << a
+            m.br(class: 'mobile only')
+            m << b
+          end
+        end
+      end
+    end
+  end
+end
+
+def useful_links
+  usefuls = data.usefuls
+  markup do |m|
+    usefuls.each do |useful|
+      m.h3(class: 'ui header') do m << useful.genre end
+      m.p(class: 'desc') do m << useful.desc end
+      m.ul(class: 'ui list') do
+        useful.links.each do |link|
+          m << link_list(link)
+        end
+      end
+    end
+  end
+end
+
+def link_list(link)
+  markup do |m|
+    m.li do
+      m << link_to(link.url, class: 'ui small teal header', target: '_blank') do
+        link.title
+      end
+      if desc = link.desc
+        desc.split('  ') do |d|
+          m.p(class: 'desc') do
+            m << d
+          end
+        end
+      end
+    end
+  end
+end
+
 def table_body
   markup(:tr) do |m|
     m.td << 'aiueo'

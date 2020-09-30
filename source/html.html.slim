@@ -3,7 +3,7 @@ title: HTML / CSS を学ぶ
 ---
 
 / billboard
-= partial 'billboard', locals: data.course[2]
+= billboard(data.course[2])
 
 .ui.middle.aligned.stackable.grid.container.mt-5
   .row
@@ -20,7 +20,7 @@ title: HTML / CSS を学ぶ
         | CSSグリッドレイアウトで
         br.mobile.only
         | 自由自在にレイアウト
-      p まず基本は文字や写真を載せること。そしてその先へ。最先端のCSSグリッドレイアウト技術を学び、まるで雑誌のグラビアのような、凝ったレイアウトも実現可能です。
+      p まず基本は文字や写真を載せること。そしてその先へ。最先端のCSSグリッドレイアウト技術を学び、まるで雑誌のグラビアのようなレイアウトも実現可能です。
     .six.wide.right.floated.column
       = image_tag "html5_css3.png", class: "ui large bordered rounded image"
 
@@ -91,7 +91,6 @@ title: HTML / CSS を学ぶ
       p
         | HTML / CSS を書くための便利なソフト、「エディタ」の使い方も学びます。
 
-
   h3 HTML発展篇
   ul
     li
@@ -124,6 +123,14 @@ title: HTML / CSS を学ぶ
         | htmlとcssに翻訳してくれます。
         br
         | また、メニュー項目など、Webサイトで共通する部分も容易に管理できます。
+
+  h2 作成できるウェブサイトの例
+  p
+    | iPhoneにも対応したレスポンシブデザインで、次のようなサイトが作成できます。
+    .ui.fluid.card
+      = link_to 'https://atelier-mirai-wave.netlify.app/', target: '_blank' do
+        = image_tag('wave.jpg')
+      end
 
   = partial 'course_introduction'
 

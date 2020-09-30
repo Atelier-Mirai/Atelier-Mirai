@@ -1,0 +1,38 @@
+---
+title: お役立ちリンク集
+---
+
+/ billboard
+= billboard(data.course[9])
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header お役立ちリンク集
+      p
+        |
+          プログラミング技術習得に役立つ、各ウェブサイトへのリンク集です。
+        br
+        |
+          基本となるタイピング習得からウェブサイト作成、開発環境の整備など、
+          技術習得にお役立てください。
+
+
+    .six.wide.right.floated.column
+      = image_tag "suiren.jpg", class: "ui large bordered rounded image"
+
+.ui.text.container.mt-5
+  h2.ui.horizontal.header.divider
+    .amairo.text サイト ご案内
+
+  = useful_links
+
+.ui.container.mt-5
+  h2.ui.header ご案内
+  .ui.four.column.doubling.stackable.grid.container
+    = partial 'other_course', locals: data.course[1]
+    = partial 'other_course', locals: data.course[2]
+    = partial 'other_course', locals: data.course[3]
+    = partial 'other_course', locals: data.course[4]
+
+= partial 'a_gem_of_a_book'

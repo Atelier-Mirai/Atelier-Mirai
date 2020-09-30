@@ -1,0 +1,87 @@
+---
+title: お薦め機種
+---
+
+/ billboard
+= billboard(data.course[8])
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header お薦め機種
+      p
+        | 初めてプログラミングを学ぶ方へのお薦め機種。それは、「MacBook Air」。洗練されたデザインと優れた使い心地、すいすいと空を舞う鳥のように、コーディングを楽しめます。
+
+      h2.ui.header
+        | MacBook Air の 特徴
+        br.mobile.only
+        |
+      ol.ui.list
+        li とても薄くて軽い洗練されたデザイン。
+        li Retinaディスプレイでとても表示が美しい。
+        li 一日中使えるバッテリー。
+
+        | より詳しくは
+        = link_to 'MacBook Air', 'https://www.apple.com/jp/macbook-air/'
+        でご覧ください。
+
+    .six.wide.right.floated.column
+      = image_tag "MacBookAir.jpg", class: "ui large bordered rounded image"
+
+.ui.text.container.mt-5
+  h2.ui.header お薦めする理由
+  ol.ui.list
+    li
+      | 美しく使いやすいUI/UX
+      / ol
+      /   li
+      /     | a
+    li
+      | UNIXベースで、様々なプログラミングのための資源が利用可能
+      / ol
+      /   li
+      /     | a
+
+  h2.ui.horizontal.header.divider
+    .amairo.text 購入について
+
+  p
+    | 軽量で安価でプログラミングの基本学習にお薦め MacBook Air
+    = link_to 'MacBook Air', 'https://www.apple.com/jp/shop/buy-mac/macbook-air/'
+    | 104,800円+税 で購入できます。
+
+  p
+    | もしご予算に余裕があれば、標準構成から変更も可能です。
+    ul.ui.list
+      li プロセッサ デュアルコア Core i3 を クアッドコア i5 に増強する。10000円追加。
+      li メモリ 8GB を 16GB に増量。 20000円追加（動画を編集されたいのであればお薦め）
+      li ストレージ 256GB を 512GB に増量。20000円追加（後からの増設も可能なので、無理せずとも）
+    | がお薦めです。
+    br
+    | キーボードは、USキーボード(上)を選択なさってください。
+    br
+    | キートップにひらがなの刻印がなく、すっきりしています。
+    br
+    | また、プログラミングで良く用いる括弧[]{}の位置も左右に整っていることから、強く推奨です。
+    br
+    | さらに、プログラミングの際には身体を正面に向けてタイピングします。
+    br
+    | USキーボード(上)は、ASDFGHJKL;'と11個のキーが配置されていますが、
+    br
+    | JISキーボード(下)は、ASDFGHJKL;:]と12個のキーが配置されています。
+    br
+    | JISキーボードはキーボードの配置が左にずれていますので、長くタイピングを続けていくに際してストレスとなって効率性を損ないます。
+
+    / ..wide.right.floated.column
+    = image_tag "us_keyboard.jpg", class: "ui fluid bordered rounded image"
+    = image_tag "jis_keyboard.jpg", class: "ui fluid bordered rounded image"
+
+.ui.container.mt-5
+  h2.ui.header ご案内
+  .ui.four.column.doubling.stackable.grid.container
+    = partial 'other_course', locals: data.course[1]
+    = partial 'other_course', locals: data.course[2]
+    = partial 'other_course', locals: data.course[3]
+    = partial 'other_course', locals: data.course[4]
+
+= partial 'a_gem_of_a_book'

@@ -29,7 +29,7 @@
 - image: qualification.png
   billboard_image: cosmos_1920x300.jpg
   title: ITの資格を取得する
-  desc: ITパスポート 応用情報技術者
+  desc: ITパスポート　応用情報技術者
   lead: 一般教養に、自己研鑽に、「ITパスポート」や「応用情報技術者」など国家資格取得のための講座です。
   url: /qualification.html
 
@@ -54,9 +54,16 @@
   lead:
   url: /contact.html
 
-- image: nature_road.jpg
-  billboard_image: stream_1920x300.jpg
-  title: お問い合わせ
-  desc: どうぞお気軽にお問い合わせください
+- image: suiren.jpg
+  billboard_image: karesawadake_1920x300.jpg
+  title: お薦め機種
+  desc: プログラミングを始めるあなたの為に
   lead:
-  url:
+  url: /recommended.html
+
+- image: suiren.jpg
+  billboard_image: momiji_1920x300.jpg
+  title: お役立ちリンク集
+  desc: プログラミングを始めるあなたの為に
+  lead:
+  url: /useful.html
