@@ -160,10 +160,39 @@
     desc: |-
           macOS用高性能ターミナルアプリ。
 
+- genre: 便利なツール
+  desc: |-
+        ウェブサイト作成に役立つツールのご紹介です。
+  links:
+  - title: 様々なファビコンを一括生成。favicon generator
+    url: https://ao-system.net/favicongenerator/
+    desc: |-
+          使い方はとってもシンプル。画像を1枚指定するだけ。面倒な設定不要。
+          favicon.ico、apple-touch-icon*.pngなどを一括生成します。
+  - title: QRコード(二次元バーコード) 作成
+    url: https://www.cman.jp/QRcode/
+    desc: |-
+          QRコードを無料で作成可能です。
+  - title: ホームページのパーツ作成 - CMAN
+    url: https://webparts.cman.jp
+    desc: |-
+          ブラウザ操作だけで、文字や画像のデザインや動きを自動生成することが出来ます。
+          HTML / CSS / JSが自動で作成されます。
+          少し古めですが、ご参考に。
+
 - genre: プログラミング技術解説
   desc: |-
+        技術系の話題です。
   links:
-  - title: Qiita – プログラミング技術共用サイト
+  - title: アトリヱ未來 - Qiita
     url: https://qiita.com/Atelier-Mirai
     desc: |-
           プログラミング技術習得に役立つ子ネタを時折執筆しております。
+  - title: ウェブデザイナーとフロントエンジニアのための情報メディア - ICS MEDIA
+    url: https://ics.media
+    desc: |-
+          ICS MEDIAは株式会社ICSが運営するオウンドメディア です。ICSはインタラクションデザイン専門のプロダクション。最先端のwebテクノロジーを駆使し、オンスクリーンメディアの表現分野で活動しています。
+  - title: コリス - Web制作に関する最新の情報をご紹介
+    url: https://coliss.com
+    desc: |-
+          Web制作に役立つ様々な話題やライブラリ等の紹介が為されています。
