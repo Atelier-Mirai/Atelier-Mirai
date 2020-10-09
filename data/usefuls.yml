@@ -179,6 +179,24 @@
           ブラウザ操作だけで、文字や画像のデザインや動きを自動生成することが出来ます。
           HTML / CSS / JSが自動で作成されます。
           少し古めですが、ご参考に。
+  - title: codic
+    url: https://codic.jp
+    desc: |-
+          codicは、プログラマーのためのネーミング辞書です。新しいcodicでは、翻訳エンジンを搭載しネーミングをジェネレートできるようになりました。
+  - title: deepL
+    url: https://www.deepl.com/translator
+    desc: |-
+          AIの力を言語に。DeepL（ディープエル）では、テキストをより深く理解し翻訳できる人工知能を開発しています。世界最高レベルの機械翻訳をお試しください。
+          Macで使えるアプリも提供されているので、ドキュメントを読む際などに重宝します。
+  - title: HTML2slim
+    url: https://html2slim.herokuapp.com/
+    desc: |-
+          htmlで書かれているサンプルコードをslimに変換する際に便利です。
+  - title: ＨＴＭＬ整形ツール
+    url: http://u670.com/pikamap/htmlseikei.php
+    desc: |-
+          このツールは「＜」「＞」マークを元に、HTMLを見やすく整形してくれる単純なツールです。
+          乱れたhtmlの整形に便利です。
 
 - genre: プログラミング技術解説
   desc: |-
