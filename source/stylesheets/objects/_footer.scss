@@ -4,4 +4,9 @@
 
 .ui.vertical.footer.segment {
   padding: 2.5rem 0;
+  .ui.link.list {
+    a {
+      line-height: 1.8;
+    }
+  }
 }
