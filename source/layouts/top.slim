@@ -17,17 +17,18 @@ html
     meta name="description" content="情報技術(IT)を夢の架け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。"
 
     / fontawesome
-    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
 
     / jQuery
-    script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    script src="https://code.jquery.com/jquery-3.6.0.min.js"
 
     / Fomantic-UI
     link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css"
     script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"
 
     / IE Buster
-    script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js"
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ie-buster@2.0.1/dist/ie-buster.min.js"></script>
+    <script nomodule>ieBuster.init()</script>
 
     / stylesheet の読み込み (style.cssを読み込む)
     = stylesheet_link_tag "style"
