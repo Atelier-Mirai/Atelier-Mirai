@@ -112,7 +112,9 @@ GEM
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
     minitest (5.14.4)
-    nokogiri (1.11.1-x86_64-darwin)
+    nokogiri (1.11.4-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.11.4-x86_64-linux)
       racc (~> 1.4)
     oj (3.11.5)
     padrino-helpers (0.14.4)
@@ -158,6 +160,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   middleman!
