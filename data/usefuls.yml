@@ -108,8 +108,8 @@
   desc: |-
         居住地が離れているなど、遠隔でのレッスンご希望の方に使っていただきたいソフトのご紹介です。
   links:
-  - title: TeamViewer – 画面共用ソフト
-    url: https://www.teamviewer.com/ja/
+  - title: splashtop – 画面共用ソフト
+    url: https://www.splashtop.co.jp
     desc: |-
           自宅にいながら、一緒に画面を見てプログラミング指導が可能とするための画面共用ソフトです。
   - title: Whereby – ビデオ通話アプリ
@@ -121,14 +121,18 @@
   desc: |-
         プログラミングに欠かせない開発環境を整えるためのサイトのご案内です。
   links:
-  - title:  軽さに速さを。MacBook Air
+  - title:  Airに新しい力をのせて
     url: https://www.apple.com/jp/macbook-air/
     desc: |-
-        美しく洗練されたデザイン、心地よく優れた利用者体験を提供するmacOSのもと、プログラミングを始める方への最初の一台として最適な機種です。
+        MacBookAirは、美しく洗練されたデザイン、心地よく優れた利用者体験を提供するmacOSのもと、プログラミングを始める方への最初の一台として最適な機種です。
   - title: Atom - 21世紀のプログラマの為のテキストエディタ
     url: https://atom.io
     desc: |-
           GitHub謹製テキストエディタ。プログラマが心地よくコーディングできるよう、必要な機能が搭載されています。始めての方へは設定不要で初日から使え、熟練者には深部まで調整可能な、21世紀のプログラマの為のテキストエディタです。
+  - title: Firefox - プライバシに配慮した安全性の高いブラウザ
+    url: https://www.mozilla.org/ja/firefox/new/
+    desc: |-
+          Firefoxは、Mosaic, Netscape の血を受け継ぐブラウザです。CSSグリッドを確認し易く、丁寧なコメントの開発者ツールが特徴です。
   - title: Git(ギット) - 分散型バージョン管理システム
     url: https://git-scm.com
     desc: |-
