@@ -5,10 +5,12 @@
       | プログラミング書籍のご紹介
     p
       | プログラミング技術習得に役立つ珠玉の名著のご紹介です。
-  .ui.eight.column.doubling.stackable.grid.container
-    - (0...data.books.count).to_a.shuffle[0...8].each do |i|
-      / = partial 'book_intro', locals: data.book[i]
-      = book_intro(data.books[i])
+
+  .ui.eight.column.doubling.stackable.centered.grid.container
+    .ui.small.images
+      - (0...data.books.count).to_a.shuffle[0...12].each do |i|
+        / = partial 'book_intro', locals: data.book[i]
+        = book_intro(data.books[i])
 
   .ui.right.aligned.grid
     .sixteen.wide.column

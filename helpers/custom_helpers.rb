@@ -78,21 +78,19 @@ def book_intro(book, format: :simple)
 
   case format
   when :simple
-    content_tag :div, class: 'column' do
-      link_to url, class: 'ui card', target: '_blank' do
-        content_tag :div, class: 'image' do
-          image_tag image
-        end
+    # content_tag :div, class: 'column' do
+      link_to url, target: '_blank' do
+        # content_tag :div, class: 'image' do
+          image_tag image, class: 'ui small image', size: '150x212', style: 'width: 150px; height: 212px;'
+        # end
       end
-    end
+    # end
   when :description
-    link_to url, class: 'ui horizontal card', target: '_blank' do
+    link_to url, class: 'card', style: 'width: auto;', target: '_blank' do
       markup do |m|
-        m.div(class: 'image', style: "background: none;") do
-          m << image_tag(image, style:"width: 150px; height: auto;")
-        end
         m.div(class: 'content') do
-          m.div(class: 'ui header') do
+          m << image_tag(image, class: 'ui left floated small image', style:"width: 150px; height: 212px;")
+          m.div(class: 'header') do
             m << title
           end
           m.div(class: 'description') do

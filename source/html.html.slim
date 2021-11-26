@@ -147,10 +147,11 @@ title: HTML / CSS を学ぶ
 
 .ui.container.mt-5
   h2.ui.header ご案内
-  .ui.four.column.doubling.stackable.grid.container
-    = partial 'other_course', locals: data.course[1]
-    = partial 'other_course', locals: data.course[3]
-    = partial 'other_course', locals: data.course[4]
-    = partial 'other_course', locals: data.course[5]
+  .ui.centered
+    .ui.four.column.doubling.stackable.grid.container
+      = partial 'other_course', locals: data.course[1]
+      = partial 'other_course', locals: data.course[3]
+      = partial 'other_course', locals: data.course[4]
+      = partial 'other_course', locals: data.course[5]
 
 = partial 'a_gem_of_a_book'

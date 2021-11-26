@@ -13,13 +13,16 @@
   レスポンシブな文字サイズ 今すぐ使えるCSSレシピブック 96頁より
 -----------------------------------------------------------------------------*/
 html {
-  font-size: 14px;
-  @media (min-width: 320px) {
-    font-size: calc( (18 - 14) * ((100vw - 320px) / (960 - 320)) + 14px);
-  }
-  @media (min-width: 960px) {
-    font-size: 18px;
-  }
+  // font-size: 14px;
+  // @media (min-width: 320px) {
+  //   font-size: calc( (18 - 14) * ((100vw - 320px) / (960 - 320)) + 14px);
+  // }
+  // @media (min-width: 960px) {
+  //   font-size: 18px;
+  // }
+  
+  // 500px - 833px で可変
+  font-size: clamp(12px, 2.4vw, 20px);
 }
 
 /*
