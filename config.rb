@@ -48,8 +48,3 @@ set :slim, {
   #  学習用に読みやすいHTMLが出力される )
   # pretty: true, sort_attrs: false,
 }
-
-# data.cats.each do |cat|
-# # ["tom", "dick", "harry"].each do |name|
-#   proxy "/#{cat.name}.html", "/template.html", locals: { data: cat }, ignore: true
-# end
