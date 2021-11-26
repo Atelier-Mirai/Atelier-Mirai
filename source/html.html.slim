@@ -26,15 +26,6 @@ title: HTML / CSS を学ぶ
       = image_tag "html5_css3.png", class: "ui large bordered rounded image"
 
 .ui.text.container.mt-5
-  h2.ui.header あるいた先にみる景色
-  p
-    | 今みている景色 それは歩んできた自分の軌跡
-    br
-    | さらに遠くへ さらなる高みへ つぎの一歩を
-    br
-    | まだ見ぬ世界が誘う 未知の
-
-.ui.text.container.mt-5
   h2.ui.header 講座内容のご案内
   p
     | これまでに、多くの方々に学んでいただいております HTML/CSS講座。
@@ -134,20 +125,25 @@ title: HTML / CSS を学ぶ
         br
         | また、メニュー項目など、Webサイトで共通する部分も容易に管理できます。
 
+  h3 JavaScript(ジャバスクリプト)
+  p
+    | JavaScript は、文字や写真の表示を制御したり、利用者の操作に応じて動きのあるサイトを作成する際に用いられるプログラミング言語です。html / css に比べ、学習の難易度は上がりますが、魅力的なサイト作成には欠かせない技術です。
+    | Google Map や YouTube、写真などの扱い方を学びます。
+
   h2 作成できるウェブサイトの例
   p
     | iPhoneにも対応したレスポンシブデザインで、次のようなサイトが作成できます。
     .ui.fluid.card
       = link_to 'https://atelier-mirai-wave.netlify.app/', target: '_blank' do
-        = image_tag('wave.jpg')
+        = image_tag 'wave.jpg', style: 'width: 100%;'
       end
 
   = partial 'course_introduction'
 
   h2 テキストはこちら
   .ui.centered.cards
-    = book_intro(data.book[0], format: :large_description)
-    = book_intro(data.book[1], format: :large_description)
+    = book_intro(data.books[0], format: :large_description)
+    = book_intro(data.books[1], format: :large_description)
 
 .ui.container.mt-5
   h2.ui.header ご案内

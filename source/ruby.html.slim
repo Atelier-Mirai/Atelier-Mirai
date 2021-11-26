@@ -12,7 +12,7 @@ title: Webプログラミングを学ぶ
       p
         | HTML/CSSを用いたWebサイト作成から一歩進んで、データベースを用いた本格的なプログラミングを学んでいきます。
         br
-        | 利用者からの文章や写真の投稿や、会員登録、検索などが可能な、クックパッドや食べログのようなサイトも作成可能です。
+        | クックパッドや食べログなど、利用者からの文章や写真の投稿や、会員登録、検索などが行えるサイトも作ることが出来るようになります。
 
       h2.ui.header
         | Ruby と
@@ -45,7 +45,7 @@ title: Webプログラミングを学ぶ
     br
     | Webサイトの表示は、HTML / CSS を使いますが、文章や写真を保存するためには、データベースの利用が必要です。また、よりよいWebアプリ作成のために、会員登録を行ったり、お薦めレシピの検索など、様々な機能を実装したいこともよくあります。
     br
-    | Webアプリ開発が容易に行えるように、多くの先人達の知見をあわせて提供してくれているフレームワーク、それが Ruby on Rails (ルビー・オン・レイルズ)です。
+    | Webアプリ開発が容易に行えるように、多くの先人達の知見をあわせて提供してくれているフレームワーク、それが Ruby on Rails (ルビーオンレイルズ)です。
     br
     | Webアプリ開発講座は、HTML 講座 で、あらかじめ用意した文章の表示方法を習得された方向けに、さらに一歩進んで、利用者からの入力を反映するような、動的なWebサイトの開発を行います。
 
@@ -80,8 +80,8 @@ title: Webプログラミングを学ぶ
 
   h2 テキストはこちら
   .ui.centered.cards
-    = book_intro(data.book[2], format: :large_description)
-    = book_intro(data.book[3], format: :large_description)
+    = book_intro(data.books[2], format: :large_description)
+    = book_intro(data.books[3], format: :large_description)
 
 .ui.container.mt-5
   h2.ui.header ご案内

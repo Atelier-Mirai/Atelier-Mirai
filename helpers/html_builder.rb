@@ -1,3 +1,4 @@
+# 実践Ruby on Railsより
 module HtmlBuilder
   def markup(tag_name = nil, options = {})
     root = Nokogiri::HTML::DocumentFragment.parse("")

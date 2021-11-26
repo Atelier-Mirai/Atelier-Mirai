@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta charset="utf-8"
-    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="viewport" content="width=device-width"
     title
       = current_page.data.title || "アトリヱ未來"
 
@@ -14,17 +14,17 @@ html
                   type:  'image/png'
 
     / 検索エンジン用にサイトの紹介文章
-    meta name="description" content="情報技術(IT)を夢の架け橋に。Webサイト作成やITを学ぶあなたを、アトリヱ未來は応援します。"
+    meta name="description" content="情報技術(IT)を夢の架け橋に。Web制作やプログラミングを学ぶあなたを、アトリヱ未來は応援します。"
 
     / fontawesome
-    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 
     / jQuery
     script src="https://code.jquery.com/jquery-3.6.0.min.js"
 
     / Fomantic-UI
-    link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css"
-    script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"
+    link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"
+    script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"
 
     / IE Buster
     <script nomodule src="https://cdn.jsdelivr.net/npm/ie-buster@2.0.1/dist/ie-buster.min.js"></script>
@@ -39,7 +39,7 @@ html
     / JavaScript (site.jsを読み込む)
     = javascript_include_tag "site"
 
-  body.site
+  body class=page_classes
     = partial 'scroll_header_menu'
     = partial 'iPhone_menu'
     = partial 'main_menu'

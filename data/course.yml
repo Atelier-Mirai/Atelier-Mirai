@@ -16,21 +16,21 @@
   billboard_image: sea_1920x300.jpg
   title: HTML/CSSを学ぶ
   desc: グリッドレイアウトで iPhoneにも対応
-  lead: 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。
+  lead: 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。コンピュータの仕組みや、エディタの使い方など、プログラミングを始めたい方にもお薦めです。
   url: /html.html
 
 - image: ruby_and_rails.png
   billboard_image: sunflower_1920x300.jpg
   title: Webプログラミングを学ぶ
   desc: データベースを利用した 本格的なプログラミングの世界へ
-  lead: 心地よい書き味のRubyと、パワフルなフレームワーク Ruby on Rails の講座です。
+  lead: 簡潔な文法と心地よい書き味が魅力のRubyと、パワフルなWebフレームワーク Ruby on Rails の講座です。
   url: /ruby.html
 
 - image: qualification.png
   billboard_image: cosmos_1920x300.jpg
-  title: ITの資格を取得する
-  desc: ITパスポート　応用情報技術者
-  lead: 一般教養に、自己研鑽に、「ITパスポート」や「応用情報技術者」など国家資格取得のための講座です。
+  title: 資格を取得する
+  desc: ITパスポート 基本情報技術者 応用情報技術者
+  lead: 一般教養に、自己研鑽に、「ITパスポート」や「基本情報技術者」「応用情報技術者」など国家資格取得のための講座です。
   url: /qualification.html
 
 - image: the_c_programming_language.png

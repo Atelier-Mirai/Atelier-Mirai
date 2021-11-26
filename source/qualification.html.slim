@@ -18,7 +18,10 @@ title: IT資格取得
         | ITパスポート と
         br.mobile.only
         | 応用情報技術者
-      p 社会人や学生のための一般教養としてのITパスポート、技術者として高い専門性を証明するための応用情報技術者。自己研鑽にもお役立てください。
+      p
+        | 社会人や学生のための一般教養としての「ITパスポート」、技術者であることを示す「基本情報技術者」、高い専門性を証明するための「応用情報技術者」。
+        br
+        | 自己の学びや成長、研鑽にどうぞお役立てください。
 
     .six.wide.right.floated.column
       = image_tag "qualification.png", class: "ui large bordered rounded image"
@@ -47,6 +50,14 @@ title: IT資格取得
     | 情報処理技術者試験の中で、ITパスポートは、最も易しい試験で、他の試験がコンピュータ技術者としての資質・能力評価を目的としているのに対し、ITパスポートは、一般学生や社会人向けに、IT利活用のための基礎知識の有無を問う内容です。
     br
     | 試験も記述式ではなく、４つの選択肢から正解を選ぶ方式ですので、初心者の方でも取得が容易で、概ね３０時間の学習時間を目安に合格できる水準です。
+
+  / h2 基本情報技術者とは
+  / p
+  /   | ｉパスは、IT化が進んだ現代社会に羽ばたく社会人や学生のために、IT(情報技術)の基礎知識を証明できる国家試験です。
+  /   br
+  /   | 情報処理技術者試験の中で、ITパスポートは、最も易しい試験で、他の試験がコンピュータ技術者としての資質・能力評価を目的としているのに対し、ITパスポートは、一般学生や社会人向けに、IT利活用のための基礎知識の有無を問う内容です。
+  /   br
+  /   | 試験も記述式ではなく、４つの選択肢から正解を選ぶ方式ですので、初心者の方でも取得が容易で、概ね３０時間の学習時間を目安に合格できる水準です。
 
   h2 応用情報技術者 とは
   p
@@ -125,8 +136,8 @@ title: IT資格取得
 
   h2 テキストはこちら
   .ui.centered.cards
-    = book_intro(data.book[4], format: :large_description)
-    = book_intro(data.book[5], format: :large_description)
+    = book_intro(data.books[4], format: :large_description)
+    = book_intro(data.books[5], format: :large_description)
 
 .ui.container.mt-5
   h2.ui.header ご案内

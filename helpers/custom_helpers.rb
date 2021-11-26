@@ -1,34 +1,72 @@
-# include HtmlBuilder
-
-module HtmlBuilder
-  def markup(tag_name = nil, options = {})
-    root = Nokogiri::HTML::DocumentFragment.parse("")
-    Nokogiri::HTML::Builder.with(root) do |doc|
-      if tag_name
-        doc.method_missing(tag_name, options) do
-          yield(doc)
-        end
-      else
-        yield(doc)
-      end
-    end
-    root.to_html.html_safe
-  end
-end
-
-
-def some_method
-  # ...何らかの処理を追加...
-  'awesome method'
+# 日本語版 loremメソッド
+def iroha
+  IrohaObject
 end
 
 class String
   def to_amazon_url
-    "https://www.amazon.co.jp/gp/product/#{self}/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=#{self}&linkCode=as2&tag=ateliermira05-22&linkId=d9a444d6a2c93e24e44eb0b3bd6d3981"
+    "https://www.amazon.co.jp/dp/#{self}"
   end
 
   def to_amazon_image
-    "//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=#{self}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ateliermira05-22"
+    "//ws-fe.amazon-adsystem.com/widgets/q?ASIN=#{self}&ServiceVersion=20070822&ID=AsinImage&WS=1"
+  end
+
+  def count_word
+    return self.split(/\s+/).size
+  end
+end
+
+# https://www.oiax.jp/rails/tips/nokogiri_html_builder.html
+def table_of_users(users)
+  markup do |m|
+    m.table(id: 'users', class: 'ui table') do
+      m.tr do
+        m.th '姓'
+        m.th '名'
+        m.th '性別'
+      end
+      users.each do |u|
+        attrs = {}
+        attrs[:class] = 'admin' if u[:admin]
+        m.tr(attrs) do
+          m.td u[:family_name]
+          m.td u[:given_name]
+          m.td u[:gender] == 'male' ? '男' : '女'
+        end
+      end
+    end
+  end
+end
+
+def book_desc_intro
+  url   = "4295008052".to_s.to_amazon_url
+  image = "4295008052".to_s.to_amazon_image
+  title = "Ruby on Rails 6 実践ガイド"
+  desc  = <<~EOL
+            本書では、1つの企業向け顧客管理システムを作る過程で、RailsによるWebアプリケーション開発の基礎知識とさまざまなノウハウを習得していきます。各章末には演習問題が設けられているので、理解度を確かめながら確実に読み進められます。
+            著者が試行錯誤を繰り返した上でのベストプラクティスを提供し、読者は、実際に業務システムを構築しながらRailsのさまざまな機能、方法、作法、メソッド、テクニックを学ぶことができます。
+            仮想環境における開発環境の構築/Railsアプリケーションの基盤ユーザー認証とDB処理/堅牢なシステム設計/テストフレームワーク―業務システムの構築を通じて、Railsアプリケーション開発をマスターできます。
+          EOL
+
+  link_to url do
+    markup do |m|
+      m.div(class: 'image') do
+        m << image_tag(image, style: "width: 100%;")
+      end
+      m.div(class: 'content') do
+        m.div(class: 'ui header') do
+          m << title
+        end
+        m.div(class: 'description') do
+          desc.split("\n").each_with_index do |d, i|
+            m.p do
+              m << d
+            end
+          end
+        end
+      end
+    end
   end
 end
 
@@ -200,3 +238,4 @@ def table_user(users)
     end
   end
 end
+# end

@@ -1,20 +1,17 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 # 静的サイトジェネレータ Middleman
-# gem 'middleman'
-gem 'middleman', github: 'middleman/middleman'
-gem 'webrick'
-
-# ベンダープリフィックス 自動付与する
-gem 'middleman-autoprefixer'
-# ファイル更新の際、ブラウザを再読み込みする
-gem 'middleman-livereload'
-# テンプレートエンジンはSlimを使用する
-gem 'slim'
+gem "middleman"
+gem "webrick"
+# ベンダープリフィックスを自動付与する
+gem "middleman-autoprefixer"
+# ファイル更新の際にブラウザを再読み込みする
+gem "middleman-livereload"
+# テンプレートエンジンとしてSlimを使用する
+gem "slim"
 # イメージ圧縮を行う
-gem 'middleman-imageoptim'
+gem "middleman-imageoptim"
 # HTML圧縮を行う
-gem 'middleman-minify-html'
-
-# html_builder用
-gem 'nokogiri'
+gem "middleman-minify-html"
+# html_builder(DSL)用にnokogiriも入れる
+gem "nokogiri"

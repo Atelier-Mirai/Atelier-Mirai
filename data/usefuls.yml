@@ -196,20 +196,19 @@
     url: https://html2slim.herokuapp.com/
     desc: |-
           htmlで書かれているサンプルコードをslimに変換する際に便利です。
-  - title: ＨＴＭＬ整形ツール
+  - title: HTML整形ツール
     url: http://u670.com/pikamap/htmlseikei.php
     desc: |-
-          このツールは「＜」「＞」マークを元に、HTMLを見やすく整形してくれる単純なツールです。
-          乱れたhtmlの整形に便利です。
+          HTMLファイル内のタグ(&lt;, &gt;)を基準に、見やすく整形するツールです。乱れたソースコードの整形に便利です。
 
 - genre: プログラミング技術解説
   desc: |-
         技術系の話題です。
   links:
-  - title: アトリヱ未來 - Qiita
-    url: https://qiita.com/Atelier-Mirai
+  - title: アトリヱ未來 - Zenn
+    url: https://zenn.dev/atelier_mirai
     desc: |-
-          プログラミング技術習得に役立つ子ネタを時折執筆しております。
+          プログラミング技術習得に役立つ小ネタを時折執筆しております。
   - title: ウェブデザイナーとフロントエンジニアのための情報メディア - ICS MEDIA
     url: https://ics.media
     desc: |-

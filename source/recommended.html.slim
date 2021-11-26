@@ -22,8 +22,8 @@ title: お薦め機種
         li 一日中使えるバッテリー。
 
         | より詳しくは
-        = link_to 'MacBook Air', 'https://www.apple.com/jp/macbook-air/'
-        でご覧ください。
+        = link_to ' MacBook Air ', 'https://www.apple.com/jp/macbook-air/'
+        | をご覧ください。
 
     .six.wide.right.floated.column
       = image_tag "macbook-air.jpg", class: "ui large bordered rounded image"
@@ -47,7 +47,7 @@ title: お薦め機種
     | 軽量で安価で高性能。プログラミングの基本学習にお薦めな機種が「MacBook Air」です。
     br
     = link_to 'MacBook Air', 'https://www.apple.com/jp/shop/buy-mac/macbook-air/'
-    | は、115,280円(税込)で購入できます。
+    | は、115,280円(税込)から購入できます。
 
   p
     | もしご予算に余裕があれば、標準構成から変更も可能です。
@@ -80,10 +80,20 @@ title: お薦め機種
     | JISキーボード(下)は、ASDFGHJKL;:]と12個のキーが配置されています。
     br
     | JISキーボードはキーボードの配置が左にずれていますので、長くタイピングを続けていくに際してストレスとなって効率性を損ないます。
+    br
 
-    / ..wide.right.floated.column
-    = image_tag "us_keyboard.jpg", class: "ui fluid bordered rounded image"
-    = image_tag "jis_keyboard.jpg", class: "ui fluid bordered rounded image"
+    .ui.centered.card style="width: 100%;"
+      .image
+        = image_tag "us_keyboard.jpg"
+      .content
+        a.header style="text-align: center;"
+          | US キーボード (推奨)
+    .ui.centered.card style="width: 100%;"
+      .image
+        = image_tag "jis_keyboard.jpg"
+      .content
+        a.header style="text-align: center;"
+          | JIS キーボード
 
 .ui.container.mt-5
   h2.ui.header ご案内
