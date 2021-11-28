@@ -16,7 +16,7 @@ end
 # レイアウトファイルの指定
 set :layout, :site
 # page "index.html", layout: :top
-page "no_layout.html", layout: false
+# page "no_layout.html", layout: false
 
 # ビルド時の設定
 configure :build do
