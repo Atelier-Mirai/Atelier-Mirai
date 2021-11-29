@@ -3,31 +3,7 @@
   リセットCSS、NormarizeCSSなどの、すべてのベースとなるCSS
 =============================================================================*/
 
-/*
-  modern-css-reset.css
------------------------------------------------------------------------------*/
-// @import "modern-css-reset";
-
-
-/*
-  レスポンシブな文字サイズ 今すぐ使えるCSSレシピブック 96頁より
------------------------------------------------------------------------------*/
-html {
-  // font-size: 14px;
-  // @media (min-width: 320px) {
-  //   font-size: calc( (18 - 14) * ((100vw - 320px) / (960 - 320)) + 14px);
-  // }
-  // @media (min-width: 960px) {
-  //   font-size: 18px;
-  // }
-  
-  // 500px - 833px で可変
-  font-size: clamp(12px, 2.4vw, 20px);
-}
-
-/*
-  2020年に最適なfont-familyの書き方
-  https://ics.media/entry/200317/
+/* 2020年に最適なfont-familyの書き方 https://ics.media/entry/200317/
 -----------------------------------------------------------------------------*/
 // M PLUS 1p
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
@@ -43,10 +19,6 @@ $font-family: "M PLUS 1p",
 
 html {
   font-family: $font-family !important;
+  // 500px - 833px で可変
+  font-size: clamp(12px, 2.4vw, 20px);
 }
-
-
-/*
-  CSS フレームワークとして、Fomantic UI を使う
------------------------------------------------------------------------------*/
-@import "homepage/homepage";

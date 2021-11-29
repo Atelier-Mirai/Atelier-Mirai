@@ -33,15 +33,12 @@ html
     / stylesheet の読み込み (style.cssを読み込む)
     = stylesheet_link_tag "style"
 
-    / Fomantic UI
-    = javascript_include_tag "semantic.min"
-
     / JavaScript (site.jsを読み込む)
     = javascript_include_tag "site"
 
   / body class=page_classes
   body
-    / = partial 'scroll_header_menu'
+    = partial 'scroll_header_menu'
     / = partial 'iPhone_menu'
     / = partial 'main_menu'
     = yield

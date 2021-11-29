@@ -1,13 +1,13 @@
 - image: aruitasakinimirukeshiki.jpg
   billboard_image: sakurajimayama_1920x300.jpg
-  title: アトリヱ未來について
+  title: アトリヱ未來
   desc: 情報技術を「夢」の架け橋に
   lead:
   url: /about.html
 
 - image: macbook.jpg
   billboard_image: sakura_1920x300.jpg
-  title: Webサイト作成依頼
+  title: Web制作依頼
   desc: レスポンシブデザインで iPhoneにも対応
   lead:
   url: /web.html
@@ -21,7 +21,7 @@
 
 - image: ruby_and_rails.png
   billboard_image: sunflower_1920x300.jpg
-  title: Webプログラミングを学ぶ
+  title: Webアプリを創る
   desc: データベースを利用した 本格的なプログラミングの世界へ
   lead: 簡潔な文法と心地よい書き味が魅力のRubyと、パワフルなWebフレームワーク Ruby on Rails の講座です。
   url: /ruby.html
@@ -36,14 +36,14 @@
 - image: the_c_programming_language.png
   billboard_image: tibet_mountain_1920x300.jpg
   title: Ｃ言語を学ぶ
-  desc: お子様から大人まで、プログラミング入門にもお薦め
+  desc: お子様から大人まで プログラミング入門にもお薦め
   lead: 組み込み系など、様々なシステム開発に用いられるＣ言語。その基本を学びます。電子工作を楽しんだり、基本情報技術者資格取得にもお薦めです。
   url: /c.html
 
 - image: book_640x426.jpg
   billboard_image: mount_fuji_1920x300.jpg
-  title: プログラミング 書籍紹介
-  desc: 技術習得に有益な書籍の数々
+  title: 珠玉の名著 ご紹介
+  desc: プログラミング学習に有益な書籍の数々
   lead: 古典的書籍から最新刊まで、お薦め書籍のご案内です。
   url: /books.html
 

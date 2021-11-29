@@ -144,7 +144,9 @@ def billboard(course)
       m.div(class: 'billboard') do
         m << image_tag(course.billboard_image)
         m.div(class: 'catch_phrase') do
-          m.h1 << course.title
+          m.h1 do
+            m << course.title
+          end
           m.p(class: 'lead') do
             a, b = course.desc.split(' ')
             m << a
