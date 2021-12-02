@@ -1,7 +1,7 @@
 .ui.vertical.footer.sakura.segment.mt-5
   .ui.center.aligned.container
     .ui.stackable.divided.grid
-      .seven.wide.column
+      .six.wide.column
         p.sanaeiro
           = image_tag 'catch_copy.png', alt: '情報技術を夢の架け橋に', style: 'max-width: 90%;'
           / | 情報技術を夢の架け橋に
@@ -21,19 +21,19 @@
           = link_to '/recommended.html', class: 'item' do
             | お薦め機種
           = link_to '/useful.html', class: 'item' do
-            | お役立ちリンク集
+            | リンク集
           = link_to '/contact.html', class: 'item' do
             | お問い合わせ
       .three.wide.column
-        h4.ui.header Web制作依頼
+        h4.ui.header Web制作
         .ui.link.list
           = link_to '/web.html', class: 'item' do
             | Web制作依頼
-      .three.wide.column
+      .four.wide.column
         h4.ui.header プログラミング講座
         .ui.link.list
           = link_to '/html.html', class: 'item' do
-            | HTML/CSS
+            | HTML / CSS
           = link_to '/ruby.html', class: 'item' do
             | Ruby / Ruby on Rails
           = link_to '/qualification.html', class: 'item' do
@@ -41,7 +41,11 @@
           = link_to '/c.html', class: 'item' do
             | Ｃ言語
 
-.ui.shobuiro.squared.segment.mt-0
+.ui.shobuiro.squared.segment.mt-0.mb-0
   .ui.center.aligned.container
     footer style="color: #fef4f4;"
       | Copyright 令和三年 &copy; アトリヱ未來
+      = link_to "#", id: "page_top", data: "scroll", class: "btn btn--circle btn--circle-c btn--shadow" do
+        span
+          i.fas.fa-angle-double-up.fa-lg.fa-fw
+          / | Page Top

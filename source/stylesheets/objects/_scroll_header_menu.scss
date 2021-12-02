@@ -1,0 +1,68 @@
+#scroll_header_menu {
+  // サイト ロゴ
+  h1#logo {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.5rem;
+    color: $konjiki !important;
+    padding: 0.5rem !important;
+    &:hover {
+      color: lighten($konjiki, 15%) !important;
+    }
+    img {
+      margin-right: 0.5rem;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  // メニューアイテムの調整
+  .item {
+    padding: 0.875rem 0.5rem;
+
+    &::before {
+      width: 0;
+    }
+    border-right: 0;
+  }
+  .dropdown.icon {
+    margin-left: 0.2rem;
+  }
+  .button {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  // メニューバーの位置を上部に固定
+  height: 79px;
+  position: fixed;
+  right: 10px;
+  bottom:10px;
+  z-index: 2000;
+  opacity: 0; // 始めは非表示
+
+  // メニューバーの出現する動き
+  &.appear {
+    animation: appear_animation 0.5s forwards;
+  }
+  @keyframes appear_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  // メニューバーの消える際の動き
+  &.disappear {
+    animation: disappear_animation 0.5s forwards;
+  }
+  @keyframes disappear_animation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}

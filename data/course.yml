@@ -43,7 +43,7 @@
 - image: book_640x426.jpg
   billboard_image: mount_fuji_1920x300.jpg
   title: 珠玉の名著 ご紹介
-  desc: プログラミング学習に有益な書籍の数々
+  desc: プログラミング学習に最適
   lead: 古典的書籍から最新刊まで、お薦め書籍のご案内です。
   url: /books.html
 

@@ -1,0 +1,58 @@
+header.iphone_menu.mobile.only
+  .header-container
+    button.navbtn
+      i.fas.fa-bars
+      i.fas.fa-times
+      spna.sr-only
+        | MENU
+
+    nav.nav
+      ul
+        / li = link_to "ホーム", "index.html"
+        / li = link_to "サービス案内", "content.html"
+        / li = link_to "お問い合わせ", "#"
+        .ui.center.aligned.container
+          .ui.stackable.divided.grid
+            .six.wide.column
+              p.sanaeiro
+                = image_tag 'catch_copy.png', alt: '情報技術を夢の架け橋に', style: 'max-width: 90%;'
+                / | 情報技術を夢の架け橋に
+              = link_to '/index.html' do
+                h3.ui.big.header.amairo.mb-3
+                  = image_tag 'logo.png', class: 'ui centered tiny image'
+                  | アトリヱ未來
+              / = link_to 'contact@atelier-mirai.net', 'mailto:contact@atelier-mirai.net', style: 'font-size: larger;'
+            .three.wide.column
+              h4.ui.header ご案内
+              .ui.link.list style="line-height: 2;"
+                = link_to '/about.html', class: 'item' do
+                  | ご案内
+                = link_to '/books.html', class: 'item' do
+                  | 書籍ご紹介
+                = link_to '/recommended.html', class: 'item' do
+                  | お薦め機種
+                = link_to '/useful.html', class: 'item' do
+                  | リンク集
+                = link_to '/contact.html', class: 'item' do
+                  | お問い合わせ
+            .three.wide.column
+              h4.ui.header Web制作
+              .ui.link.list
+                = link_to '/web.html', class: 'item' do
+                  | Web制作依頼
+            .four.wide.column
+              h4.ui.header プログラミング講座
+              .ui.link.list
+                = link_to '/html.html', class: 'item' do
+                  | HTML / CSS
+                = link_to '/ruby.html', class: 'item' do
+                  | Ruby / Ruby on Rails
+                = link_to '/qualification.html', class: 'item' do
+                  | IT資格取得
+                = link_to '/c.html', class: 'item' do
+                  | Ｃ言語
+
+javascript:
+  document.querySelector('.navbtn').addEventListener('click', () => {
+    document.querySelector('html').classList.toggle('open');
+  });

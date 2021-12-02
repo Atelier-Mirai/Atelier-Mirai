@@ -35,11 +35,24 @@ html
 
     / JavaScript (site.jsを読み込む)
     = javascript_include_tag "site"
+    = javascript_include_tag "page_top"
+    = javascript_include_tag "scroll_header_menu"
+
 
   / body class=page_classes
   body
     = partial 'scroll_header_menu'
+    = partial 'mobile_menu'
     / = partial 'iPhone_menu'
     / = partial 'main_menu'
     = yield
     = partial 'footer'
+
+    script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+
+    javascript:
+      let scroll = new SmoothScroll('a[href*="#"]', {
+        speedAsDuration: true,
+        speed: 1000,
+        easing: 'easeInOutQuint'
+      });

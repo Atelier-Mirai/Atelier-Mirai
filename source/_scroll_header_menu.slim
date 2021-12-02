@@ -1,15 +1,30 @@
-.ui.large.top.fixed.hidden.menu
+.ui.large.top.fixed.menu#scroll_header_menu.computer.only
   .ui.container
+    .left.menu
+      = link_to '/index.html', class: 'item' do
+        h1.header.item#logo
+          = image_tag 'logo.png'
+          | アトリヱ未來
+
     .right.menu
-      = link_to '/index.html', class: 'active item' do
-        i.home.icon
-        | アトリヱ未來
-      = link_to '/about.html', class: 'item' do
-        i.seedling.icon
+      .ui.dropdown.item
+        i.seedling.cap.icon
         | ご案内
+        i.dropdown.icon
+        .menu
+          = link_to '/about.html', class: 'item' do
+            | ご案内
+          = link_to '/books.html', class: 'item' do
+            | 書籍ご紹介
+          = link_to '/recommended.html', class: 'item' do
+            | お薦め機種
+          = link_to '/useful.html', class: 'item' do
+            | リンク集
+
       = link_to '/web.html', class: 'item' do
         i.globe.icon
-        | Web作成依頼
+        | Web制作
+
       .ui.dropdown.item
         i.graduation.cap.icon
         | ITを學ぶ
@@ -23,7 +38,7 @@
             | IT資格
           = link_to '/c.html', class: 'item' do
             | Ｃ言語
-      .item
-        = link_to '/contact.html', class: 'ui yellow button' do
+      = link_to '/contact.html', class: 'item' do
+          button.ui.small.yellow.button
             i.paper.plane.icon
             | お問い合わせ

@@ -12,9 +12,43 @@
       | あなたの爲に
 
   .get_started
-    = link_to '#creation', class: 'ui huge yellow button'
+    / = link_to '#creation', class: 'ui large yellow button'
+    /   | 始めましょう
+    /   i.right.arrow.icon
+    /
+    /
+    / a href="#" class="btn btn-malformation btn-malformation--pastel"
+    /   | PUSH！
+    /
+    /
+    /
+    / <div class="btn-wrap">
+    /   <a href="" class="btn btn-c">資料請求する</a>
+    / </div>
+    /
+
+    = link_to "#creation", class: "btn-grad" 
       | 始めましょう
       i.right.arrow.icon
+
+    / a href="#" class="btn-grad"
+    /   | 始めましょう
+
+    / <div class="wrapper">
+    /   <a href="#" class="fancy-button bg-gradient1">
+    /     <span>
+    /       <i class="fa fa-wheelchair-alt"></i>
+    /       | Follow Me
+    /     </span>
+    /   </a>
+    /   <a href="#" class="fancy-button bg-gradient2">
+    /     <span>
+    /       <i class="fa fa-envelope"></i>
+    /       | Messages
+    /     </span>
+    /   </a>
+    / </div>
+
 
   .the_name_of_the_picture
     = link_to "あるいた先にみる景色", "./about.html"

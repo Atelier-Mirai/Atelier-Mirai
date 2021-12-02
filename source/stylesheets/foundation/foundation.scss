@@ -20,5 +20,7 @@ $font-family: "M PLUS 1p",
 html {
   font-family: $font-family !important;
   // 500px - 833px で可変
-  font-size: clamp(12px, 2.4vw, 20px);
+  font-size: clamp(12px, 2.4vw, 16px);
+
+  scroll-behavior: smooth;
 }

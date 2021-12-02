@@ -19,7 +19,7 @@
     h1 {
       color: white;
       letter-spacing: 5px;
-      font-size: 36px;
+      font-size: clamp(32px, 5vw, 54px);
 
       text-shadow: 5px 7px 7px rgba(0, 0, 0, 0.81);
       text-align: center;

@@ -1,9 +1,8 @@
 /*=============================================================================
   ページをまたいで使われる各種パーツを定義するクラス
 =============================================================================*/
-@import "../utilities/wa_no_iro";
+@import "../utilities/iro";
 
-@import "logo";
 @import "hero";
 @import "creation";
 @import "home";
@@ -11,3 +10,7 @@
 
 @import "footer";
 @import "contact_form";
+@import "scroll_header_menu";
+@import "mobile_menu";
+@import "page_top";
+@import "button";
