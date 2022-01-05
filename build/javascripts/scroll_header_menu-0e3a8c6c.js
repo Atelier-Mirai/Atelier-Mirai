@@ -1,1 +1,0 @@
-const e=()=>{let e=$(window).scrollTop();e>=200?($("#scroll_header_menu").removeClass("disappear"),$("#scroll_header_menu").addClass("appear")):$("#scroll_header_menu").hasClass("appear")&&($("#scroll_header_menu").removeClass("appear"),$("#scroll_header_menu").addClass("disappear"))};$(window).scroll(()=>{e()}),$(window).on("load",()=>{e()});
