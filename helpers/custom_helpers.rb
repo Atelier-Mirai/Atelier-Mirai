@@ -9,7 +9,8 @@ class String
   end
 
   def to_amazon_image
-    "https://ws-fe.amazon-adsystem.com/widgets/q?ASIN=#{self}&ServiceVersion=20070822&ID=AsinImage&WS=1"
+    # "https://ws-fe.amazon-adsystem.com/widgets/q?ASIN=#{self}&ServiceVersion=20070822&ID=AsinImage&WS=1"
+    "http://images-jp.amazon.com/images/P/#{self}.09.LZZZZZZZ.jpg"
   end
 
   def count_word
