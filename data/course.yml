@@ -1,68 +1,68 @@
-- image: aruitasakinimirukeshiki.jpg
-  billboard_image: sakurajimayama_1920x300.jpg
+- image: aruitasakinimirukeshiki.webp
+  billboard_image: sakurajimayama_1920x300.webp
   title: アトリヱ未來
   desc: 情報技術を「夢」の架け橋に
   lead:
   url: /about.html
 
-- image: macbook.jpg
-  billboard_image: sakura_1920x300.jpg
+- image: macbook.webp
+  billboard_image: sakura_1920x300.webp
   title: Web制作依頼
   desc: レスポンシブデザインで iPhoneにも対応
   lead:
   url: /web.html
 
-- image: html5_css3.png
-  billboard_image: sea_1920x300.jpg
+- image: html5_css3.webp
+  billboard_image: sea_1920x300.webp
   title: HTML/CSSを学ぶ
   desc: グリッドレイアウトで iPhoneにも対応
   lead: 初めての方にも基礎からレッスン、ご自分のWebサイトが作成できる講座です。コンピュータの仕組みや、エディタの使い方など、プログラミングを始めたい方にもお薦めです。
   url: /html.html
 
-- image: ruby_and_rails.png
-  billboard_image: sunflower_1920x300.jpg
+- image: ruby_and_rails.webp
+  billboard_image: sunflower_1920x300.webp
   title: Webアプリを創る
   desc: データベースを利用した 本格的なプログラミングの世界へ
   lead: 簡潔な文法と心地よい書き味が魅力のRubyと、パワフルなWebフレームワーク Ruby on Rails の講座です。
   url: /ruby.html
 
-- image: qualification.png
-  billboard_image: cosmos_1920x300.jpg
+- image: qualification.webp
+  billboard_image: cosmos_1920x300.webp
   title: IT資格を取得する
   desc: ITパスポート 応用情報技術者
   lead: 一般教養に、自己研鑽に、「ITパスポート」や「基本情報技術者」「応用情報技術者」など国家資格取得のための講座です。
   url: /qualification.html
 
-- image: the_c_programming_language.png
-  billboard_image: tibet_mountain_1920x300.jpg
+- image: the_c_programming_language.webp
+  billboard_image: tibet_mountain_1920x300.webp
   title: Ｃ言語を学ぶ
   desc: お子様から大人まで プログラミング入門にもお薦め
   lead: 組み込み系など、様々なシステム開発に用いられるＣ言語。その基本を学びます。電子工作を楽しんだり、基本情報技術者資格取得にもお薦めです。
   url: /c.html
 
-- image: book_640x426.jpg
-  billboard_image: mount_fuji_1920x300.jpg
+- image: book_640x426.webp
+  billboard_image: mount_fuji_1920x300.webp
   title: 珠玉の名著 ご紹介
   desc: プログラミング学習に最適
   lead: 古典的書籍から最新刊まで、お薦め書籍のご案内です。
   url: /books.html
 
-- image: nature_road.jpg
-  billboard_image: stream_1920x300.jpg
+- image: nature_road.webp
+  billboard_image: stream_1920x300.webp
   title: お問い合わせ
   desc: どうぞお気軽にお問い合わせください
   lead:
   url: /contact.html
 
-- image: suiren.jpg
-  billboard_image: karesawadake_1920x300.jpg
+- image: suiren.webp
+  billboard_image: karesawadake_1920x300.webp
   title: お薦め機種
   desc: プログラミングを始めるあなたの為に
   lead:
   url: /recommended.html
 
-- image: suiren.jpg
-  billboard_image: momiji_1920x300.jpg
+- image: suiren.webp
+  billboard_image: momiji_1920x300.webp
   title: お役立ちリンク集
   desc: プログラミングを始めるあなたの為に
   lead:
