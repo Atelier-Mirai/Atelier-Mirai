@@ -193,51 +193,28 @@ def link_list(link)
   end
 end
 
-def table_body
-  markup(:tr) do |m|
-    m.td << 'aiueo'
-    m.td 'kakikukeko'
-    m.td(:class => 'date') do
-      m.text '3/1'
-    end
-  end
-end
-
-def table_row(description: 'aaa')
-  markup(:tr) do |m|
-    # unless view_context.instance_variable_get(:@staff_member)
-    #   m.td do
-    #     m << link_to(member.family_name + member.given_name,
-    #      [ :admin, member, :staff_events ])
-    #   end
-    # end
-    m.td description
-    m.td(:class => "date today") do
-      # m.text occurred_at.strftime("%Y/%m/%d %H:%M:%S")
-      m.text 'aiueo!'
-    end
-  end
-end
-
-def table_user(users)
-
+# Nokogiri::HTML::Builder の使い方紹介
+# content_tag の不便さを改善
+# https://www.oiax.jp/rails/tips/nokogiri_html_builder.html
+def table_of_users(users)
   markup do |m|
-    m.table(id: 'users') do
+    m.table(id: 'users', class: 'ui table') do
       m.tr do
-        m.th 'Family Name'
-        m.th 'Given Name'
+        m.th '姓'
+        m.th '名'
+        m.th '性別'
       end
       users.each do |u|
         attrs = {}
-        # attrs[:class] = 'admin' if u.admin?
+        attrs[:class] = 'admin' if u[:admin]
         m.tr(attrs) do
           m.td(:class => 'family_name bold') do
             m.text u[:family_name]
           end
           m.td u[:given_name]
+          m.td u[:gender] == 'male' ? '男' : '女'
         end
       end
     end
   end
 end
-# end

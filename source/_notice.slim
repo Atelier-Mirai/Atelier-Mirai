@@ -1,11 +1,71 @@
+/ ウェブサイトを作ってみたい方へ向けて、
+/   ファビコン / アップルタッチアイコン / 検索エンジン用の説明文 / 写真のポップアップやスライド / ヒーローローイメージ / 光りながら出現する文字 / 装飾的なボタン / トップに戻るボタン / ナビゲーションメニュー / タブ機能 / 続きを読む / 地図掲載 / 動画掲載 / モーダルウィンドウなど
+/ 盛りだくさんの一冊です。
+
+/ ウェブサイトには ヘッダーやナビゲーションメニュー フッターなど 共通する部品が多数あります
+/ こういった部品を纏めて管理できると作成が楽になります
+/
+/ Ruby 製の 静的サイトジェネレータ Middleman (ミドルマン) を使ったウェブサイト作成法をご紹介いたします
+/ さらに HTML に代えて Slim を CSS に代えて Sass を使うと制作が楽になります
+/
+
+ruby:
+  desc1 =<<~EOS
+    計算機の歴史と仕組みを知り ウェブアプリ開発の基礎を学びます
+    情報技術に触れる中高生から社会人にお薦めの一冊です
+  EOS
+  desc1 = desc1.gsub("\n", "<br>")
+
+  desc2 =<<~EOS
+    写真や動画、地図など 豐かなウェブサイトを創りたい方へお薦めの一冊です
+  EOS
+  desc2 = desc2.gsub("\n", "<br>")
+
+  desc3 =<<~EOS
+    ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得
+    さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です
+  EOS
+  desc3 = desc3.gsub("\n", "<br>")
+
 .ui.m-5
   .ui.middle.aligned.stackable.grid.container
-    .ui.orange.icon.message
+    / Red Orange  Yellow  Olive  Green  Teal  Blue  Violet  Purple Pink  Brown  Grey Black
+    .ui.olive.icon.message
       i.leaf.icon
       .content
         .ui.large.header
-          | 新年お年玉セール開催中
+          | オリジナル書籍販売中
         p
-          | 令和四年がいよいよ始まりました。新年をお祝いして、お年玉セール開催中です。
+          | 令和四年 最新刊。オリジナル書籍出版いたしました。
           br
-          | お問い合わせ、お待ちいたしております。
+          | ウェブ制作、プログラミング学習に役立つ一冊となっております。
+          br
+          | 是非、お求めください。
+
+.ui.three.stackable.cards.ml-5.mr-5
+  .ui.fluid.card
+    a.image href="https://techbookfest.org/product/6119227251490816?productVariantID=5623879479328768"
+      = image_tag "my_books/keisanki_s.webp"
+    .content
+      a.header
+        | 計算機とプログラミング
+      .description
+        p = desc1
+
+  .ui.fluid.card
+    a.image href="https://techbookfest.org/product/5827698494537728?productVariantID=5762227120373760"
+      = image_tag "my_books/yutaka_s.webp"
+    .content
+      a.header
+        | JavaScriptで 豐かなウェブサイトを創ろう
+      .description
+        p = desc2
+
+  .ui.fluid.card
+    a.image href="https://techbookfest.org/product/4827424569163776?productVariantID=5784246008414208"
+      = image_tag "my_books/middleman_s.webp"
+    .content
+      a.header
+        | Middlemanで樂しく創るウェブサイト
+      .description
+        p = desc3
