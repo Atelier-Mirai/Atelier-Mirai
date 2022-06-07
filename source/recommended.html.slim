@@ -18,7 +18,7 @@ title: お薦め機種
         |
       ol.ui.list
         li とても薄くて軽い洗練されたデザイン。
-        li Apple M1チップ搭載で、驚異的な性能を発揮。
+        li Apple M1 / M2チップ搭載で、驚異的な性能を発揮。
         li 一日中使えるバッテリー。
 
         | より詳しくは
@@ -26,58 +26,76 @@ title: お薦め機種
         | をご覧ください。
 
     .six.wide.right.floated.column
-      = image_tag "macbook-air.webp", class: "ui large bordered rounded image"
+      = image_tag "macbook-air-m2.webp", class: "ui large image"
 
 .ui.text.container.mt-5
-  h2.ui.header お薦めする理由
+  h2.ui.header
+    strong
+      | Mac
+    | を お薦めする理由
   ol.ui.list
+    li 洗練されたデザインで、使っていて楽しい。
     li 直感的な操作で簡単に使いこなせる。
-    li 圧倒的にパワフル。
-    li 信じられないほどバッテリーが長持ちする。
+    li 圧倒的にパワフルで、信じられないほどバッテリーが長持ちする。
     li すぐに使えるアプリが最初からたっぷり内蔵。
-    li iPhoneユーザーなら、使い慣れた感覚で操作できる。
+    li iPhoneユーザーとして、いつもの慣れた感覚で操作できる。
     li
       b
-        | UNIXベースで、様々なプログラミングのための資源が利用可能
+        | UNIXベースで、様々なプログラミングのための資源が利用可能。
+    li 価値ある品で、数年後もしっかり下取りできる。
 
   h2.ui.horizontal.header.divider
     .amairo.text 購入について
+
+
+  h3.ui.header
+    | プログラミングにお薦め「MacBook Air」
 
   p
     | 軽量で安価で高性能。プログラミングの基本学習にお薦めな機種が「MacBook Air」です。
     br
     = link_to 'MacBook Air', 'https://www.apple.com/jp/shop/buy-mac/macbook-air/'
-    | は、115,280円(税込)から購入できます。
+    | は、134,800円(税込)から購入できます。
 
   p
     | もしご予算に余裕があれば、標準構成から変更も可能です。
     ul.ui.list
       li
-        | メモリ 8GB を 16GB に増量。 22,000円(税込)追加
+        | メモリ 8GB を 16GB に増量。 28,000円(税込)追加
         br
         | （動画編集や多くのアプリを使う際に快適です）
       li
-        | ストレージ 256GB を 512GB に増量。22,000円(税込)追加
+        | ストレージ 256GB を 512GB に増量。28,000円(税込)追加
         br
         |（写真や動画など多くのデータを保存できます）
-    | がお薦めです。
-    br
-    br
+      li
+        | デザイン性とより高性能を求めるなら、30,000円(税込)追加で、M2チップ搭載もお薦め。
+
+  h3.ui.header
+    | プログラミングなら「USキーボード」
+  p
     b
       | キーボードは、
       span style="font-size: larger;"
         | USキーボード&nbsp;
       | がお薦めです。
-    br
-    | キートップにひらがなの刻印がなく、すっきりしています。
-    | また、プログラミングで良く用いる括弧[]{}の位置も左右に整っています。
-    | さらに、プログラミングの際には身体を正面に向けてタイピングします。
-    br
-    | USキーボード(上)は、ASDFGHJKL;'と11個のキーが配置されていますが、
-    | JISキーボード(下)は、ASDFGHJKL;:]と12個のキーが配置されています。
-    br
-    | JISキーボードはキーボードの配置が左にずれていますので、長くタイピングを続けていくに際してストレスとなって効率性を損ないます。
-    br
+
+  p
+    | USキーボードの長所
+    ul
+      li
+        | キートップにひらがなの刻印がなく、すっきりしている。
+      li
+        | プログラミングで良く用いる括弧[]{}の位置も左右に整っている。
+      li
+        | プログラミングの際に身体を正面に向けてタイピングできる。
+
+    | JISキーボードの短所
+    ul
+      li
+        | USキーボード(上)に比べ、一つ多い12個のキーが配置されるため窮屈。
+      li
+        | キーボードの配置が左にずれるので、タイピングがストレスとなり、非効率。
 
     .ui.centered.card style="width: 100%;"
       .image
@@ -90,7 +108,7 @@ title: お薦め機種
         = image_tag "jis_keyboard.webp"
       .content
         a.header style="text-align: center;"
-          | JIS キーボード
+          | JIS キーボード(非推奨)
 
 .ui.container.mt-5
   h2.ui.header ご案内
