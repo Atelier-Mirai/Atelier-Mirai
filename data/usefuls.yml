@@ -192,14 +192,14 @@
     desc: |-
           AIの力を言語に。DeepL（ディープエル）では、テキストをより深く理解し翻訳できる人工知能を開発しています。世界最高レベルの機械翻訳をお試しください。
           Macで使えるアプリも提供されているので、ドキュメントを読む際などに重宝します。
-  - title: HTML2slim
-    url: https://html2slim.herokuapp.com/
-    desc: |-
-          htmlで書かれているサンプルコードをslimに変換する際に便利です。
   - title: HTML整形ツール
     url: http://u670.com/pikamap/htmlseikei.php
     desc: |-
           HTMLファイル内のタグ(&lt;, &gt;)を基準に、見やすく整形するツールです。乱れたソースコードの整形に便利です。
+  - title: HTML2slim
+    url: https://html2slim.herokuapp.com/
+    desc: |-
+          htmlで書かれているサンプルコードをslimに変換する際に便利です。
 
 - genre: プログラミング技術解説
   desc: |-
