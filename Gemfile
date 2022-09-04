@@ -16,8 +16,8 @@ gem "slim"
 # HTML圧縮を行う
 gem "middleman-minify-html"
 
-# イメージ圧縮を行う
-# gem "middleman-imageoptim"
-
 # html_builder(DSL)用にnokogiriも入れる
 gem "nokogiri"
+
+# img タグに width属性, height属性を付与する為に
+gem "fastimage"
