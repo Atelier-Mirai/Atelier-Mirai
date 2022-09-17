@@ -25,7 +25,12 @@ ruby:
     ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得
     さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です
   EOS
-  desc3 = desc3.gsub("\n", "<br>")
+
+  desc4 =<<~EOS
+    ★1の易しい計算問題から ★5の双六、数当て、ポーカーまで全３８問。
+    C言語を愛する方にお薦めの一冊です。
+  EOS
+  desc4 = desc4.gsub("\n", "<br>")
 
 .ui.m-5
   .ui.middle.aligned.stackable.grid.container
@@ -42,13 +47,13 @@ ruby:
           br
           | 是非、お求めください。
 
-.ui.three.stackable.cards.ml-5.mr-5
+.ui.four.stackable.cards.ml-5.mr-5
   .ui.fluid.card
     a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/DPDwXdra2H8WGiq6QmhKDP"
       = image_tag "my_books/hyoshi_keisanki.jpg"
     .content
       a.header
-        | 計算機とプログラミング
+        | 計算機の歴史を訪ね プログラミングを樂しむ本
       .description
         p = desc1
 
@@ -69,3 +74,12 @@ ruby:
         | 静的サイトジェネレータで樂しく創るウェブサイト
       .description
         p = desc3
+
+  .ui.fluid.card
+    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/BpgnwqkA8gYE56XeFnTBhR"
+      = image_tag "my_books/c_renshu.jpg"
+    .content
+      a.header
+        | はじめてのＣ言語 練習帳
+      .description
+        p = desc4
