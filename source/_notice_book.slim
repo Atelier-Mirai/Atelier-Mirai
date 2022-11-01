@@ -1,0 +1,85 @@
+/ ウェブサイトを作ってみたい方へ向けて、
+/   ファビコン / アップルタッチアイコン / 検索エンジン用の説明文 / 写真のポップアップやスライド / ヒーローローイメージ / 光りながら出現する文字 / 装飾的なボタン / トップに戻るボタン / ナビゲーションメニュー / タブ機能 / 続きを読む / 地図掲載 / 動画掲載 / モーダルウィンドウなど
+/ 盛りだくさんの一冊です。
+
+/ ウェブサイトには ヘッダーやナビゲーションメニュー フッターなど 共通する部品が多数あります
+/ こういった部品を纏めて管理できると作成が楽になります
+/
+/ Ruby 製の 静的サイトジェネレータ Middleman (ミドルマン) を使ったウェブサイト作成法をご紹介いたします
+/ さらに HTML に代えて Slim を CSS に代えて Sass を使うと制作が楽になります
+/
+
+ruby:
+  desc1 =<<~EOS
+    計算機の歴史と仕組みを知り ウェブアプリ開発の基礎を学びます
+    情報技術に触れる中高生から社会人にお薦めの一冊です
+  EOS
+  desc1 = desc1.gsub("\n", "<br>")
+
+  desc2 =<<~EOS
+    写真や動画、地図など 豐かなウェブサイトを創りたい方へお薦めの一冊です
+  EOS
+  desc2 = desc2.gsub("\n", "<br>")
+
+  desc3 =<<~EOS
+    ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得
+    さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です
+  EOS
+
+  desc4 =<<~EOS
+    ★1の易しい計算問題から ★5の双六、数当て、ポーカーまで全３８問。
+    C言語を愛する方にお薦めの一冊です。
+  EOS
+  desc4 = desc4.gsub("\n", "<br>")
+
+.ui.m-5
+  .ui.middle.aligned.stackable.grid.container
+    / Red Orange  Yellow  Olive  Green  Teal  Blue  Violet  Purple Pink  Brown  Grey Black
+    .ui.orange.icon.message
+      i.leaf.icon
+      .content
+        .ui.large.header
+          | オリジナル書籍販売中
+        p
+          | 令和四年秋 最新刊。オリジナル書籍出版いたしました。
+          br
+          | ウェブ制作、プログラミング学習に役立つ一冊となっております。
+          br
+          | 是非、お求めください。
+
+.ui.four.stackable.cards.ml-5.mr-5
+  .ui.fluid.card
+    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/DPDwXdra2H8WGiq6QmhKDP"
+      = image_tag "my_books/hyoshi_keisanki.jpg"
+    .content
+      a.header
+        | 計算機の歴史を訪ね プログラミングを樂しむ本
+      .description
+        p = desc1
+
+  .ui.fluid.card
+    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/VVB5QxPRdtRaYaiXC2WmYd"
+      = image_tag "my_books/hyoshi_yutaka.jpg"
+    .content
+      a.header
+        | JavaScriptで創る豐かなウェブサイト
+      .description
+        p = desc2
+
+  .ui.fluid.card
+    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/FYzhmV2oZndANZ8XzFoSoC"
+      = image_tag "my_books/hyoshi_middleman.jpg"
+    .content
+      a.header
+        | 静的サイトジェネレータで樂しく創るウェブサイト
+      .description
+        p = desc3
+
+  .ui.fluid.card
+    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/BpgnwqkA8gYE56XeFnTBhR"
+      = image_tag "my_books/c_renshu.jpg"
+    .content
+      a.header
+        | はじめてのＣ言語 練習帳
+      .description
+        p = desc4
