@@ -1,85 +1,72 @@
-/ ウェブサイトを作ってみたい方へ向けて、
-/   ファビコン / アップルタッチアイコン / 検索エンジン用の説明文 / 写真のポップアップやスライド / ヒーローローイメージ / 光りながら出現する文字 / 装飾的なボタン / トップに戻るボタン / ナビゲーションメニュー / タブ機能 / 続きを読む / 地図掲載 / 動画掲載 / モーダルウィンドウなど
-/ 盛りだくさんの一冊です。
-
-/ ウェブサイトには ヘッダーやナビゲーションメニュー フッターなど 共通する部品が多数あります
-/ こういった部品を纏めて管理できると作成が楽になります
-/
-/ Ruby 製の 静的サイトジェネレータ Middleman (ミドルマン) を使ったウェブサイト作成法をご紹介いたします
-/ さらに HTML に代えて Slim を CSS に代えて Sass を使うと制作が楽になります
-/
-
-ruby:
-  desc1 =<<~EOS
-    計算機の歴史と仕組みを知り ウェブアプリ開発の基礎を学びます
-    情報技術に触れる中高生から社会人にお薦めの一冊です
-  EOS
-  desc1 = desc1.gsub("\n", "<br>")
-
-  desc2 =<<~EOS
-    写真や動画、地図など 豐かなウェブサイトを創りたい方へお薦めの一冊です
-  EOS
-  desc2 = desc2.gsub("\n", "<br>")
-
-  desc3 =<<~EOS
-    ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得
-    さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です
-  EOS
-
-  desc4 =<<~EOS
-    ★1の易しい計算問題から ★5の双六、数当て、ポーカーまで全３８問。
-    C言語を愛する方にお薦めの一冊です。
-  EOS
-  desc4 = desc4.gsub("\n", "<br>")
-
 .ui.m-5
   .ui.middle.aligned.stackable.grid.container
     / Red Orange  Yellow  Olive  Green  Teal  Blue  Violet  Purple Pink  Brown  Grey Black
-    .ui.orange.icon.message
+    .ui.red.icon.message
       i.leaf.icon
       .content
         .ui.large.header
-          | オリジナル書籍販売中
+          | 秋のプログラミング特集
         p
-          | 令和四年秋 最新刊。オリジナル書籍出版いたしました。
+          | 最新鋭の MacBook Air / 12.9インチ iPad Pro 販売中です。
           br
-          | ウェブ制作、プログラミング学習に役立つ一冊となっております。
+          | ウェブ制作、プログラミング学習に役立つ一台となっております。
           br
           | 是非、お求めください。
 
-.ui.four.stackable.cards.ml-5.mr-5
-  .ui.fluid.card
-    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/DPDwXdra2H8WGiq6QmhKDP"
-      = image_tag "my_books/hyoshi_keisanki.jpg"
-    .content
-      a.header
-        | 計算機の歴史を訪ね プログラミングを樂しむ本
-      .description
-        p = desc1
+.ui.container
+  .ui.cards
+    .card style="width: 100% !important;"
+      .content
+        = image_tag "macbookair_gold.webp", class: 'ui left floated large image'
+        .header.mt-3
+          = link_to "M2チップ搭載 MacBook Air", "https://www.apple.com/jp/macbook-air-m2/"
+        .meta
+          span.category
+            span.ui.medium.black.text
+              | 16GBユニファイドメモリ / 1TB SSDストレージ / USキーボード /
+            span
+              | True Tone搭載13.6インチLiquid Retinaディスプレイ / スターライト
+        .description style="clear: none;"
+          | 次世代のM2チップに合わせて、デザインも性能も一新。新しいMacBook Airは、薄くて頑丈なオールアルミニウムのボディで飛ぶような速さと電力効率を両立します。超万能で超高速のノートブックで、
+          b
+            span.ui.medium.black.text プログラミング
+          | を楽しんでください。
+          br
+          | Apple Store での
+          b
+            span.ui.medium.black.text 定価264,800円
+          | のところ、
+          b
+            span.ui.midium.black.text style="font-size: larger;" プログラミング学習希望者
+          | へ、
+          b
+            span.ui.medium.red.text style="font-size: larger;" 249,800円
+          | でご提供させていただきます。
 
-  .ui.fluid.card
-    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/VVB5QxPRdtRaYaiXC2WmYd"
-      = image_tag "my_books/hyoshi_yutaka.jpg"
-    .content
-      a.header
-        | JavaScriptで創る豐かなウェブサイト
-      .description
-        p = desc2
-
-  .ui.fluid.card
-    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/FYzhmV2oZndANZ8XzFoSoC"
-      = image_tag "my_books/hyoshi_middleman.jpg"
-    .content
-      a.header
-        | 静的サイトジェネレータで樂しく創るウェブサイト
-      .description
-        p = desc3
-
-  .ui.fluid.card
-    a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/BpgnwqkA8gYE56XeFnTBhR"
-      = image_tag "my_books/c_renshu.jpg"
-    .content
-      a.header
-        | はじめてのＣ言語 練習帳
-      .description
-        p = desc4
+    .card style="width: 100% !important;"
+      .content
+        = image_tag "ipad_pro.webp", class: 'ui left floated large image'
+        .header.mt-3
+          = link_to "12.9インチ iPad Pro", "https://www.apple.com/jp/ipad-pro/"
+        .meta
+          span.category
+            span.ui.medium.black.text
+              | 12.9インチiPad Pro / 256GB ストレージ / 
+            span
+              | Wi-Fi / スペースグレイ
+        .description style="clear: none;"
+          |  M2チップは次世代のAppleシリコンです。最大15%速いパフォーマンスを発揮する8コアCPUと、最大35%速いグラフィックス性能をもたらす10コアGPUを積んでいます。写真のようにリアルな3Dデザインの制作も、細密なARモデルの構築も、かつてないほどの速さでどうぞ。しかもバッテリーは一日中使えるので、好きなことを好きなだけできます。
+          b
+            span.ui.medium.black.text プログラミング
+          | を楽しんでください。
+          br
+          | Apple Store での
+          b
+            span.ui.medium.black.text 定価188,800円
+          | のところ、
+          b
+            span.ui.midium.black.text style="font-size: larger;" プログラミング学習希望者
+          | へ、
+          b
+            span.ui.medium.red.text style="font-size: larger;" 173,800円
+          | でご提供させていただきます。
