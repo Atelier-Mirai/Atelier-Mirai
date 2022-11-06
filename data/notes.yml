@@ -1,0 +1,226 @@
+- genre: HTML講座
+  desc: |-
+        HTML講座に関する補足資料です。
+  links:
+  - title: テキスト補足資料
+    url: https://atelier-mirai.net/html_note.pdf
+    desc: |-
+          CSSグリッドで作る HTML5&CSS3 レッスンブック の補足資料です。
+  - title: 開発環境の作り方
+    url: https://atelier-mirai.net/env.pdf
+    desc: |-
+          Atom と Firefox をダウンロードして、開発環境を整えます。
+  - title: 画面配置について
+    url: https://atelier-mirai.net/atom_firefox.pdf
+    desc: |-
+          開発の際の Atom と Firefox の画面配置についてです。
+
+# - genre: HTML / CSS
+#   desc: |-
+#         ウェブサイトを作成するために用いられる言語で、HTMLは文書構造を、CSSは文書装飾を担当します。
+#   links:
+#   - title: ウェブ入門 - MDN web docs
+#     url: https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web
+#     desc: |-
+#           HTML (HyperText Markup Language; ハイパーテキストマークアップ言語) はウェブページのコンテンツを記述や定義するための言語です。
+#           詳細で分かり易く使用法が記載されているリファレンスサイトです。
+#   - title: HTML - MDN web docs
+#     url: https://developer.mozilla.org/ja/docs/Web/HTML
+#     desc: |-
+#           完全な初心者へ向けて、実用的なウェブ開発の入門シリーズです。まずはじめに、簡単なウェブページを作るのに必要なツールを導入するところから始めて、簡単なコードを書いたら、実際にウェブに公開するところまでを道案内します。
+#   - title: CSS - MDN web docs
+#     url: https://developer.mozilla.org/ja/docs/Web/CSS
+#     desc: |-
+#           CSS (Cascading Style Sheets; カスケーディングスタイルシート) はウェブコンテンツの見た目や表現を制御するために使います。
+#           詳細で分かり易く使用法が記載されているリファレンスサイトです。
+#   - title: CSSフレームワーク Fomantic-UI
+#     url: https://fomantic-ui.com
+#     desc: |-
+#           Fomantic UI を使用すると、美しいウェブサイトを素早くデザインできます。人に優しいHTMLを使って、レスポンシブで美しいレイアウトを作成するのに役立つ開発フレームワークです。
+#   - title: Can I use ?
+#     url: https://caniuse.com
+#     desc: |-
+#           "Can I use "では、デスクトップおよびモバイルのWebブラウザでフロントエンドのWeb技術をサポートするための最新のブラウザサポート表を提供しています。
+#
+# - genre: Ruby / Ruby on Rails
+#   desc: |-
+#         より本格的なプログラミング技術へ。優れた書き味で楽しくコーディングできる Ruby と、ウェブアプリケーションフレームワークとして大人気の Ruby on Rails です。
+#   links:
+#   - title: オブジェクト指向スクリプト言語 Ruby
+#     url: https://www.ruby-lang.org/ja/
+#     desc: |-
+#           Rubyとは、オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。 エレガントな文法を持ち、自然に読み書きができます。公式サイトです。
+#   - title: Ruby on Rails
+#     url: https://rubyonrails.org
+#     desc: |-
+#           Ruby on Railsを学んだら何が作れるか想像してみてください...。
+#           最新のウェブアプリケーションの構築を学ぶのは大変なことです。Ruby on Railsを使えば、もっと簡単に、もっと楽しく学ぶことができます。
+#           Model-View-Controller (MVC) パターンに従ってデータベースを利用したウェブアプリケーションを作成するために必要なすべてのものを含んだウェブアプリケーションフレームワークです。
+#   - title: Ruby on Rails ガイド：体系的に Rails を学ぼう
+#     url: https://railsguides.jp
+#     desc: |-
+#           Ruby on Rails に特化した 1,600 ページ超えの大型リファレンスガイド。プロダクト開発を生産的にする電子書籍や全文検索、法人向けサービスも提供しています。
+#
+# - genre: 写真素材
+#   desc: |-
+#         ウェブサイト作成に当たって必要となる様々な写真素材を提供されているサイトです。
+#   links:
+#   - title:  ぱくたそ
+#     url: https://www.pakutaso.com
+#     desc: |-
+#           人気の写真素材を無料でダウンロード「ぱくたそ」写真は33,119枚
+#           使って楽しい、見て楽しい。高解像度で美しい日本の写真が沢山あります。
+#   - title:  pro.foto
+#     url: https://pro-foto.jp
+#     desc: |-
+#           pro.foto（プロ ドット フォト）では、雑誌・出版業界や広告業界などで活躍しているプロカメラマンが撮影した高品質の写真素材を無料のフリー素材として公開しています。
+#           商業デザインなどの商用利用も可能な高解像度の無料画像がフリー素材として今すぐ無料でダウンロードできます。
+#   - title: BEIZ images
+#     url: https://www.beiz.jp
+#     desc: |-
+#           フリー素材のベイツ・イメージズでは、背景や壁紙に使える画像素材を無料でダウンロードできます。高画質＆高解像度の風景やテクスチャーなど、Web、DTP、動画、アプリ、背景等に使える商用利用可能なフリー素材として限りなく自由にご利用いただけます。
+#   - title:  足成（あしなり）
+#     url: http://www.ashinari.com
+#     desc: |-
+#           「写真素材 足成」は、全国のアマチュアカメラマンが撮影した写真を、写真素材として無料で提供しています。個人、商用を問わず全て無料でお使い頂け、その上、煩わしいクレジットやリンクの表記、ユーザー登録は一切不要。Web、紙、動画他、あらゆる媒体で写真素材としてのご利用が可能です。
+#   - title: Pixabay
+#     url: https://pixabay.com/ja/
+#     desc: |-
+#           どこでも使える無料のイメージとビデオ. Pixabayは創作に意欲的なコミュニティであり、著作権フリーな画像や映像をお使いいただけます。
+#           海外サイトです。
+#   - title:  写真AC
+#     url: https://www.photo-ac.com
+#     desc: |-
+#           高品質な写真素材が無料でダウンロードできます。加工や商用利用もOK!
+#           登録やダウンロードが一手間掛かります。
+#
+# - genre: ウェブデザイン参考サイト
+#   desc: |-
+#         様々な方が作成された優れたデザインのウェブサイト集です。
+#   links:
+#   - title: SANKOU!
+#     url: https://sankoudesign.com
+#     desc: |-
+#           Webデザイン制作の参考になる国内のWebサイト･LPを集めたギャラリー･リンク集。｢ビジュアルやコンテンツが魅力的｣｢技術を駆使｣｢UI/UXに優れている｣などのステキなサイトを厳選！2020年の最新トレンドをチェック！
+#   - title: イケサイ
+#     url: https://www.ikesai.com
+#     desc: |-
+#           ikesaiはウェブデザインに役立つ、いけてるサイト、かっこいいサイト、おしゃれなサイト、クールなサイトなどを集めたWebデザイナーのためのWEBデザイン リンク集。日本語&日本人が制作しているWEBデザインサイトを対象としています。
+#   - title: WebDesignClip
+#     url: https://www.webdesignclip.com
+#     desc: |-
+#           WebDesignClipはWebデザインの参考となるクオリティーの高い国内のWebデザインギャラリー・クリップ集です。 Web制作において、Webデザイナー・開発の方々などのインスピレーションを刺激するようなWebサイトや、アイデア・技術に優れたサイトをクリップしています。
+#
+# - genre: 遠隔レッスン
+#   desc: |-
+#         居住地が離れているなど、遠隔でのレッスンご希望の方に使っていただきたいソフトのご紹介です。
+#   links:
+#   - title: splashtop – 画面共用ソフト
+#     url: https://www.splashtop.co.jp
+#     desc: |-
+#           自宅にいながら、一緒に画面を見てプログラミング指導が可能とするための画面共用ソフトです。
+#   - title: Whereby – ビデオ通話アプリ
+#     url: https://apps.apple.com/jp/app/whereby-video-meetings/id878583078
+#     desc: |-
+#           ビデオ通話アプリとして、定評のあるWherebyです。iPhoneにインストールすることで、お顔を見ながらプログラミング指導できます。iPhoneのカメラを画面や書籍に向けることで分からない点の質問等もできます。
+#
+# - genre: 開発環境
+#   desc: |-
+#         プログラミングに欠かせない開発環境を整えるためのサイトのご案内です。
+#   links:
+#   - title:  Airに新しい力をのせて
+#     url: https://www.apple.com/jp/macbook-air/
+#     desc: |-
+#         MacBookAirは、美しく洗練されたデザイン、心地よく優れた利用者体験を提供するmacOSのもと、プログラミングを始める方への最初の一台として最適な機種です。
+#   - title: Atom - 21世紀のプログラマの為のテキストエディタ
+#     url: https://atom.io
+#     desc: |-
+#           GitHub謹製テキストエディタ。プログラマが心地よくコーディングできるよう、必要な機能が搭載されています。始めての方へは設定不要で初日から使え、熟練者には深部まで調整可能な、21世紀のプログラマの為のテキストエディタです。
+#   - title: Firefox - プライバシに配慮した安全性の高いブラウザ
+#     url: https://www.mozilla.org/ja/firefox/new/
+#     desc: |-
+#           Firefoxは、Mosaic, Netscape の血を受け継ぐブラウザです。CSSグリッドを確認し易く、丁寧なコメントの開発者ツールが特徴です。
+#   - title: Git(ギット) - 分散型バージョン管理システム
+#     url: https://git-scm.com
+#     desc: |-
+#           Gitはフリーでオープンソースの分散型バージョン管理システムで、小規模なプロジェクトから大規模なプロジェクトまで、あらゆるものを迅速かつ効率的に処理できるように設計されています。
+#           Git は習得が簡単で、高速なパフォーマンスを発揮します。容易に作成可能なローカルブランチ、便利なステージングエリア、多様なワークフローが特徴です。
+#   - title: Pro Git
+#     url: https://git-scm.com/book/ja/v2
+#     desc: |-
+#           Git の 基本操作から応用的な事項まで、500ページに渡って書かれた書籍です。
+#           大部ですが、二章「Gitの基本」だけでも読まれることをお薦めいたします。
+#   - title: GitHub(ギットハブ)
+#     url: https://github.com
+#     desc: |-
+#           開発者のために作られた GitHub は、あなたの働き方にインスパイアされた開発プラットフォームです。オープンソースからビジネスまで、コードをホストしてレビューしたり、プロジェクトを管理したり、5000万人の開発者と一緒にソフトウェアを構築したりすることができます。
+#   - title: Netlify(ネットリファイ)
+#     url: https://www.netlify.com
+#     desc: |-
+#           静的Webサイトを公開可能なホスティングサービスです。1クリックでHTTPSなど必要なすべてのサービスを無料で利用可能です。
+#   - title: heroku(ヘロク)
+#     url: https://www.heroku.com/
+#     desc: |-
+#           Herokuは、開発者がアプリケーションを完全にクラウド上で構築、実行、運用することを可能にするPaaS（Platform as a Service）です。
+#   - title: Homebrew - macOS用パッケージマネージャー
+#     url: https://brew.sh/index_ja
+#     desc: |-
+#           macOS用パッケージマネージャー。開発に必要な様々なプログラムをインストールできます。
+#   - title: iTerm2
+#     url: https://www.iterm2.com
+#     desc: |-
+#           macOS用高性能ターミナルアプリ。
+#
+# - genre: 便利なツール
+#   desc: |-
+#         ウェブサイト作成に役立つツールのご紹介です。
+#   links:
+#   - title: 様々なファビコンを一括生成。favicon generator
+#     url: https://ao-system.net/favicongenerator/
+#     desc: |-
+#           使い方はとってもシンプル。画像を1枚指定するだけ。面倒な設定不要。
+#           favicon.ico、apple-touch-icon*.pngなどを一括生成します。
+#   - title: QRコード(二次元バーコード) 作成
+#     url: https://www.cman.jp/QRcode/
+#     desc: |-
+#           QRコードを無料で作成可能です。
+#   - title: ホームページのパーツ作成 - CMAN
+#     url: https://webparts.cman.jp
+#     desc: |-
+#           ブラウザ操作だけで、文字や画像のデザインや動きを自動生成することが出来ます。
+#           HTML / CSS / JSが自動で作成されます。
+#           少し古めですが、ご参考に。
+#   - title: codic
+#     url: https://codic.jp
+#     desc: |-
+#           codicは、プログラマーのためのネーミング辞書です。新しいcodicでは、翻訳エンジンを搭載しネーミングをジェネレートできるようになりました。
+#   - title: deepL
+#     url: https://www.deepl.com/translator
+#     desc: |-
+#           AIの力を言語に。DeepL（ディープエル）では、テキストをより深く理解し翻訳できる人工知能を開発しています。世界最高レベルの機械翻訳をお試しください。
+#           Macで使えるアプリも提供されているので、ドキュメントを読む際などに重宝します。
+#   - title: HTML整形ツール
+#     url: http://u670.com/pikamap/htmlseikei.php
+#     desc: |-
+#           HTMLファイル内のタグ(&lt;, &gt;)を基準に、見やすく整形するツールです。乱れたソースコードの整形に便利です。
+#   - title: HTML2slim
+#     url: https://html2slim.herokuapp.com/
+#     desc: |-
+#           htmlで書かれているサンプルコードをslimに変換する際に便利です。
+#
+# - genre: プログラミング技術解説
+#   desc: |-
+#         技術系の話題です。
+#   links:
+#   - title: アトリヱ未來 - Zenn
+#     url: https://zenn.dev/atelier_mirai
+#     desc: |-
+#           プログラミング技術習得に役立つ小ネタを時折執筆しております。
+#   - title: ウェブデザイナーとフロントエンジニアのための情報メディア - ICS MEDIA
+#     url: https://ics.media
+#     desc: |-
+#           ICS MEDIAは株式会社ICSが運営するオウンドメディア です。ICSはインタラクションデザイン専門のプロダクション。最先端のwebテクノロジーを駆使し、オンスクリーンメディアの表現分野で活動しています。
+#   - title: コリス - Web制作に関する最新の情報をご紹介
+#     url: https://coliss.com
+#     desc: |-
+#           Web制作に役立つ様々な話題やライブラリ等の紹介が為されています。

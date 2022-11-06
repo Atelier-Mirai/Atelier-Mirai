@@ -67,3 +67,10 @@
   desc: プログラミングを始めるあなたの為に
   lead:
   url: /useful.html
+
+- image: snow_fuji.webp
+  billboard_image: snow_sunset_1920x300.webp
+  title: 講座 補足資料集
+  desc: プログラミングを始めるあなたの為に
+  lead:
+  url: /note.html

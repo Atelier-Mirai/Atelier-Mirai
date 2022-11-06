@@ -176,6 +176,21 @@ def useful_links
   end
 end
 
+def note_links
+  notes = data.notes
+  markup do |m|
+    notes.each do |note|
+      m.h3(class: 'ui header') do m << note.genre end
+      m.p(class: 'desc') do m << note.desc end
+      m.ul(class: 'ui list') do
+        note.links.each do |link|
+          m << link_list(link)
+        end
+      end
+    end
+  end
+end
+
 def link_list(link)
   markup do |m|
     m.li do

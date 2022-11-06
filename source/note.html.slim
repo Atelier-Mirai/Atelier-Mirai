@@ -1,0 +1,37 @@
+---
+title: 講座 補足資料
+---
+
+/ billboard
+= billboard(data.course[10])
+
+.ui.middle.aligned.stackable.grid.container.mt-5
+  .row
+    .eight.wide.column
+      h2.ui.header 講座 補足資料
+      p
+        |
+          講座の補足資料です。
+        br
+        |
+          ダウンロードして印刷なされるなど、技術習得にお役立てください。
+
+
+    .six.wide.right.floated.column
+      = image_tag "snow_fuji.webp", class: "ui large bordered rounded image"
+
+.ui.text.container.mt-5
+  h2.ui.horizontal.header.divider
+    .amairo.text ご案内
+
+  = note_links
+
+/ .ui.container.mt-5
+/   h2.ui.header ご案内
+/   .ui.four.column.doubling.stackable.grid.container
+/     = partial 'other_course', locals: data.course[1]
+/     = partial 'other_course', locals: data.course[2]
+/     = partial 'other_course', locals: data.course[3]
+/     = partial 'other_course', locals: data.course[4]
+/
+/ = partial 'books'
