@@ -1,1 +1,0 @@
-body{background:yellow}.card-parent{border:1px solid red;container-type:inline-size;container-name:card-container;container:card-container / inline-size}@container (min-width: 768px){}@container card-container (width < 700px){.card p{color:red}}
