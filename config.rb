@@ -9,9 +9,9 @@ activate :relative_assets
 set :relative_links, true
 
 # ベンダープリフィックスを自動的に付与する
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
+# activate :autoprefixer do |prefix|
+#   prefix.browsers = "last 2 versions"
+# end
 
 # レイアウトファイルの指定
 set :layout, "site"

@@ -83,7 +83,7 @@ def book_intro(book, format: :simple)
     # content_tag :div, class: 'column' do
       link_to url, target: '_blank' do
         # content_tag :div, class: 'image' do
-          image_tag image, class: 'ui small image', size: '150x212', style: 'width: 150px; height: 212px;'
+          image_tag image, class: 'ui small image', size: '150x212', style: 'width: 150px; height: 212px;', alt: book.title
         # end
       end
     # end
@@ -91,7 +91,7 @@ def book_intro(book, format: :simple)
     link_to url, class: 'card', style: 'width: auto;', target: '_blank' do
       markup do |m|
         m.div(class: 'content') do
-          m << image_tag(image, class: 'ui left floated small image', style:"width: 150px; height: 212px;")
+          m << image_tag(image, class: 'ui left floated small image', style:"width: 150px; height: 212px;", alt: book.title)
           m.div(class: 'header') do
             m << title
           end
@@ -109,7 +109,7 @@ def book_intro(book, format: :simple)
     link_to url, class: 'ui card', target: '_blank', style: 'text-decoration: none;' do
       markup do |m|
         m.div(class: 'image') do
-          m << image_tag(image, style:"width: 300px; height: auto;")
+          m << image_tag(image, style:"width: 300px; height: auto;", alt: book.title)
         end
         m.div(class: 'content') do
           m.div(class: 'header') do

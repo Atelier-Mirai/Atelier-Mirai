@@ -29,6 +29,13 @@ html
     / stylesheet の読み込み (style.cssを読み込む)
     = stylesheet_link_tag "style"
 
+
+
+    / script type="module"
+    /   | if (!("container" in document.documentElement.style)) {
+    /   |   import("https://unpkg.com/container-query-polyfill@^0.2.0");
+    /   | }
+
     / JavaScript (site.jsを読み込む)
     = javascript_include_tag "site"
     = javascript_include_tag "page_top"

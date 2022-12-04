@@ -10,4 +10,17 @@
       line-height: 1.8;
     }
   }
+
+  address {
+    text-align: justify;
+    text-align-last: justify;
+    padding: 0 17%;
+    font-size: middle;
+    @media (min-width: 768px) {
+      text-align: center;
+      text-align-last: center;
+      padding: 0;
+      font-size: smaller;
+    }
+  }
 }
