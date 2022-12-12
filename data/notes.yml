@@ -9,11 +9,11 @@
   - title: 開発環境の作り方
     url: https://atelier-mirai.net/env.pdf
     desc: |-
-          Atom と Firefox をダウンロードして、開発環境を整えます。
+          高性能エディタ Pulsar と ブラウザ Firefox を導入し、開発環境を整えます。
   - title: 画面配置について
-    url: https://atelier-mirai.net/atom_firefox.pdf
+    url: https://atelier-mirai.net/pulsar_firefox.pdf
     desc: |-
-          開発の際の Atom と Firefox の画面配置についてです。
+          開発時の Pulsar と Firefox の画面配置の紹介です。
 
 # - genre: HTML / CSS
 #   desc: |-
