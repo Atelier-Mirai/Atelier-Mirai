@@ -11,19 +11,18 @@
 
 ruby:
   desc1 =<<~EOS
-    計算機の歴史と仕組みを知り ウェブアプリ開発の基礎を学びます
-    情報技術に触れる中高生から社会人にお薦めの一冊です
+    計算機の歴史と仕組みを知り、ウェブアプリ開発の基礎を学びます。 情報技術に触れる中高生から社会人にお薦め。
   EOS
   desc1 = desc1.gsub("\n", "<br>")
 
   desc2 =<<~EOS
-    写真や動画、地図など 豐かなウェブサイトを創りたい方へお薦めの一冊です
+    写真や動画・地図から図表やPWAまで、基礎から応用までを一挙紹介。豐かなウェブサイトを創りたい方へお薦めの一冊。
   EOS
   desc2 = desc2.gsub("\n", "<br>")
 
   desc3 =<<~EOS
-    ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得
-    さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です
+    ウェブサイトの部品を共用できる Middleman と 高級言語 Slim / Sass を習得。
+    さくさく快適にウェブサイトを制作されたい方にお薦めの一冊です。
   EOS
 
   desc4 =<<~EOS
@@ -50,7 +49,7 @@ ruby:
 .ui.four.stackable.cards.ml-5.mr-5
   .ui.fluid.card
     a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/DPDwXdra2H8WGiq6QmhKDP"
-      = image_tag "my_books/hyoshi_keisanki.jpg"
+      = image_tag "my_books/keisanki.webp"
     .content
       a.header
         | 計算機の歴史を訪ね プログラミングを樂しむ本
@@ -59,7 +58,7 @@ ruby:
 
   .ui.fluid.card
     a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/VVB5QxPRdtRaYaiXC2WmYd"
-      = image_tag "my_books/hyoshi_yutaka.jpg"
+      = image_tag "my_books/yutaka.webp"
     .content
       a.header
         | JavaScriptで創る豐かなウェブサイト
@@ -68,16 +67,17 @@ ruby:
 
   .ui.fluid.card
     a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/FYzhmV2oZndANZ8XzFoSoC"
-      = image_tag "my_books/hyoshi_middleman.jpg"
+      = image_tag "my_books/middleman.webp"
     .content
       a.header
-        | 静的サイトジェネレータで樂しく創るウェブサイト
+        | 静的サイトジェネレータで 樂しく創るウェブサイト
+
       .description
         p = desc3
 
   .ui.fluid.card
     a.image href="https://mercari-shops.com/seller/shops/rroeFJiuPPxkFGxq5PK6cN/products/BpgnwqkA8gYE56XeFnTBhR"
-      = image_tag "my_books/c_renshu.jpg"
+      = image_tag "my_books/c_renshu.webp"
     .content
       a.header
         | はじめてのＣ言語 練習帳

@@ -11,7 +11,7 @@ gem "middleman-autoprefixer"
 gem "middleman-livereload"
 
 # テンプレートエンジンとしてSlimを使用する
-gem "slim"
+gem "slim", "4.1.0"
 
 # HTML圧縮を行う
 gem "middleman-minify-html"
