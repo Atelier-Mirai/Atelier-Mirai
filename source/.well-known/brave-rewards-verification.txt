@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: atelier-mirai.net
+Token: 1601cbf62aa871c76a6aef78637c5cfc3981fe5cc8c001c88ed20a8db988cba6

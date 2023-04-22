@@ -12,8 +12,6 @@ gem "middleman-livereload"
 
 # テンプレートエンジンとしてSlimを使用する
 gem "slim", "4.1.0"
-# gem "actionview"
-# gem "slim"
 
 # HTML圧縮を行う
 gem "middleman-minify-html"
