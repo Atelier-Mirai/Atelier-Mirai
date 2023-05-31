@@ -374,8 +374,9 @@
       color: green; }
   .pseudo-class-form.wrapper input[required] ~ label.name::after,
   .pseudo-class-form.wrapper textarea[required] ~ label.name::after {
-    content: '※';
-    color: red; }
+    content: '【必須】';
+    color: red;
+    font-size: small; }
   .pseudo-class-form.wrapper p.required {
     display: block;
     text-align: right;

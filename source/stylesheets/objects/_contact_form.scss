@@ -105,8 +105,9 @@
 
   input[required] ~ label.name::after,
   textarea[required] ~ label.name::after {
-    content: '※';
+    content: '【必須】';
     color: red;
+    font-size: small;
   }
 
   p.required {
