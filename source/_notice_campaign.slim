@@ -1,15 +1,15 @@
 .ui.m-5
   .ui.middle.aligned.stackable.grid.container
     / Red Orange  Yellow  Olive  Green  Teal  Blue  Violet  Purple Pink  Brown  Grey Black
-    .ui.red.icon.message
+    .ui.green.icon.message
       i.laptop.code.icon
       .content
         .ui.large.header
-          | 初春のプログラミング特集
+          | 春のプログラミング特集
         p
-          | 新年 明けましておめでとうございます。
+          | 立春を迎え、少しずつ春へと向かって歩んでいる今日この頃、
           br
-          | 新しい年の始まりに、プログラミングを始めてみませんか。
+          | 大地から大空に伸びていく土筆のように、プログラミングを始めてみませんか。
           br
           | 経験豊富な講師が、初心者の方に分かりやすくレッスンいたします。
           br
@@ -19,9 +19,12 @@
   .ui.cards
     .card style="width: 100% !important;"
       .content
-        = image_tag "nagoya_premium.png", class: 'ui left floated large image'
+        / = image_tag "nagoya_premium.png", class: 'ui left floated large image'
         .header.mt-3
-          = link_to "HTML/CSS講座", "https://atelier-mirai.net/html.html"
+        = link_to 'https://wave-example.netlify.app/sakura_fubuki.html', target: '_blank' do
+          = image_tag 'sakura.webp', class: 'ui left floated medium image'
+
+        = link_to "HTML/CSS講座", "https://atelier-mirai.net/html.html"
         / .meta
         /   span.category
         /     span.ui.medium.black.text
@@ -29,10 +32,12 @@
         /     span
         /       | True Tone搭載13.6インチLiquid Retinaディスプレイ / スターライト
         .description style="clear: none;"
-          | 初めてプログラミングを学ぶ方に大人気のHTML/CSS講座をよりお得にご提供。一回二時間、週二回学習される方なら、一ヶ月で素敵なウェブサイト作成ができます。
+          | 初めてプログラミングを学ぶ方に大人気のHTML/CSS講座をお得にご提供。一回二時間、週二回学習される方なら、一ヶ月で素敵なウェブサイト作成ができます。
+          br
           br
           | コンピュータの仕組みなども学べ、知的好奇心の充足の他、ご自身やお友達のサイトを作成したり、将来的にはフリーランスへの道も拓けてきます。
           br
-          | 今なら、HTML/CSS講座8回に加えて、JavaScript講座2回分もご提供。現金、お振込の他、名古屋プレミアム商品券も、ご利用いただけます。
           br
+          / | 今なら、HTML/CSS講座8回に加えて、JavaScript講座2回分もご提供。現金、お振込の他、名古屋プレミアム商品券も、ご利用いただけます。
+          / br
           | 遠方の方へは、画面共用ソフトやビデオ通話でのレッスンも行っておりますので、この機会に、ぜひご参加ください。
