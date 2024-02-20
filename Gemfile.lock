@@ -17,7 +17,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.3)
     contracts (0.16.1)
-    dotenv (2.8.1)
+    dotenv (3.0.2)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -88,7 +88,17 @@ GEM
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
     minitest (5.22.2)
+    nokogiri (1.16.2-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-arm-linux)
+      racc (~> 1.4)
     nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
@@ -124,7 +134,12 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
+  arm-linux
   arm64-darwin
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   fastimage
@@ -135,6 +150,9 @@ DEPENDENCIES
   nokogiri
   slim (= 4.1.0)
   webrick
+
+RUBY VERSION
+   ruby 3.3.0p0
 
 BUNDLED WITH
    2.5.6
