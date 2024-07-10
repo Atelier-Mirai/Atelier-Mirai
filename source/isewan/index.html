@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>伊勢湾カップ【公式】</title>
+  <meta content="width=device-width" name="viewport" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="RhdMH8NmsoqPZYZNP3MKTkG2dTfrObWqtnRwBoKDPVZ-R7FkLRqdm4YowSRFRa39t43kHMocJcwaXyQSkFc8Yw" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon-66bd5282b3e904b2871b1616d0e1e2dc8247221d.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon-180x180-70ac9d0f6427c257d1b32f792f2f93dcba22c308.png" sizes="180x180" />
+  <meta content="伊勢湾カップの公式サイトです。昭和58年より開催、今年で40回目を迎える国内有数のウィンドサーフィンの祭典です。毎年夏に愛知県知多市新舞子海岸沖で行われます。" name="description" />
+
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&amp;family=Yusei+Magic&amp;display=swap" rel="stylesheet" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/hamburgers-bc3c08163382fb3467b167573a3fbc7900cfa43c.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="assets/application-d49c4f9b85b5ed243887f45051511cf41aea9bd2.css" data-turbo-track="reload" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+  <script src="assets/page_top-82b9a128981d5ee13f4e0ed010caceba1754d75b.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
+</head>
+
+<body>
+  <header class="header ui small top fixed menu scroll_header_menu computer only bg-sakurairo">
+    <div class="ui container">
+      <div class="left menu">
+        <a class="item" href="index.html">
+          <h1 class="header item"><img alt="伊勢湾カップ ロゴマーク" src="assets/isewan_logo_2s-1e8384ccd4fdfd15cf47636d85453850925be8f1.webp" width="300" height="166" />伊勢湾カップ</h1>
+        </a>
+      </div>
+      <div class="right item"><a class="item desktop only" href="#award"><i class="fa-solid fa-trophy fa-lg fa-fw"></i>歴代表彰</a><a class="item" href="#gallery"><i class="fa-solid fa-photo-film fa-lg fa-fw"></i>写真・動画</a></div>
+    </div>
+  </header>
+  <style>
+    .ui.menu .item:before {
+     position:absolute;
+     content:"";
+     top:0;
+     right:0;
+     height:100%;
+     width:0px;
+     background:rgba(34,36,38,.0)
+    }
+
+    .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) > .container > .right.item:not(.borderless):last-child, .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless) > .container > .right.menu > .item:not(.borderless):last-child {
+      border-right: 1px solid rgba(34,36,38,.0);
+    }
+  </style>
+  <header class="header scroll_header_menu mobile only">
+    <div class="container">
+      <div class="site-title">
+        <a href="index.html">
+          <h1><img src="assets/isewan_logo_2s-1e8384ccd4fdfd15cf47636d85453850925be8f1.webp" />伊勢湾カップ</h1>
+        </a>
+      </div><button class="navbtn hamburger hamburger--spin"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="sr-only">MENU</span></button>
+      <nav class="nav">
+        <ul>
+          <li>
+            <div class="site-title">
+              <a href="#landing">
+                <h1><img src="assets/isewan_logo_2s-1e8384ccd4fdfd15cf47636d85453850925be8f1.webp" />伊勢湾カップ</h1>
+              </a>
+            </div>
+          </li>
+          <li><a class="item" href="#award"><i class="fa-solid fa-trophy fa-lg fa-fw"></i>歴代表彰</a></li>
+          <li><a class="item" href="#gallery"><i class="fa-solid fa-photo-film fa-lg fa-fw"></i>写真・動画</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script>
+    document.querySelector('.navbtn.hamburger').addEventListener('click', () => {
+      document.querySelector('html').classList.toggle('open');
+      document.querySelector('.navbtn.hamburger').classList.toggle('is-active');
+    });
+
+    document.querySelectorAll('nav a').forEach((link) => {
+      link.addEventListener('click', () => {
+        document.querySelector('html').classList.toggle('open');
+        document.querySelector('.navbtn.hamburger').classList.toggle('is-active');
+      });
+    });
+
+    // ウィンドウをスクロールした際の処理を、関数定義する。
+    //-----------------------------------------------------------------------
+    let scrollHeaderMenuAnimation = () => {
+      let scroll = $(window).scrollTop();
+      if (scroll >= 200){
+        $(".computer.scroll_header_menu").removeClass("disappear");
+        $(".computer.scroll_header_menu").addClass("appear");
+      } else if ($(".computer.scroll_header_menu").hasClass("appear")){
+        $(".computer.scroll_header_menu").removeClass("appear");
+        $(".computer.scroll_header_menu").addClass("disappear");
+      }
+    }
+
+    // 画面をスクロールをした際にどの関数を呼ぶか記述する
+    //-------------------------------------------------------------------------
+    $(window).scroll(() => {
+      scrollHeaderMenuAnimation();
+    });
+
+    // ページが読み込まれた際にどの関数を呼ぶか記述する
+    //-------------------------------------------------------------------------
+    $(window).on("load", () => {
+      scrollHeaderMenuAnimation();
+    });
+  </script>
+  <div class="ui container"></div>
+  <section id="landing">
+    <div id="vegas-slider">
+      <div class="grid"><img class="computer only mr-2" src="assets/isewan_logo_1200x1200-0324353d9011ac07bb0d09d44480c11290002ed2.png" />
+        <h1 class="ui center aligned h1 header mb-0">第40回記念大会 伊勢湾カップ2023</h1>
+        <p class="ui center aligned h2 header mb-0">The Last Isewan Cup</p>
+        <p class="ui center aligned h3 header mb-0">8月5日(土)～6日(日)</p>
+        <div class="ui text container">
+          <p class="bold center text mb-0" style="font-size: 1.35rem;">写真掲載のお知らせ</p>
+          <p class="mb-0">第４０回伊勢湾カップ2023にご参加いただき、ありがとうございます。大変遅くなりましたが、国体も終わりましたので、競技風景や表彰式の模様等、写真を掲載いたしました。伊勢湾DIV出場の選手の中から国体上位入賞を果たされ、おめでとうございました。<b style="font-size: 1.25rem">「大いなる草レース」</b>として新舞子に情熱を注いだ日々を振り返る縁(よすが)としていただければ幸いです。</p>
+          <p class="mb-0">今大会を以て伊勢湾カップは幕引きとなりますが、40年間の歴史の中で多くの選手や大会オーガナイザー、地元知多市、知多市観光協会、愛知県、一般セーラー等、ご支援下さった方々全てに改めて御礼申し上げます。ありがとうございました。</p>
+          <div class="kaicho">
+            <div class="first column"></div>
+            <div class="second column">
+              <p class="mb-0">令和5年10月吉日</p>
+              <p class="mb-0">大会会長　神谷　至</p>
+              <p class="medium text">伊勢湾カップ 知多フリート運営スタッフ一同</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll down"><span>Scroll</span></div>
+  </section>
+  <script>
+    $('#vegas-slider').vegas({
+      overlay: true,
+      transition: 'blur',
+      transitionDuration: 2000,
+      delay: 10000,
+      animationDuration: 20000,
+      animation: 'kenburns',
+      slides: [{ src: "/isewan/assets/vegas1.webp"},
+               { src: "/isewan/assets/vegas2.webp"},
+               { src: "/isewan/assets/vegas3.webp"},
+               { src: "/isewan/assets/vegas4.webp"},
+               { src: "/isewan/assets/vegas6.webp"}]
+    });
+  </script>
+  <div class="ui container">
+    <div class="pt-68" id="award"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned six wide column">
+        <div class="ui">
+          <h2 class="ui h2 header">40枚の写真で振り返る 伊勢湾カップ2023</h2>
+        </div>
+      </div>
+    </div>
+
+    <style>
+    .large.gallery p {
+      font-size: 15px;
+      letter-spacing: -1px;
+    }
+    </style>
+
+
+    <div class="ui blue segment large gallery">
+      <h3 class="large text mt-2 mb-2">第40回記念大会 伊勢湾カップ2023</h3>
+      <p class="lead text">知多フリートに始まる歴史と伝統に共感・賛同する参加選手とともに、知多市長や県会議員を始めとする来賓の方々をお迎えし、第40回記念大会が開かれました。</p>
+
+      <!-- <a data-group="photo" data-modaal-desc="第40回記念大会" class="photo" href="assets/isewan40_highlight/IMG_6736-e056333a1b7524bf6f6efab6edf962340a053198.webp">
+        <div class="frame"><img alt="第40回記念大会" loading="lazy" src="assets/isewan40_highlight/IMG_6736-e056333a1b7524bf6f6efab6edf962340a053198.webp" width="320" height="240" /></div>
+        <p class="center aligned text">第40回記念大会</p>
+      </a> -->
+      <a data-group="photo" data-modaal-desc="第40回記念大会" class="photo" href="assets/isewan40_highlight/backboard.webp">
+        <div class="frame"><img alt="第40回記念大会" loading="lazy" src="assets/isewan40_highlight/backboard.webp" width="320" height="240" /></div>
+        <p class="center aligned text">第40回記念大会</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="開会式 大会会長 神谷 至" class="photo" href="assets/isewan40_highlight/IMG_6741-e310dcf32b7c46b69519191ad26b475652ebaec0.webp">
+        <div class="frame"><img alt="開会式 大会会長 神谷 至" loading="lazy" src="assets/isewan40_highlight/IMG_6741-e310dcf32b7c46b69519191ad26b475652ebaec0.webp" width="320" height="240" /></div>
+        <p class="center aligned text">開会式 大会会長 神谷 至</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="開会式 大会会長 神谷 至" class="photo" href="assets/isewan40_highlight/IMG_6745-0cfa1e15d04d7b5fba70033f985db80761ccd115.webp">
+        <div class="frame"><img alt="開会式 大会会長 神谷 至" loading="lazy" src="assets/isewan40_highlight/IMG_6745-0cfa1e15d04d7b5fba70033f985db80761ccd115.webp" width="320" height="240" /></div>
+        <p class="center aligned text">開会式 大会会長 神谷 至</p>
+      </a>
+
+      <!-- <a data-group="photo" data-modaal-desc="開会式 大会会長 神谷 至" class="photo" href="assets/isewan40_highlight/IMG_7100-53020bc63dd0e687a82264e88f8ce5602f05f291.webp">
+        <div class="frame"><img alt="開会式 大会会長 神谷 至" loading="lazy" src="assets/isewan40_highlight/IMG_7100-53020bc63dd0e687a82264e88f8ce5602f05f291.webp" width="320" height="240" /></div>
+        <p class="center aligned text">開会式 大会会長 神谷 至</p>
+      </a> -->
+
+
+
+      <a data-group="photo" data-modaal-desc="表彰式 知多市副市長 立川 泰造 様" class="photo" href="assets/isewan40_highlight/IMG_7101-ff6dac17dd864f526549c3853fa47bffed69ef4a.webp">
+        <div class="frame"><img alt="開会式 知多市副市長 立川 泰造 様" loading="lazy" src="assets/isewan40_highlight/IMG_7101-ff6dac17dd864f526549c3853fa47bffed69ef4a.webp" width="320" height="240" /></div>
+        <p class="center aligned text">開会式 知多市副市長 立川 泰造 様</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="開会式 知多市観光協会 会長 酒井 清 様" class="photo" href="assets/isewan40_highlight/IMG_7102-f73c2cf82f7781979252b18cb041932977ec3457.webp">
+        <div class="frame"><img alt="開会式 知多市観光協会 会長 酒井 清 様" loading="lazy" src="assets/isewan40_highlight/IMG_7102-f73c2cf82f7781979252b18cb041932977ec3457.webp" width="320" height="240" /></div>
+        <p class="center aligned text">開会式 知多市観光協会 会長 酒井 清 様</p>
+      </a>
+
+      <!-- <a data-group="photo" data-modaal-desc="スタート風景" class="photo" href="assets/isewan40_highlight/IMG_6778-990b74550970363a09d7a1751bf168595b0bd904.webp">
+        <div class="frame"><img alt="スタート風景" loading="lazy" src="assets/isewan40_highlight/IMG_6778-990b74550970363a09d7a1751bf168595b0bd904.webp" width="320" height="240" /></div>
+        <p class="center aligned text">スタート風景</p>
+      </a> -->
+      <a data-group="photo" data-modaal-desc="スタート前の緊張" class="photo" href="assets/isewan40_highlight/IMG_6781-8c416d482f2085baa3d9e1c8a53e164e83d4997c.webp">
+        <div class="frame"><img alt="スタート前の緊張" loading="lazy" src="assets/isewan40_highlight/IMG_6781-8c416d482f2085baa3d9e1c8a53e164e83d4997c.webp" width="320" height="240" /></div>
+        <p class="center aligned text">スタート前の緊張</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="スタート前の緊張" class="photo" href="assets/isewan40_highlight/IMG_6864-a4cebe41ca21b39d57fe603528518cbe4f932413.webp">
+        <div class="frame"><img alt="スタート前の緊張" loading="lazy" src="assets/isewan40_highlight/IMG_6864-a4cebe41ca21b39d57fe603528518cbe4f932413.webp" width="320" height="240" /></div>
+        <p class="center aligned text">スタート前の緊張</p>
+      </a>
+
+      <a data-group="photo" data-modaal-desc="スタート風景" class="photo" href="assets/isewan40_highlight/extra20.webp">
+        <div class="frame"><img alt="スタート風景" loading="lazy" src="assets/isewan40_highlight/extra20.webp" width="320" height="240" /></div>
+        <p class="center aligned text">スタート風景</p>
+      </a>
+
+      <a data-group="photo" data-modaal-desc="伊勢湾女子優勝 小嶺選手" class="photo" href="assets/isewan40_highlight/extra30.webp">
+        <div class="frame"><img alt="伊勢湾女子優勝 小嶺選手" loading="lazy" src="assets/isewan40_highlight/extra30.webp" width="320" height="240" /></div>
+        <p class="center aligned text">伊勢湾女子優勝 小嶺選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="静岡より参加の市川選手" class="photo" href="assets/isewan40_highlight/extra40.webp">
+        <div class="frame"><img alt="静岡より参加の市川選手" loading="lazy" src="assets/isewan40_highlight/extra40.webp" width="320" height="240" /></div>
+        <p class="center aligned text">静岡より参加の市川選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="知多フリート 金光選手" class="photo" href="assets/isewan40_highlight/IMG_6808-add5ef133f5fd9e1f6affd3be94eac856e401bc8.webp">
+        <div class="frame"><img alt="知多フリート 金光選手" loading="lazy" src="assets/isewan40_highlight/IMG_6808-add5ef133f5fd9e1f6affd3be94eac856e401bc8.webp" width="320" height="240" /></div>
+        <p class="center aligned text">知多フリート 金光選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="熊本より参加の川端選手" class="photo" href="assets/isewan40_highlight/IMG_6853-f4826d1adc3c2bae7f6ab15ff85bacb51b935d66.webp">
+        <div class="frame"><img alt="熊本より参加の川端選手" loading="lazy" src="assets/isewan40_highlight/IMG_6853-f4826d1adc3c2bae7f6ab15ff85bacb51b935d66.webp" width="320" height="240" /></div>
+        <p class="center aligned text">熊本より参加の川端選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="総合優勝 黒石選手" class="photo" href="assets/isewan40_highlight/IMG_6879-0f5cddbea9d8e2061638b8855bd098cb564183a8.webp">
+        <div class="frame"><img alt="総合優勝 黒石選手" loading="lazy" src="assets/isewan40_highlight/IMG_6879-0f5cddbea9d8e2061638b8855bd098cb564183a8.webp" width="320" height="240" /></div>
+        <p class="center aligned text">総合優勝 黒石選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="総合優勝 黒石選手" class="photo" href="assets/isewan40_highlight/IMG_6880-b9cfb5b508504c820e46e92ac395edc127838251.webp">
+        <div class="frame"><img alt="総合優勝 黒石選手" loading="lazy" src="assets/isewan40_highlight/IMG_6880-b9cfb5b508504c820e46e92ac395edc127838251.webp" width="320" height="240" /></div>
+        <p class="center aligned text">総合優勝 黒石選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="総合二位 福村選手" class="photo" href="assets/isewan40_highlight/extra50.webp">
+        <div class="frame"><img alt="総合二位 福村選手" loading="lazy" src="assets/isewan40_highlight/extra50.webp" width="320" height="240" /></div>
+        <p class="center aligned text">総合二位 福村選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="総合三位 廣津選手" class="photo" href="assets/isewan40_highlight/extra60.webp">
+        <div class="frame"><img alt="総合三位 廣津選手" loading="lazy" src="assets/isewan40_highlight/extra60.webp" width="320" height="240" /></div>
+        <p class="center aligned text">総合三位 廣津選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="ウィンドサーファークラス優勝 作野選手" class="photo" href="assets/isewan40_highlight/IMG_6882-2df967fafc0a798216edfefde180ae36805ab5e1.webp">
+        <div class="frame"><img alt="ウィンドサーファークラス優勝 作野選手" loading="lazy" src="assets/isewan40_highlight/IMG_6882-2df967fafc0a798216edfefde180ae36805ab5e1.webp" width="320" height="240" /></div>
+        <p class="center aligned text">ウィンドサーファークラス優勝 作野選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="競技中の一幕" class="photo" href="assets/isewan40_highlight/IMG_6835.webp">
+        <div class="frame"><img alt="競技中の一幕" loading="lazy" src="assets/isewan40_highlight/IMG_6835.webp" width="320" height="240" /></div>
+        <p class="center aligned text">競技中の一幕</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="テクノDIV U-15 田中選手" class="photo" href="assets/isewan40_highlight/IMG_6894-b37f885425051b20fbb14161f27db702c6f254fb.webp">
+        <div class="frame"><img alt="テクノDIV U-15 田中選手" loading="lazy" src="assets/isewan40_highlight/IMG_6894-b37f885425051b20fbb14161f27db702c6f254fb.webp" width="320" height="240" /></div>
+        <p class="center aligned text">テクノDIV U-15 田中選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="スタート風景" class="photo" href="assets/isewan40_highlight/IMG_6908-c41d1ce8562cdfd41c899d0b61b624b1226fa18e.webp">
+        <div class="frame"><img alt="スタート風景" loading="lazy" src="assets/isewan40_highlight/IMG_6908-c41d1ce8562cdfd41c899d0b61b624b1226fa18e.webp" width="320" height="240" /></div>
+        <p class="center aligned text">スタート風景</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="競技風景" class="photo" href="assets/isewan40_highlight/IMG_6917-0ea1c8c40173d7e3fd954f4e88d372eef322a278.webp">
+        <div class="frame"><img alt="競技風景" loading="lazy" src="assets/isewan40_highlight/IMG_6917-0ea1c8c40173d7e3fd954f4e88d372eef322a278.webp" width="320" height="240" /></div>
+        <p class="center aligned text">競技風景</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="デッドヒート" class="photo" href="assets/isewan40_highlight/IMG_6921-1c8020722b3a05822a28df3c197d73abfce92864.webp">
+        <div class="frame"><img alt="デッドヒート" loading="lazy" src="assets/isewan40_highlight/IMG_6921-1c8020722b3a05822a28df3c197d73abfce92864.webp" width="320" height="240" /></div>
+        <p class="center aligned text">デッドヒート</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="山口より参加の鳥取選手" class="photo" href="assets/isewan40_highlight/IMG_6934-76eb7cc232cdc8787ca0af39bf3fe2d269579386.webp">
+        <div class="frame"><img alt="山口より参加の鳥取選手" loading="lazy" src="assets/isewan40_highlight/IMG_6934-76eb7cc232cdc8787ca0af39bf3fe2d269579386.webp" width="320" height="240" /></div>
+        <p class="center aligned text">山口より参加の鳥取選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="知多フリート 金光選手" class="photo" href="assets/isewan40_highlight/IMG_6935-c68a4a39f93a9b86eb26409d06a65bb3b076979f.webp">
+        <div class="frame"><img alt="知多フリート 金光選手" loading="lazy" src="assets/isewan40_highlight/IMG_6935-c68a4a39f93a9b86eb26409d06a65bb3b076979f.webp" width="320" height="240" /></div>
+        <p class="center aligned text">知多フリート 金光選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="ウィンドサーファークラス 吉岡選手" class="photo" href="assets/isewan40_highlight/IMG_6944-e9fe7db944831ea256262503748b35b001aa73c6.webp">
+        <div class="frame"><img alt="ウィンドサーファークラス 吉岡選手" loading="lazy" src="assets/isewan40_highlight/IMG_6944-e9fe7db944831ea256262503748b35b001aa73c6.webp" width="320" height="240" /></div>
+        <p class="center aligned text">ウィンドサーファークラス 吉岡選手</p>
+      </a>
+
+      <a data-group="photo" data-modaal-desc="栄光の優勝カップと盾" class="photo" href="assets/isewan40_highlight/IMG_6978-1399eab1b4ea4e4e7421ce78a3909983ed7b0269.webp">
+        <div class="frame"><img alt="栄光の優勝カップと盾" loading="lazy" src="assets/isewan40_highlight/IMG_6978-1399eab1b4ea4e4e7421ce78a3909983ed7b0269.webp" width="320" height="240" /></div>
+        <p class="center aligned text">栄光の優勝カップと盾</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="40名の優勝者名を刻む栄光の伊勢湾カップ" class="photo" href="assets/isewan40_highlight/IMG_6983.webp">
+        <div class="frame"><img alt="40名の優勝者名を刻む栄光の伊勢湾カップ" loading="lazy" src="assets/isewan40_highlight/IMG_6983.webp" width="320" height="240" /></div>
+        <p class="center aligned text">40名の優勝者名を刻む栄光の伊勢湾カップ</p>
+      </a>
+
+
+      <a data-group="photo" data-modaal-desc="総合優勝 黒石選手" class="photo" href="assets/isewan40_highlight/IMG_6994-0e5bc50c09f45daff118c8291700233b1a6f2b2a.webp">
+        <div class="frame"><img alt="総合優勝 黒石選手" loading="lazy" src="assets/isewan40_highlight/IMG_6994-0e5bc50c09f45daff118c8291700233b1a6f2b2a.webp" width="320" height="240" /></div>
+        <p class="center aligned text">総合優勝 黒石選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="女子の部表彰式" class="photo" href="assets/isewan40_highlight/IMG_7018-be39d251244adcdc20520fa6a4ad94ccfe712e85.webp">
+        <div class="frame"><img alt="女子の部表彰式" loading="lazy" src="assets/isewan40_highlight/IMG_7018-be39d251244adcdc20520fa6a4ad94ccfe712e85.webp" width="320" height="240" /></div>
+        <p class="center aligned text">女子の部表彰式</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="マスターズ表彰式" class="photo" href="assets/isewan40_highlight/IMG_7025-9be4703b633956a51fabc87275e82903c09b3adf.webp">
+        <div class="frame"><img alt="マスターズ表彰式" loading="lazy" src="assets/isewan40_highlight/IMG_7025-9be4703b633956a51fabc87275e82903c09b3adf.webp" width="320" height="240" /></div>
+        <p class="center aligned text">マスターズ表彰式</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="シニア優勝にも黒石選手" class="photo" href="assets/isewan40_highlight/IMG_7027-0047848e66c1890829b4e65395f8477f0dd0925e.webp">
+        <div class="frame"><img alt="シニア優勝にも黒石選手" loading="lazy" src="assets/isewan40_highlight/IMG_7027-0047848e66c1890829b4e65395f8477f0dd0925e.webp" width="320" height="240" /></div>
+        <p class="center aligned text">シニア優勝にも黒石選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="カップを授与される小嶺選手" class="photo" href="assets/isewan40_highlight/IMG_7029-ad413610e0998e694a66426a82f5889f37bfe6f3.webp">
+        <div class="frame"><img alt="カップを授与される小嶺選手" loading="lazy" src="assets/isewan40_highlight/IMG_7029-ad413610e0998e694a66426a82f5889f37bfe6f3.webp" width="320" height="240" /></div>
+        <p class="center aligned text">カップを授与される小嶺選手</p>
+      </a>
+      <!-- <a data-group="photo" data-modaal-desc="ウィンドサーファークラス表彰" class="photo" href="assets/isewan40_highlight/IMG_7031-0d557d522d94bc7dc58d1f5ed6662cf1a73f0771.webp">
+        <div class="frame"><img alt="ウィンドサーファークラス表彰" loading="lazy" src="assets/isewan40_highlight/IMG_7031-0d557d522d94bc7dc58d1f5ed6662cf1a73f0771.webp" width="320" height="240" /></div>
+        <p class="center aligned text">ウィンドサーファークラス表彰</p>
+      </a> -->
+      <a data-group="photo" data-modaal-desc="ウィンドサーファークラス表彰" class="photo" href="assets/isewan40_highlight/IMG_7032-cf8466d27b33528e200eaf5bfcff40b3f34ea0e2.webp">
+        <div class="frame"><img alt="ウィンドサーファークラス表彰" loading="lazy" src="assets/isewan40_highlight/IMG_7032-cf8466d27b33528e200eaf5bfcff40b3f34ea0e2.webp" width="320" height="240" /></div>
+        <p class="center aligned text">ウィンドサーファークラス表彰</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="テクノDIV表彰" class="photo" href="assets/isewan40_highlight/IMG_7036-d85000ac1150df887feac9f09702fd8b23d45357.webp">
+        <div class="frame"><img alt="テクノDIV表彰" loading="lazy" src="assets/isewan40_highlight/IMG_7036-d85000ac1150df887feac9f09702fd8b23d45357.webp" width="320" height="240" /></div>
+        <p class="center aligned text">テクノDIV表彰</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="テクノDIV U-15優勝 梶村選手" class="photo" href="assets/isewan40_highlight/IMG_7037-c9a21339d0e3f0527b5c2ccca29dc60f278a8e71.webp">
+        <div class="frame"><img alt="テクノDIV U-15優勝 梶村選手" loading="lazy" src="assets/isewan40_highlight/IMG_7037-c9a21339d0e3f0527b5c2ccca29dc60f278a8e71.webp" width="320" height="240" /></div>
+        <p class="center aligned text">テクノDIV U-15優勝 梶村選手</p>
+      </a>
+
+      <a data-group="photo" data-modaal-desc="閉会式 大会名誉会長 知多市長 宮島壽男 様" class="photo" href="assets/isewan40_highlight/IMG_7045.webp">
+        <div class="frame"><img alt="閉会式 大会名誉会長 知多市長 宮島壽男 様" loading="lazy" src="assets/isewan40_highlight/IMG_7045.webp" width="320" height="240" /></div>
+        <p class="center aligned text" style="letter-spacing: -1.5px;">閉会式 大会名誉会長 知多市長 宮島壽男 様</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="閉会式 大会名誉会長 知多市長 宮島壽男 様" class="photo" href="assets/isewan40_highlight/IMG_7047.webp">
+        <div class="frame"><img alt="閉会式 大会名誉会長 知多市長 宮島壽男 様" loading="lazy" src="assets/isewan40_highlight/IMG_7047.webp" width="320" height="240" /></div>
+        <p class="center aligned text" style="letter-spacing: -1.5px;">閉会式 大会名誉会長 知多市長 宮島壽男 様</p>
+      </a>
+
+      <a data-group="photo" data-modaal-desc="閉会式 愛知県議会議員 宮島謙治 様" class="photo" href="assets/isewan40_highlight/IMG_7048-58c5f710ba1ca1935141000de78625c733ba69d1.webp">
+        <div class="frame"><img alt="閉会式 愛知県議会議員 宮島謙治 様" loading="lazy" src="assets/isewan40_highlight/IMG_7048-58c5f710ba1ca1935141000de78625c733ba69d1.webp" width="320" height="240" /></div>
+        <p class="center aligned text">閉会式 愛知県議会議員 宮島謙治 様</p>
+      </a>
+      <!-- <a data-group="photo" data-modaal-desc="閉会式 大会会長 神谷 至" class="photo" href="assets/isewan40_highlight/IMG_7054-cfc0ac2b3e8fc3a4d9215033dc9b6023686f0404.webp">
+        <div class="frame"><img alt="閉会式 大会会長 神谷 至" loading="lazy" src="assets/isewan40_highlight/IMG_7054-cfc0ac2b3e8fc3a4d9215033dc9b6023686f0404.webp" width="320" height="240" /></div>
+        <p class="center aligned text">閉会式 大会会長 神谷 至</p>
+      </a> -->
+      <a data-group="photo" data-modaal-desc="閉会式 大会会長 神谷 至" class="photo" href="assets/isewan40_highlight/IMG_7057-7e745db0392263f1efaa858b3072823a6f67a1ca.webp">
+        <div class="frame"><img alt="閉会式 大会会長 神谷 至" loading="lazy" src="assets/isewan40_highlight/IMG_7057-7e745db0392263f1efaa858b3072823a6f67a1ca.webp" width="320" height="240" /></div>
+        <p class="center aligned text">閉会式 大会会長 神谷 至</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="集合写真" class="photo" href="assets/isewan40_highlight/IMG_7202.webp">
+        <div class="frame"><img alt="集合写真" loading="lazy" src="assets/isewan40_highlight/IMG_7202.webp" width="320" height="240" /></div>
+        <p class="center aligned text">集合写真</p>
+      </a>
+    </div>
+  </div>
+  <div class="ui container">
+    <div id="video_area">
+      <video controls="" id="video" poster="assets/isewan40_highlight/IMG_7202.webp" style="width: 100%;">
+        <source src="assets/isewan40_highlight/isewan40.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+
+  <div class="ui container">
+    <p class="lead text" style="text-align: right;">
+      その他の写真は
+      <a href="https://photos.app.goo.gl/VbJ5UYsoh9zncNDc9">
+        こちら
+      </a>
+    </p>
+  </div>
+
+  <div class="ui container">
+    <div class="pt-68" id="about"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned ten wide column">
+        <div class="ui">
+          <h2 class="ui h2 yellow header">第40回 伊勢湾カップ 2023 最終成績</h2><img class="ui rounded yellow bordered fluid image" style="border-width: 7px; border-image: linear-gradient(45deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); border-image-slice: 1;" src="assets/result-875efa71c4d67fcb9270c593d54131765909666d.webp" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="pt-68" id="about"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned ten wide column">
+        <div class="ui">
+          <h2 class="ui h2 yellow header">伊勢湾カップ 御礼と順位変更のお詫び</h2>
+        </div>
+      </div>
+    </div>
+    <div class="ui yellow segment mb-0">
+      <p>第４０回伊勢湾カップ2023にご参加いただいた皆様、暑い中、また台風が進行方向を変え九州に向かってきている中、幸い新舞子では、初日４~7m/秒で３レース、二日目は高気圧の縁を回って吹き出す南東の風と、サーマルが合体した５m/秒~８m/秒の少しずつ強さを増すこれぞウインドに絶好の風の中2レースを行い、予定していた５レースすべて消化することができました。</p>
+      <div class="ui accordion">
+        <div class="title"><i class="dropdown icon"></i><span class="ui blue text">続きを読む</span></div>
+        <div class="content">
+          <p><span class="bold text">今回伊勢湾DIVの上位3名の選手がスコアの部分で同ポイントとなり、大会終了時の順位を発表し、またそれに基づいて表彰を行いました。しかし同ポイント（ルール上ではタイ）の場合、そのタイの解き方について、大会実行委員会の判断に誤りがあり、別表のように訂正して新たな最終成績とする事態となりました。</span>これについてはJSAF（日本セーリング連盟ルール委員会）にも確認いたしました。今回のタイの解き方の間違いによる順位の間違いにおいて、上位3選手をはじめ関係方々にお詫びをするとともに、参加全選手に対してもお詫びを申し上げます。すでに上位3選手には間違った経緯や最終結果についてお伝えをして、お詫びを申し上げるとともに、改めて表彰状などをお渡しすることになっており、その結果についてご理解をいただきました。今回の伊勢湾カップはそれだけ順位が毎レース入れ代わり白熱していたとも選手からお言葉をいただきました。このタイの解き方について、<span class="bold text">国内のウインドサーフィンの大会ほぼすべてにおいて「付則B」が適用されていますが今回のレースがNORに「RRSおよび付則Bを使う」としてあるため、タイの解き方についてその付則Bに基づいて行わななければならなかったことが認識されました（これについては、別添でタイの場合のその解き方を後ほど示します）。</span>いずれにしましても<span class="bold text">大会実行委員会の過ちは過ちとして認めた上で、3選手をはじめ関係方々に、ご迷惑をおかけしたことを改めてお詫び申し上げます。</span></p>
+          <p>今回は伊勢湾DIVで総合優勝となったのは1位から3位まで同ポイントの白熱した争いでしたが、常に５位以内の順位でまとめた、大分県セーリング連盟の黒石勇次選手が優勝となりました。女子では総合５位の小嶺恵美選手が１位、マスターズクラス九州から参加の松浦絵里選手が男子選手を押さえて１位に、ウィンドサーファークラスは総合で１４位に入った作野達雄選手、テクノDIVでの総合優勝は山口直樹選手、U-15 １位は梶村幸永選手、の皆さんがそれぞれのDIVで上位に入られました。<a href="https://isewan-cup.org/result.pdf">（成績表参照）</a></p>
+          <p>本年は早くに梅雨明けしてから、大会二日前までは灼熱のような高温の天気が続いたり、知多市新舞子も通常のシーブリーズとは違った風でしたが、大会に入るとその気温もサーマルによって33℃どまりとなり、2日間とも絶好のコンディションとなりました。</p>
+          <p>大会に参加してくださった皆様には、台風が接近する予定にも関わらず新舞子にお越しくださり、大会実行委員会として、心から感謝申し上げます。ありがとうございました。今回のレースに関する写真については後日の掲載を予定いたしておりますが、今大会をもって41年前から続いてきた<small>（コロナで１度だけ2020年のみ開催見合わせ）</small>伊勢湾カップは40回の大会をもって幕引きとなります。</p>
+          <p>伊勢湾カップの総合優勝された選手の名前がカップにその名を刻んできて、プロの選手からオリンピック日本代表選手、また国体で複数回優勝している選手など40年間のウインドの歴史の中でこの大会が多くの選手によって支えられ、またこの本大会に出場するための予選大会を開催して下さった日本全国の大会オーガナイザーのご支援の賜物と改めて感謝するところです。</p>
+          <p>また伊勢湾カップを開催するにあたり、なんといっても地元知多市をはじめ、一般社団法人知多市観光協会、愛知県、またいつも新舞子でセーリングしている一般セーラーの方々に心からお礼を申し上げるとともに、この40回の開催をバックヤードから支えてくださった、ウインドサーフィンの関係メーカー、そして地元の方々すべての関係の方々に改めて御礼申し上げます。41年間ありがとうございました。</p>
+          <div class="kaicho">
+            <div class="first column"></div>
+            <div class="second column">
+              <p class="mb-0">令和5年8月6日</p>
+              <p class="mb-0">大会会長　神谷　至</p>
+              <p class="medium text">伊勢湾カップ 知多フリート運営スタッフ一同</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="pt-68" id="about"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned ten wide column">
+        <div class="ui">
+          <h2 class="ui h2 yellow header">４０年の伊勢湾カップ</h2>
+        </div>
+      </div>
+    </div>
+    <div class="ui yellow segment mb-0">
+      <p class="lead text mb-0">【発足】</p>
+      <p>　伊勢湾カップは昭和５８年（1983年）に競技に対する考え方と、その運営方法に賛同した知多フリートとして集まったメンバーを中心として始まった。</p>
+      <p>　アメリカから入ってきた新しいマリンスポーツとして、ウインドサーフィンが爆発的な人気を博していた。そのスポーツの遊び方は、フリーセーリングとして楽しみでセーリングする方法もあれば、片やヨットレースのように海面にブイを設置し、参加選手がヨットレースルールに基づいて帆走する方法もあった。手軽にできるセーリング競技スポーツとして、ウィンドサーフィンを楽しむ人が増え、知多半島を中心とする各浜（ビーチ）においても、草レースが盛んに行われていた。</p>
+      <p>　当時、新舞子には名古屋鉄道株式会社（名鉄）の関連施設（舞子館）があり、ウィンドサーフィンを楽しむ愛好家たちのグループである「知多フリート」が、舞子館の一階駐車場をボード置き場（艇庫）として利用・活動していた。
+        <div class="ui accordion">
+          <div class="title"><i class="dropdown icon"></i><span class="ui blue text">続きを読む</span></div>
+          <div class="content">
+            <p>　知多フリートメンバーは、他の地区で行われるレースにおいて、様々な疑問点を持っていた。例えば「風が吹いてきているにもかかわらず、マーク設定に時間がかかり、スタート時には風が弱くなってしまった」、「ほとんど風がないにも関わらず、無理にレースを行おうとした」、「レース当日に風が吹くか吹かないかは、自然現象なので仕方がないが、吹かない日であっても、その一日の中で、最も良い条件の時を逃さないレースが何故できないのか」などなどである。</p>
+            <p>　「梅雨明け十日は晴れが続く」との格言・言い伝えがある。「８月の第一週は、まず梅雨は明けているであろう」、「太平洋高気圧の圏内に入り、台風接近のリスクも９月より断然少ないであろう」、「午後になるに従って風が上がってくることがほぼ確約されるような場所はどこであろうか」と思案、新舞子の夏は、「晴れれば必ず風が徐々に上がってきて、ウインドサーフィンにちょうど良い風速になる。ここで大会を開催すれば、選手の皆が満足するレースが行えるのではないか」と結論を得た。</p>
+            <p>　そして、名鉄よりマリンスポーツ発展のための支援や、各社・各団体よりの協賛、協力を得ながら、知多フリート時代に行っていた草レースを「伊勢湾カップ」として大会を企画、運営することとなった。これが「伊勢湾カップ」の始まりである。</p>
+            <p class="lead text mb-0">【発展】</p>
+            <p>　晴れた夏の伊勢湾は、暖められた名古屋地区の大気が上昇気流となり１１時ごろから海風が吹き出す。そして、その風速は徐々に強くなり、最大では毎秒七～八メートルになる。これはウインドサーファーにとって絶好の風であり、徐々に強くなる風の中で帆走できることが、最も楽しいことである。</p>
+            <p>　さらに地理的に日本の中心地であることや、大会運営メンバーのチームワーク・連携の良い素早くフェアな運営方針などと相まって、参加選手がますます増えていった。そのため全国各地のレースを予選会としてもらい、出場選手を絞って開催するようになり、<span class="ui lead yellow text">「大いなる草レース」</span>として伊勢湾カップの栄耀は輝くこととなった。</p>
+            <p>　そんな折、ウィンドサーフィンのメーカーや近隣ショップから大会の実施カテゴリ−（開催方法）に対して、自社のボードやセールなどがより多く販売できるような働きかけがあった。しかし、伊勢湾カップは「その大会に参加する選手に公平で、フェアなレースを貫く」という元来の考え方を貫きとおしたことが奏功し、新舞子での伊勢湾カップの開催主体が、スポーツマンシップに則ったフェアプレイの精神を体現した知多フリートのメンバーであることが確認・信認され、全国の選手からも賛同を得ることができ、ますますその人気は高まっていった。</p>
+            <p>　その後、名鉄がマリンスポーツ事業から撤退してからも、地元知多市や知多市観光協会の多大なご協力とご支援のもと、全国の選手ならびに予選大会オーガナイザーの賛同を得て、ボードの流行やメーカーの栄枯盛衰に応じて少しずつレギュレーションを変化させつつ、綺羅びやかな派手さに走るのではなく、質実剛健に参加者全てに公平誠実な良いレースを目指して、毎年の開催を続けてきた。</p>
+            <p class="lead text mb-0">【感謝】</p>
+            <p>　現在もこのポリシーは貫かれ、「伊勢湾カップ」は本年で４０回の「記念大会」を迎えることとなった。大会はほぼ手作りで行われており、新舞子の陸側（駐車場や砂浜）や海の状況（例えばマリンパークなど）ができ、徐々に変わってきている今日この頃、大会を続けてゆくことが年々難しくなってきている中で、多くの選手が、この午後吹き上がる新舞子の風「シーブリーズ」を求めて、お越しくださることに、ただただ感謝の気持ちで一杯です。</p>
+            <p>　４０回記念大会が、選手の皆さんが最高のパフォーマンスを発揮できる思い出に残る素晴らしい大会となるよう、実行委員会一同、準備を進めております。新舞子の碧い海で皆様にお目にかかれること、楽しみに致しております。</p>
+            <div class="ui right aligned container">
+              <p class="mb-0">令和五年６月吉日</p>
+              <p>伊勢湾カップ実行委員会</p>
+            </div>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="pt-68" id="about"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned ten wide column">
+        <div class="ui">
+          <h2 class="ui h2 yellow header">大会実行委員長の神谷 至さんって、こんな方。</h2>
+        </div>
+        <div class="ui yellow segment mb-0">
+          <p class="sublead text mb-0">有終の美を飾る伊勢湾カップ2023。その大会実行委員長である神谷 至さんへインタビューを致しました。以下、短いながらご紹介記事です。</p>
+          <div class="ui segment"><img alt="第一回伊勢湾カップ参加賞" class="ui medium right floated image" src="assets/prize-00938cad62489ea01560569632fd3a441b357c79.webp" />
+            <p>　神谷至さんは、あの伝説の「知多フリート」創立メンバーです。古稀を目前にした現在もなお、新舞子海岸で愛するロングボード(イムコ)で、春夏秋冬、毎週セーリングを楽しんでいるそうです。</p>
+            <p>　ウィンドサーフィンとの出会いは1975年とのこと。試乗してすぐにウィンドサーフィンの魅力に引き込まれ、翌年にはウインドサーファーを購入(No17435)されたそうです。198,000円だったと仰いましたが、大卒初任給が十万円を切るような時代、とても高級な遊具であったことは間違いありません。それでも欲しくて一生懸命頑張ったんだよ、と語った笑顔が忘れられません。ああ人間夢の為に生きるんだなと、なにか熱いものが込み上げてきました。</p>
+            <p>　そして、その大枚を叩いて購入したウィンドサーフィンです。神谷さんは毎日毎日練習し、その伎倆をめきめきと上げていかれます。中部選手権や伊勢湾カップなど数多くの大会に出場、優勝や入賞など数々の素晴らしい成績を納めていらっしゃいます。その輝かしい戦歴の一部を以下に。</p>
+            <div class="ui accordion">
+              <div class="title"><i class="dropdown icon"></i><span class="ui blue text">続きを読む</span></div>
+              <div class="content">
+                <ul>
+                  <li>中部選手権シリーズ多数(数年)参加(入賞数回2位1回他)</li>
+                  <li>1979, 1980, 1983年 全日本選手権(沖縄)参加(中部地区代表)</li>
+                  <li>1980年名鉄知多新線開通記念大会(内海)優勝</li>
+                  <li>1980年全日本選手権大会参加スナップ</li>
+                  <li>1981年世界選手権(沖縄)大会のパンフレット裏表紙の写真に採用(No153986)</li>
+                  <li>ナゴヤチャレンジカップ(名古屋港)多数参加(マスターズクラス1位1回 2位3回 3位2回)</li>
+                  <li>1983年伊勢湾カップ第1回以降多数参加</li>
+                  <li>2010年伊勢湾カップIMCクラス男子1位</li>
+                  <li>2011年伊勢湾カップセレクション3位</li>
+                </ul>
+                <p>　写真は、今となってはとても貴重な第一回の伊勢湾カップに出場された際の参加賞です。思い出の品として、大切に保管されているとのことでした。</p>
+                <p>　また、知多の綺麗な海を持続する為には山の環境整備・啓蒙活動が必要と考え、森林インストラクターの資格を取得されたとのこと。現在も森と木のクリエーター・専門士(森林文化系専門課程)として活動されています(岐阜県立森林文化アカデミークリエーター科2011年3月卒業)。また、あいち森林インストラクター会活動(なごや環境大学他)へご参加されたり、ウォーキングガイドとしても活動されているそうです。</p>
+                <p>　そんな、素敵なお話が尽きない神谷さんですが、ウィンドサーフィンの歴史と発展について研究した素晴らしい論文があるよ、と紹介していただきました。著者の平野貴也さんは、順天堂大学で博士の学位を取得、現在は沖縄にある名桜大学教授として、教鞭をとっておられます。若かりし頃は、この新舞子の海で、ウィンドサーフィンの練習に励み、伊勢湾カップにも数多く出場された方とのことでした。是非、ご一読下さい。</p>
+                <div class="ui yellow segment mb-0">
+                  <div class="ui text container">
+                    <p class="lead text" style="font-size: 24px;">日本におけるウインドサーフィンの普及過程と普及戦略</p>
+                    <p class="lead text">平野貴也1)2)*、野川春夫2)、工藤康宏2)</p>
+                    <p class="lead text">Diffusion Process and Strategy of Windsurfing in Japan</p><br />
+                    <p class="sublead text">Abstract</p>
+                    <p>The purpose of this research was to explain the diffusion strategy in regards to the process of diffusion and diffusion stages of windsurfing in Japan. This descriptive study was based on the literatures relating to marine sports and leisure articles, for the target period of 1974 to 2010. In order to analyze the diffusion process of windsurfing in Japan, the authors attempted to employ Rogers's diffusion of innovation, and analyzed 5 stages of diffusion process from the 4 aspects such as marketability, penetrability, organization, and exposure. For the diffusion process index of "marketability," the number of board sales was used. For "penetrability," trends in the number of sales outlets were used. For "organization," the number of registered members of each sports association were aggregated and used as an index. For "exposure," the number of articles relating to windsurfing and boardsailing in magazines collected in the Ōya Soichi Bunko and in 4 national newspapers were the main source of information in this descriptive study. The main findings of this research study were as follows; (1) During the introductory stage, the effective diffusion strategy was organization. The supply of equipment became more fluid, and media exposure had strong influence during the growth stage. During the maturity stage, continuous innovation brought a variety of equipment. (2) The characteristics of the diffusion process in windsurfing was the shift from seasonal leisure sports to year-round leisure sports in the maturity stage. Even in the saturation stage, the number of registered association members appeared to increase. (3) In order to sustain the diffusion process of windsurfing, it is necessary to utilize various media, including social media, after the maturity stage. (4) The ideas of five diffusion stages seemed to be suitable for clarifying the relationship between the diffusion process and the diffusion strategy of windsurfing in Japan. (5) The correlation among 4diffusion indices appeared to be sophisticated to analyze the diffusion process of leisure sports so that more in-depth study will be recommended.</p>
+                    <p>《keywords》innovation、marketability, penetrability, organization, exposure</p>
+                    <p>1)名桜大学 905-8585 沖縄県名護市字為又1220-1<br />2)順天堂大学* 順天堂大学協力研究員 270-1695 千葉県印西市平賀学園台1-1</p>
+                  </div>
+                  <p class="lead text mt-4">1. はじめに</p>
+                  <article class="column2">
+                    <p>1960年代にレジャーという用語や行為がブームとなり、「一億総レジャーの時代」と言われるなどレジャー・スポーツ市場が成長を始めた(中西、2015)。水泳、体操などの参加者が増加し、テニス、ゴルフ、ボウリングなどのレジャーブーム、スポーツブームが起きた。1981年に2兆6414億円であったレジャー・スポーツ市場規模は、1990年には5兆2140億円と10年間で約2倍に拡大した。その後、1992年の6兆530億円をピークとして徐々に減少し、2000年以降は4兆円前後を推移しており、1980年代にレジャー・スポーツ市場は大幅な成長を示した(余暇開発センター、1984、1991、1998;日本生産性本部、2008)。レジャー・スポーツが大衆化したと考えられる現代社会において、新しいレジャー・スポーツ活動が一時のブームではなく、我が国に定着し、普及するためにはどのような条件が必要なのかは明確になっていない。この課題を明らかにするためには、レジャー・スポーツ活動の普及過程や規模拡大の契機あるいは兆候などについて知見を深め、状況を整理する必要がある。</p>
+                    <p>レジャー・スポーツ用品市場についてレジャー白書(余暇開発センター、1984、1991、1998;日本生産性本部、2008)では、球技スポーツ用品、その他のスポーツ用品、山岳・海洋性スポーツ用品の3部門が継続的に調査されている。スキー・スケート・水上スキー、レジャー用ボート、釣具、海水中用品、サーフィン、登山・キャンプなどに使用する用品によって構成される山岳・海洋性スポーツ用品市場は1980年当初から最も多くの市場規模を有しており、球技スポーツ用品部門の販売が減少した1980年代中期も市場規模を保ち、1987年以降はさらに市場を拡大した。1980年代のレジャー・スポーツ市場の拡大に山岳・海洋性スポーツ用品部門の販売は大きな役割を果たしたと言える。
+                      <レジャー白書 余暇開発センター、1984、1991="">では1980年代から1990年代にかけてヨット、ウインドサーフィン、スクーバ・ダイビング、ハングライダー・パラグライダー、スカイダイビング、スケートボード等のレジャー種目への参加者の増加を示している。これらの種目の中で、特にウインドサーフィンはヨットとサーフィンの特徴を融合させたイノベーションによって用具が開発され、普及したレジャー・スポーツである。発明起源には諸説あるが、我が国に導入された時期は用具が輸入された時期であり、普及に至る起点が明確である。さらに1980年代にはウインドサーフィンブームと言われる時期があり、我が国に定着した経緯を持つことから、ウインドサーフィンの普及過程を新たなレジャー・スポーツ活動が我が国に普及していくプロセスの事例として設定する。</レジャー白書>
+                    </p>
+                  </article>
+                  <div class="ui accordion">
+                    <div class="title"><i class="dropdown icon"></i><span class="ui blue text">続きを読む</span></div>
+                    <div class="content">
+                      <p class="lead text mt-4">2. 先行研究の検討</p>
+                      <p class="sublead text">2.1 イノベーション普及理論と普及過程の区分について</p>
+                      <article class="column2">
+                        <p>ウインドサーフィンは新たな発想によって生み出されたレジャー・スポーツであり、イノベーションの賜物と言えよう。ロジャース(2007)のイノベーション普及理論では「普及とはイノベーションが、コミュニケーション・チャネルを通じて、時間の経過の中で、社会システムの成員の間に、コミュニケート(伝達)される過程である(p.8)」と述べられており、普及の要素としてイノベーション、コミュニケーション・チャネル、時間の経過、社会システムを挙げている。ロジャースの提唱するイノベーションの普及理論の基本的な体系は1960年前後に提示されたものであるが、青池(2003)、三藤(2005、2007)はこの普及理論を用いて、ビデオレコーダーやファクシミリなどの普及過程の解明に用いており、1980年代の事象にも対応している。</p>
+                        <p>レジャー・スポーツ分野では、山下・出村(1987)はスイミングクラブに子供を通わせるというスポーツ行動をイノベーションと捉え、ロジャースのイノベーションの普及理論を援用し、イノベーションの普及に影響を及ぼしている要因を明らかにしている。またPoulos&Donaldson(2015)は、オーストラリアでのスポーツ実施時の安全ガイドラインの普及に、ロジャースのイノベーション普及理論に基づいたアプローチを援用したことを説明している。一方でBallet。al(2014)は遠隔的な健康教育の採用と普及にロジャースのイノベーション普及理論を踏まえて取り組んだことを報告している。Kellison&Hong(2015)は環境に配慮したスタジアムの建設に対する取り組みにおいて、環境に影響を及ぼす要因についてロジャースのイノベーションの普及理論の枠組を用いて説明している。そのため、スポーツ・レジャーの普及にロジャース(2007)のイノベーションの普及理論を援用可能と判断した。
+                          <なお>、ロジャース(2007)は普及曲線を用いて、普及過程を5段階に区分している。イノベーションを採用する速度によって革新的採用者、早期採用者、早期多数派、後期多数派、採用遅滞者の5つに採用者を分類し、採用者カテゴリーとした。普及段階における採用者の特徴を明らかにすることは、普及過程を把握する際に有効ではあるが(宇野、1990)、過去のレジャー・スポーツ参加者の特徴を現時点からさかのぼって調査することは不可能である。そこで本研究では採用されたモノや行為(プロダクト)の動向によって普及過程を区分するプロダクトライフサイクル理論を援用する。ライフサイクルのステージは研究者によって3段階、4段階、5段階など区分の基準が異なる(八代・浪越、1989)。ライフサイクル理論をレクリエーション・プログラム経営の分析に応用したHoward&Crompton(1980)、ウインドサーフィンのように用具の価格が高く、耐久財のライフサイクルを対象としたバーグ(1969)等の研究では5段階の分類法が用いられている。</なお>
+                          <原田 1987="">はライフサイクルの判定には、あらゆる理論と経験を加味して総合的に判断することの重要性を示唆しており、本研究では数学的成長曲線にあてはめて変動パターンを探る方法ではなく、ボードの販売数の推移を中心に複数の指標によって普及過程のステージを判断する方法(八代、1989;米谷、1995)を用いるのが適切であると考える。</原田>
+                        </p>
+                      </article>
+                      <p class="sublead text">2.2 普及過程の指標について</p>
+                      <article class="column2">
+                        <p>ロジャースは、普及過程の指標としてイノベーションの採用者数、用具の販売数、新技術の導入数、売上高などを用いている(宇野、1990)。ただし、小野(2000)や樋口(2012)はロジャースが普及曲線を構成する指標を明確にしておらず、統一性がないことを指摘している。だが、Gatignon&Robertson(1985)は、Rogers(1962)の普及理論に基づき普及過程をRate、Pattern:TimeandSpatial、Potentialの3つの指標を用いてマーケティングの観点から説明しており、複数の指標を用いることで普及過程を分析できることを示唆している。ロジャース(2007)は普及過程分析について人間の行動を洞察し、理解することを目的に実施されると述べており、普及過程の指標について普及曲線による指標のパターンを観察するだけでなく、イノベーション採用者の動向やコミュニケーション・チャネルとのかかわり、制度の変更など外部的な影響を考慮すべきであることを示唆している。これら3指標に加え、草深(1986)はスポーツ産業の浸透にマスコミ、コマーシャル、メディアイベントのプロデュースが有効であることを主張している。さらにベスト(2009)、中島(1988)はメディアが普及に重要な役割を果たすことを述べていることからも、現代的な普及過程の解明にはメディアへの露出性を指標に加える必要がある。</p>
+                      </article>
+                      <p class="sublead text">2.3 レジャー・スポーツにおける普及戦略</p>
+                      <aritcle class="column2">
+                        <p>ちなみに戦略という用語は、経済戦略、経営戦略、人事戦略のように一般的に使用されているが、普及現象に対する戦略を論じた研究は多くない。レジャーおよびスポーツに関する普及戦略の研究には、嘉納治五郎の柔道における普及戦略(桐生、2012)、ACL損傷予防プログラムの普及戦略(窪田・鎌田、2016)、幼児期の運動指標の普及戦略(春日、2014)などがあるが、明確な定義はなされていない。</p>
+                        <p>マリンレジャー・スポーツの普及過程及び普及戦略に関する研究においても同様で、明確な定義はなされておらず、普及を促進するために行われた方略が述べられている。ヨットは外国人居留地から高原避暑地に伝播し、海浜別荘地を中心に普及したが、佐藤(2003)は日本経済が発展し、経済的に豊かになった我が国の社会的背景と、受容基盤となった欧米人や上流階級者によって行われたヨットクラブの運営や競技会の開催が、普及を促進したことを明らかにした。また小長谷(2005)はサーフィンの普及過程を、湘南地区から全国に伝播していく受容過程を実施者の活動内容によって3期に分けて説明した。第1期(輪郭形成期)には用具の供給と活動場所の整備、第2期(大衆化期)にはファッションの流行や雑誌等によるマスコミの影響が普及を促進したことを明らかにした。第3期は、ダイヤルQ2による波情報やインターネット販売など大衆化後の活動についてであった。スクーバ・ダイビングは1960年代後半からチャンピオン・スポーツとしてのスピア・フィッシングからレジャー・スポーツとしてのファン・ダイビングへとダイビングスタイルが移行することで、参加者が増加した。参加者の増加を促進した要因として圓田(2009)は海外の潜水指導団体の商業主義的な活動とデジタルカメラの普及を挙げている。</p>
+                        <p>本論文のテーマであるウインドサーフィンの普及及び普及戦略に関する研究において、平野(2001)はウインドサーフィンの特許を巡る論争とオリンピック種目への採用に向けた取り組みを調査し、特許が我が国への普及を促進し、一方で阻害したことを明らかにした。また平野(2004)は日本ウインドサーフィン協会(以下:JWAと表記)の活動について文献調査を行い、競技団体の組織的な活動が我が国における黎明期のウインドサーフィンの普及を促進したことを明らかにしており、普及を促進した方略と考える事ができる。ただどちらの研究も普及初期の事象や期間に限定された調査研究であり、普及過程や普及戦略に関する縦断的な知見は確認できなかった。</p>
+                        <p>海外では、Krebs(1986)、Bellis(2016)は特許を巡る国際的な論争と米国における特許の範囲について報告をしており、ウインドサーフィンの特許が普及に与えた影響について言及している。またSedlaczek(2009)は歴史文化的な観点から、ウインドサーフィンに用いられる用語の特徴を調査している。製品開発や競技団体の違いによってウインドサーフィンの用具には異なる名称が与えられ、名称が多様化したことを明らかにしているが、用具販売の促進などにどのように影響があったかについては述べられていないShah(2006)はウインドサーフィンには22年間で40回の製品イノベーションが起きており、イノベーションの連続が産業を大きく成長させた要因であったことを明らかにした。つまり製品イノベーションが普及を促進した戦略であったと考える事ができる。しかしウインドサーフィンへの参加者数や用具販売数、競技団体の動向などに関する縦断的な記載は見られず、米国を含め我が国のウインドサーフィンの普及戦略に関する研究知見は皆無であった。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">3. 目的</p>
+                      <aritcle class="column2">
+                        <p>以上の先行研究の検討より、本研究は、ロジャースのイノベーション普及理論を援用し、国内にウインドサーフィンが普及する過程及び普及各期における普及戦略について明らかにすることを目的とする。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">4. 調査の方法</p>
+                      <aritcle class="column2">
+                        <p>ウインドサーフィンには「ボードセーリング」、「セイルボード」、「ヨットサーフィン」など複数の呼称があるが、本研究では現在、国際競技団体が使用しているウインドサーフィンを用いる。国内で用具販売が開始された1974年を調査の起点に、2010年までの37年間を調査対象期間として、ウインドサーフィン及びマリンレジャー・スポーツに関する文献調査を行った。最大で17団体に分かれていた競技団体が2010年に統合されたことは、多様化していた用具や活動内容が集約された証左であり、普及過程の分岐点と考え、本調査の終点とした。</p>
+                        <p>普及過程の指標としてGatignon&Robertson(1985)が用いた3つの指標および露出性を用いるが、Rateはイノベーションの採用規模のことであり、「市場性」とした。「市場性」にはボードの販売数を用い、国内で20年以上継続して輸入販売を行っているメーカー4社の販売記録と日本ボードセーリング協会(以後JBSAと表記)保存資料を収集し、ボードの販売数を集計した。Pattern:TimeandSpatialはイノベーションが浸透していく時間と場所のパターンのことであり、「浸透性」とした。「浸透性」には販売店数の動向を用い、各年の月刊ハイウインド(以下HWと表記)4月号に掲載された販売店リストを用いた。Potentialはイノベーションの発展性及び可能性のことであり、ウインドサーフィンのスポーツとしての発展性・可能性を「組織性」とした。「組織性」には競技団体に保管されていた登録記録を用い、競技団体登録者数とした。</p>
+                        <p>「露出性」には雑誌約17万冊を所蔵し、「雑誌の図書館」と呼ばれる大宅壮一文庫に所蔵された雑誌と新聞全国4紙への掲載数を指標とした。雑誌への掲載数の検索にはデータベース「WebOYA-bunko」(検索日2015年5月6日から5月31日)を、新聞への掲載数の検索にはデータベース「G-Searchセレクト」(検索日2015年6月17日から8月16日)を使用し、「ウインドサーフィン」及び「ボードセーリング」を検索語に設定して抽出を行った。抽出された記事を読み、内容がウインドサーフィンに関する活動内容や競技結果などに触れていない記事を除き、集計し、掲載数とした。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">5. 結果
+                        <p class="sublead text">5.1 普及過程の区分</p>
+                      </p>
+                      <aritcle class="column2">
+                        <p>図1には販売店数、ボード販売数及び団体登録者数の推移、図2には雑誌及び新聞掲載数を示した。新聞への掲載数を除く、その他の指標は1980年代後半をピークとするベル型の曲線を描いた後、2000年前後から指標の増減が少なくなった。4つの指標の上昇が緩慢な1974年から1978年を導入期、用具販売数、団体登録者数、雑誌掲載数が急速に伸びた1979年から1982年を成長期とした。販売店数、競技会開催数、団体登録者数が増加し、ボードが最も販売された1983年から1986年を成熟期とし、団体登録者数、雑誌・新聞への掲載数は増加するが、ボード販売数、販売店数が減少した1987年から1991年を飽和期とした。新聞への掲載数を除くすべての指標が減少し、後半は指標の変動が少なくなった1992年から2010年を衰退・維持期と区分した。</p>
+                      </aritcle>
+                      <p class="sublead text">
+                        <5 class="2">ウインドサーフィンの普及過程と普及戦略</5>
+                      </p>
+                      <aritcle class="column2">
+                        <p>ウインドサーフィンの普及過程及び普及戦略を表1に示した。普及戦略については各普及期における用品・用具のイノベーション、販売店・用具メーカーの販売、競技団体・イベントの組織化、メディアの広報宣伝に分類した。</p>
+                      </aritcle>
+                      <p class="sublead text">5.2.1 導入期(1974年から1978年)</p>
+                      <aritcle class="column2">
+                        <p class="bold text">1)市場性(ボード販売数)</p>
+                        <p>ウインドサーフィンが国内で販売されたのは1974年であり、米国から輸入されたウインドサーファー艇(以下WS艇と表記)であった。年間の販売艇数は1974年の150艇から毎年増加し、導入期全体では計2,600艇が販売された。国内におけるWS艇の販売・製造権は勝和機工(株)と(株)ウインドサーフィン・ジャパン(以下WSJ)の専用であり、WS艇はセイルなどのパーツとセットで約17万円であった。用具・用品の価格帯が高価なこともあり、マリンレジャー・スポーツ経験のある社会人の参加者が多かった(JWA、1984.8)。セイルサイズやボード形状の変更、フットストラップの開発などの製品イノベーションに伴って販売数を年々増やし、販売数の上昇は緩やかではあったが、輸入品は即完売の状態が続いた(鈴木、1982)。</p>
+                        <figure><img alt="ボード販売数、販売店数、団体登録者数&lt;市場性、浸透性、組織性&gt;の推移" class="ui fluid image" src="assets/figure1-42f064e7f685ac0c748e806025b19c67ae055701.png" /></figure>
+                        <p class="bold text">2)浸透性(販売店数)</p>
+                        <p>1974年に東京、和歌山、静岡に4店の販売店ができた。WSJやJWAのスタッフが各地でデモンストレーションを行うことで体験者が増加し、販売店が水辺地域に広がった(JWA、1975.10)。1975年には全国6ブロックすべてに販売店が設置された。WSJの販売促進活動に加え、サーフィンやヨット、スクーバ・ダイビングなどのすでに実施されていたマリンレジャー・スポーツ業者の販売網によって、いち早く販売ルートが整備された。1976年10月には70店舗が登録し、1977年にはウインドサーフィン専門店と銘打つ販売店も出現した(JWA、1977.4)。専門店という表記には、他のレジャー・スポーツ用具と同様に販売している販売店と差別化する意図があったと思われる。ウインドサーフィン用のウエットスーツの販売やインストラクター制度の確立と同時期のため、用具を販売し、乗り方を教えることで生計が立てられる時期を迎えた証左とも言える。販売店は参加者を愛好者グループごとに登録するJWAのフリート制度を推奨した。販売店がフリートの活動拠点になることで販売店に参加者がつどい、海で遊ぶ仲間を口コミで増やす場となり、ウインドサーフィンの浸透に効果的であった。</p>
+                        <p class="bold text">3)組織性(競技団体登録者数)</p>
+                        <p>WSJ代表の鈴木東英(1982)は競技スポーツとしての普及を強く望み、競技団体JWAを1974年1月に設立した。JWAへの登録者数は1974年の70名から毎年増加し、1978年には500名を超えた。JWAは、1974年3月に初の公式競技会、11月に全日本選手権、1977年4月には全日本学生選手権を開催した。ヨットと同様の競技形態が主流であったが、フリースタイル、ロングディスタンス、スラロームなど多様な競技形態が加わった。競技団体と用具メーカーが競技会の運営、支部組織の設立など競技の普及を戦略的に行った時期であり、1978年には33競技会の開催、日本ヨット協会(JYA、現日本セーリング連盟)への加盟や国際的な競技会への参加など、競技スポーツとしての拡大が見られた。また競技団体が推奨したフリート制度はJWAの競技会に出場する窓口、安全対策やルールの啓蒙にも機能しており(平野、2007)、競技団体による競技化、組織化の普及戦略は登録者の増加を促進した。</p>
+                        <p class="bold text">4)露出性(記事掲載数)</p>
+                        <p>導入期の雑誌への掲載は、徐々に増加するが年間6誌前後と少なく、普及に大きな影響を及ぼしたとは考えられない。記事の見出しには「新興スポーツ」「流行りの」「ヤング向け」などの見出しが付けられ、新規のレジャー・スポーツとして扱われていた。記事の内容はWSJやJWAのスタッフが国内各所でウインドサーフィンのデモンストレーションを行う様子、乗り方や楽しみ方などが詳細に解説され、JWAの活動内容が紹介されており、用具メーカーや競技団体の普及戦略であったと考えられた。また「ニューヨットの競技会」(報知新聞、1974)「風に乗って、水上を滑る」(朝日新聞、1974)、「風まかせ、波はいらないサーフィン」(読売新聞、1975)などと題して掲載されていたことから、サーフィンやヨットの派生形として扱われていたことがわかる。</p>
+                        <figure><img alt="雑誌及び新聞掲載数&lt;露出性&gt;の推移" class="ui fluid image" src="assets/figure2-0abc80d55d9fcc81692e30b69c2bdd23e2da7796.png" /></figure>
+                        <figure><img alt="各期におけるウインドサーフィンの普及過程および普及戦略" class="ui fluid image" src="assets/table1-c91eac2ace9c0828f44320ae653965c32b8beb2e.png" /></figure>
+                      </aritcle>
+                      <p class="sublead text">5.2.2 成長期(1979年から1982年)</p>
+                      <aritcle class="column2">
+                        <p class="bold text">1)市場性(ボード販売数)</p>
+                        <p>1979年はWSJがWS艇の国内生産を始め、価格が195,000円と上昇したにもかかわらず、WS艇の国内販売数は前年の4倍以上、1年間で販売開始からの総販売数を超える4,300艇が販売された(JWA、1980.9)。1982年には14,600艇、成長期全体では35,500艇のWS艇が販売された。ボードが軽量化され、可動式センターボードの導入やトラッカーを付属するなど機能的なバリエーションを増し(JWA、1982.10)、急速に販売数を伸ばした。競技者にも、レジャー参加者にも使いやすい機能を追加した製品イノベーションによる普及戦略によって、販売数が増加したと言える。</p>
+                        <p>海外ではWS艇以外のボードを用いた競技会や賞金レースが多数開催されていた。ただ国内では1980年前後からウインドサーフィン用具の特許が示す範囲をめぐり、特許を無効とする販売店や輸入業者とWSJ間に法廷論争が起き(横山、1983;スポーツ産業新報、1983)、特許料の納入や製品差し押さえなどが実施された。国内におけるウインドサーフィンの市場拡大はWSJやJWAの普及活動による影響が大きいが、WS艇以外の艇の販売総数は1,745艇にとどまっており、WSJの保有した特許権の存在がWS艇以外の販売を抑制したと考えられる。</p>
+                        <p>2)浸透性(販売店数)</p>
+                        <p>1981年には奈良・栃木県を除く45都道府県に105の販売店が展開された。店舗数の増加は34と急増ではないが、地理的な拡大が見られた。さらに1981年にはビック、三井物産など大手企業が輸入販売に参入した。またマルイ、西武スポーツ館、スポーツショップタカハシなどの大手スポーツ店も用具販売を開始した。販売店の多くは水辺に隣接していたが、水辺に近くない都市部の販売店も増加しており、用具の入手が手軽になったと考えられる。また従来は用具販売と同時に水上での操作方法やルールを指導する販売方法が主であったが、都市型の店舗では用具の販売のみを行うなど、販売方法に変化が見られた(JWA、1982.4)。成長期には用具の販売数、競技団体への登録者数が増加しており、立地や販売方法の変化、商圏範囲の拡大によって用具の入手を容易にした販売店の普及戦略が浸透に影響したと考えられた。</p>
+                        <p class="bold text">3)組織性(競技団体登録者数)</p>
+                        <p>成長期を通じて、JWAへの登録者は800名から2,800名と約3倍に増加し、フリート数は201へと倍増した(JWA、1982.4)。1981年にはウインドサーフィンが1984年のロサンゼルスオリンピックのヨット競技種目に採用がきまり、JWAは日本ヨット協会(JYA)に加盟した。またジャパンクラシックなど賞金レースが行われるようになり、1981年後半には企業と契約し、プロセイラーとして活動する者も出現した。さらに1982年アジア大会で石渡常原氏が金メダルを獲得し、競技スポーツとしての活動が注目を集めた。登録者が増加したという意味では組織性が促進されているが、成長期のボードの販売数37,280艇であったのに対し、団体登録者数の増加は2,000名と少数であり、組織化を進め、登録者を増やす競技団体の普及戦略が円滑に機能していたとは考えられない。平野(2001)は競技団体の整備や選手強化が進まなかった原因として、オリンピックに使用される艇種や特許に関する問題から競技団体が複数存在し、参加者が混乱したこと、オリンピックへの選手派遣などを巡ってJYAとJWAの対立が深まったことを指摘している。前述のWS艇の販売数に対し、WS艇以外の艇の販売数が少数であったことからも、競技に用いられる艇種や競技団体の活動に偏りがあったと推測され、組織化を抑制したと考える。</p>
+                        <p class="bold text">4)露出性(記事掲載数)</p>
+                        <p>1979年の雑誌への掲載数は16誌、成長期には合計54誌に掲載され、露出性が増加した。また「明星」「中学3年生」「平凡パンチ」などレジャー・スポーツとは関連の少ない若者向けの娯楽誌にも多数掲載されており、その新奇性や楽しさが紹介されていた。一方でロサンゼルスオリンピックに使用する艇種の選定や特許に関連した問題が新聞紙面に取り上げられた(朝日新聞、1981;日経産業新聞、1983)。</p>
+                        <p>1980年後半に月刊誌Hi-Wind(以後HWと表記)と専門書ウインドサーフィンが創刊された。特にHWにはセイリングの適地、テクニック、競技会、ファッション、海外での情報や波に乗るウエイブパフォーマンスなどの活動の様子が全国に紹介された(HW、1989.11)。インターネットなど無い時代であり、参加者の活動見本になったと思われる。</p>
+                        <p>1982年頃より清涼飲料水や衣類のTVコマーシャルにウインドサーフィンの疾走する様子や大きな波に挑戦する映像が用いられた。ウインドサーフィンの爽快感が強調された映像は宣伝対象であった製品のイメージとして販売促進に活用されると同時に、ウインドサーフィンのメディア露出を高め、ウインドサーフィン自体に爽快なイメージを確立することにつながったと考えられた。水辺でないと目にする事が出来なかったウインドサーフィンの帆走がメディアに露出することで大衆の目に触れ、ウインドサーフィンに対する興味や活動が促進されたと考えられる。</p>
+                      </aritcle>
+                      <p class="sublead text">5.2.3 成熟期(1983年から1986年)</p>
+                      <aritcle class="column2">
+                        <p class="bold text">1)市場性(ボード販売数)</p>
+                        <p>WS艇の販売数は1983年の13,500艇から1986年4,000艇へと減少した。反面、WS艇以外の3社のボード販売数は1983年3,900艇から1985年13,100艇、1986年12,800艇へと急速に増加した。1983年5月にウインドサーフィンの特許を巡る裁判で特許庁が特許無効の審判を下した。その後も公判は継続されたが、特許料の納入や開発の規制が緩和されるという推測から輸入製造業者が多数参入し、国内で販売される艇種が急増した。</p>
+                        <p>成熟期には競技用、レジャー用、波に乗るウエイブ用などのボード、風の強弱に合わせた複数のセイルが販売されており、製品イノベーションによる参加者の用途目的や技量に応じた用具の専門化、細分化が進んだ。また1セットの用具で様々なコンディションに対応できるオールラウンドボードや帆走自体を楽しむことが目的とするファンボードというカテゴリーの用具販売が行われるなど、用具メーカーによるイノベーションは用具の多様化、多目的化をもたらした。</p>
+                        <P>また、これまではセイルとボードなどの用具をセットで販売する形態が主流であったが、成熟期には用具の多様化に伴って各パーツを参加者が選択して購入する販売形態に移行するという販売方法の変化が見られた(平野、2000)。さらにWS艇はセットで20万円前後であったが、他のメーカーの用具はボード30万円前後、セイル4~8万円前後、その他にマスト、ブーム、ユニバーサルジョイントなどのパーツを揃えると、総額40~50万円前後の費用が必要であり、価格の上昇につながった。</P>
+                        <p>国内における用具販売の最盛期を迎え、WS艇を第一世代とするならば、第二世代とも言える用具へと変化し、それに伴って販売形態、価格にも変化が見られた。特許無効の審判による影響はもちろんであるが、用具メーカーが行った製品イノベーションと参加者の様々な志向やニーズに対応した用具の専門化、細分化、多様化、多目的化などの販売戦略が用具の購買を促進した普及戦略であったと言える。
+                          <p class="bold text">2)浸透性(販売店数)</p>
+                          <p>販売店数は1983年206店、1985年411店、1986年660店と急速な増加を示した。さらに内陸地の販売店が増加し、ヤマハやブリヂストンなどの国内大手企業が用具の生産を開始し、国内外への販売を始めた。活動シーズンの参加者数を示すデータは存在しないが、用具の販売数および全国的な店舗数の増加状況から販売店には年間を通じて収入があり、相当数の参加者が時期や場所を限定せずウインドサーフィンを実施していたと推測された。</p>
+                          <p>海水浴場やリゾート地で実施される事が多かったウインドサーフィンは、容易に用具を入手できる商圏エリアの確立、レジャー志向の参加者にも手軽に扱える用具開発、身近な水辺でも実施できる用具や環境の整備といった販売店・用具メーカーの販売戦略によって、日常的に実施できるレジャー・スポーツへと移行していったことが浸透性を高め、普及の拡大につながったと考えられる。</p>
+                          <p>一方で水辺地域に隣接しない都市型の販売店が増加したこともあり、ハワイや沖縄、伊豆七島、奄美大島などの好適地でセーリングすることを目的とする旅行ツアーが販売店によって数多く企画された(Windflash、1983.12;HW、1983.7)。水辺地域に隣接するリゾート施設にはウインドサーフィンのレンタル用具やスクールが設けられており(Windflash、1983.12;HW、1984.4)、リゾート型レジャー・スポーツとして拡大を続けた。</p>
+                          <p class="bold text">3)組織性(競技団体登録者数)</p>
+                          <p>競技団体への登録者数は1983年3,820名から1986年には4,618名と年々増加した。プロ選手の活動が活発化し、1984年にプロフェッショナルウインドサーフィン選手会、1985年には全日本実業団ボードセーリング連盟が発足した。さらにJYA内に使用する用具の異なる艇種ごとに競技団体が設置されたことも登録者の増加に寄与したと考えられ、競技形態や艇種によるセグメンテーションは組織性を推進したと言える。また1983年頃からスポンサー企業の社名や製品名などを大会名に持つ「冠レース」と呼ばれる競技会が増加し、コカ・コーラや日本たばこなどの企業がプロ選手の国際大会を誘致しており、競技会の開催数は1983年228大会から1986年460大会へと倍増した。</p>
+                          <p>成熟期の競技会は使用する艇種を限定せず、予選や出場制限を設けない「草レース」と呼ばれる開催形態が主であった。競技団体が開催する全日本選手権や海外派遣レースの選考会のような艇種ごとに開催される公式な競技会とは異なり、「草レース」は用具メーカーや販売店が開催し、出場制限が無く、誰でも参加できた。競技に参加するハードルが下がり、レジャー志向者が爽快感や挑戦を求め、参加者の技量を試す活躍の場となった(HW、1985.3)。「草レース」は、大衆化を促進する組織化イノベーションとも言え、製品販売を促進したいスポンサー企業の意図と合致し、競技者の増加に効果的な普及戦略であったと言える。</p>
+                          <p class="bold text">4)露出性(記事掲載数)</p>
+                          <p>雑誌への掲載数は1984年が21誌と増減はあるものの、導入期、成長期と比較して多く見られ、新聞への掲載数も年々増加し、1986年には18本となった。用具メーカーのメディア戦略かどうかは定かでないが、1983年と1985年にはアイドル歌手が出演する映画のストーリーに用いられ、主人公がウインドサーフィンで帆走し、競技会に出場した。1984年には年間で20誌以上の雑誌に記事が掲載されるなど、テレビや雑誌などのメディアに露出しており、参加者の増加に貢献したと考えられる。またウインドサーフィンスクール(教室)が盛況で、販売店の大きな収入源となっていたが(JBSA、1985.12)、スクール用のセイルにタバコや清涼飲料水などのロゴマークや商品名を記載したものが多く見られた。海水浴などで水辺を訪れた人たちの目にとまる意図から宣伝材料としてウインドサーフィンが用いられ、これらの商品の販促活動によっても華やかなセイルがメディアに多数露出し、知名度と露出性の向上につながったと推測された。</p>
+                          <p>なお、この頃より、ウインドサーフィン参加者による事故が多発し、漂流事故や死亡事故などが新聞に掲載された(朝日新聞、1984;朝日新聞、1985)。競技団体は指導者制度の浸透や参加者のナンバー登録など対策を講じたが、水辺から離れた量販店による販売では初期技能やルール、海岸の利用方法など充分な指導をすることができず、事故が多発した一因となった(HW、1982.12;WindsurfCLUB、1991.3)。小長谷(2005)はサーフィンの普及過程において、成熟期にあたる大衆化前期にサーファーの事故、悪評などがメディアに取り上げられ、サーファーのイメージが変わるきっかけになったことを指摘している。危険を伴うといったイメージがウインドサーフィンの普及を抑制したかは不明だが、参加者が急増したことの弊害であり、成熟期の特徴の一つと言える。</p>
+                        </p>
+                      </aritcle>
+                      <p class="sublead text">5.2.4 飽和期(1987年から1991年)</p>
+                      <aritcle class="column2">
+                        <p class="bold text">1)市場性(ボード販売数)</p>
+                        <p>1988年には年間に国内で約20,000艇のボードが販売されており、WSJを除く3社の国内販売シェアは52%であった(JYA、1988)。用具メーカーのイノベーションによりボード形状、芯材、外皮など素材が変わり、軽量化され、用具の強度が増した結果、ボードのスピードや操作性などが向上した(平野、2000)。また、セイルや他のパーツに関しても同様で、用具メーカーが開発を競うことで用具が改良され、海のコンディションに合わせた用具が開発されて多様化し、技量や用途によって細分化・専門化するなどイノベーションが進められた。我が国は1991年にバブル経済が崩壊し、景気の後退期を迎えた影響もあり、ボードの販売艇数は減少を続けた。しかし、競技団体への登録者数は急激な減少を示しておらず、競技者の活動は活発であったと推測される。ただイノベーションの大半は競技性の促進(競技化)や技能の向上(高度化)に寄与するものであり、ワンタッチ式ブーム(簡易化)やカーボン製マスト(軽量化)など、初心者に恩恵をもたらした製品イノベーションはわずかであった。成長期にはマーケットの主流であり、大衆化を促進したWS艇の販売数が減少したことに加え、初心者層の実施を促すような用具・用品のイノベーションが少なく、新たな参加者の獲得につながらなかったのではないかと考えられる。</p>
+                        <p class="bold text">2)浸透性(販売店数)</p>
+                        <p>販売店数は1987年が800店とピークを迎えた後、緩やかに減少した。国内では40を超える多数のボードブランドが販売を行っていたが(HW、1987.4)、ボードの販売数に顕著な増加は見られず、用具が参加者に行きわたり、販売店や用具メーカーが飽和状態にあったと考えられる。</p>
+                        <p>1987年には、総合保養地域整備法(リゾート法)が制定され、増加したリゾート施設ではヨットや船舶などと比較して、設備投資が少ないウインドサーフィンを積極的に取り入れていた(HW、1991.3;HW、1992.10)。販売店はこうしたリゾート施設や旅行業と連携して国内外でのセーリングや競技会に参加するためのツアーを企画し、レースを開催するなど、販売した用具の利用機会と用途拡大を行った。また1990年以降、HWでは一部の販売店を別枠に記載し「ウインドサーフィン専門店」と表記している。こうした販売店による独自の企画や表記など差別化は販売店の販売戦略であり、ウインドサーフィンの用具や楽しみ方が国内に浸透し、飽和した販売店や用具メーカーの淘汰が始まったと言える。</p>
+                        <p class="bold text">3)組織性(競技団体登録者数)</p>
+                        <p>飽和期における競技団体への登録者数は期間を通じて5,500名を超える登録者がおり、1988年が6,321名と調査期間内で最も登録者が多かった。また競技団体も増加しており、最多で17団体の活動が確認できた。参加者が競技活動を行うためには複数の競技団体に所属する必要があったなど乱立状態にあった。日本ヨット協会が、日本ボードセーリング連盟を設立して競技団体の統合を試みるが、合意に至らなかった。1988年にフリート数405、競技団体登録者6,321名、1989年に競技会の開催数は540と最多であり、飽和期が競技活動の最も盛んに行われた時期であった。飽和期の競技は、コースレースと呼ばれるロングボードを用いた競技であり、冠スポンサーが付き、賞金や賞品が配布される「草レース」が主であった。競技会は、ゲーム大会や音楽ライブ、パーティーなどと組み合わせたイベントが多数開催されており(HW、1991.11;HW、1991.12)、競技だけでなく、多様な娯楽要素を持つレジャー・イベントへと開催形態が大型化した。選手やイベントのスポンサーとしてレジャー・スポーツ関連の企業だけでなく、ファッションや旅行業など多業種が参入し(HW、1991.4;HW、1992.4)、市場や販売網の拡大につながった。</p>
+                        <p>一方、競技会への参加者は競技以外のイベントを目的とした参加が増加したと記載されており(JBSA、1991)、勝利や競技性を求めるだけではなく、多様な志向を持っていたことが報告されている。イベントの大型化は多様な目的を持った参加者の興味と関心を引き付け、これまで競技に参加していなかったセグメントの参入を促すことで競技団体への登録が活発化しており、組織化を促す重要な普及戦略であったと分析する。ウインドサーフィンのイベントは競技的な特徴とレジャー的な特徴を併せ持つことで、参加者を増やし、組織を拡大した。ただ登録窓口の一本化や競技形態の統一など競技団体による組織化が促進されていない。競技会の開催数、競技団体の登録者数が最も多かった飽和期の参加者や競技会の多様化は組織化を妨げ、結果的に競技参加者や競技団体への登録者の増加を維持できなかった要因の一つであったとも推測される。</p>
+                        <p class="bold text">4)露出性(記事掲載数)</p>
+                        <p>雑誌への掲載数は24誌と1991年が調査期間内で最多であった。また新聞紙面への掲載数は1990年123本、1991年102本と増加しており、露出性が高まった。記事の内容は、競技者の活動内容や競技内容が主であり、ウインドサーフィンというレジャー・スポーツが大衆に浸透していることを想定して書かれた記事であった。プロ選手が出場する世界大会(ワールドカップ)が1984年より引き続き国内で開催されていたが、大会告知などで競技場面がメディアに露出し、参加者の競技への関心を高めることにつながったと思われる。</p>
+                        <p>また従来のセイルは布に近い素材であったが、1990年前後より透明なフィルムが素材として用いられるようになった。機能的な向上を意図した製品イノベーションであったが、スポンサーや大会のステッカー、チーム名などをセイルに広告として貼ることが可能となった。そのため、セーリング風景を視覚的な広告として用いることが容易となり、TVコマーシャルや雑誌などのメディアに宣伝材料や広告塔として露出する機会が増加した。宣伝材料としてメディアに露出することはモータースポーツなどでは一般的であり(近田、2006;小林、2010)、ウインドサーフィンの商業化やプロスポーツ化を促進したと言えよう。本来のセーリング活動や競技風景がメディアに取り上げられるニュース性とは異なるが、メディアとの親和性が強いというウインドサーフィンの特性は、普及を促進したと考えられる。</p>
+                      </aritcle>
+                      <p class="sublead text">5.2.5 衰退・維持期(1992年から2010年)</p>
+                      <aritcle class="column2">
+                        <p class="bold text">1)市場性(ボード販売数)</p>
+                        <p>ボードの販売数は1992年の8,250艇から徐々に減少した。2005年以降は大幅な増減が見られなくなり、1,700艇前後で推移した。一過性のブームが去り、市場規模は縮小したが、継続的に用具の販売が行われており、一部の愛好者に定着したと考えられる。</p>
+                        <p>販売数が減少した後も用具・用品開発のイノベーションは続き、用具の専門化が促進されており、ウエイブパフォーマンス用やレース用、フラットウオーター用など、用途によって細分化され、用具選択の幅が広がった(平野、2000)。製品イノベーションは帆走スピードや操作性の向上につながり、経験者や上級者に恩恵をもたらした。また初級者や新規参加者が容易に帆走できるエントリーモデルの開発及び販売による普及戦略が行われているが、市場を拡大するには至らなかった。用具を中心とする高度化、専門分化が進んだ反面、複雑化し、細分化された用具は新たな初心者の参入の障害となり、イノベーションが推進することによる逆効果現象が起こったと言える。</p>
+                        <p class="bold text">2)浸透性(販売店数)</p>
+                        <p>HWの記載では販売店が2007年148店から2008年には84店へと急激に減少した。ただこれはHWへの掲載方法が変更された影響であり、用具の販売状況から実際に販売店が半減するほどの変動があったとは考えられない。所在地から販売店は全国的に展開しており、地理的な普及は維持されていた。用具の専門化、多様化に伴って販売メーカーは試乗会などを開催し、用具の説明や販売促進を行ったが、効果的な普及戦略とはならなかった。</p>
+                        <p class="bold text">3)組織性(競技団体登録者数)</p>
+                        <p>競技団体への登録者数は減少が続いたものの、2000年以降は2,000名前後の登録者数で推移した。1994年に国民体育大会にヨット競技の種目として採用されたことや1996年に分化していた競技団体の一部が日本ウインドサーフィン連盟(WFJ)に統合されたことは、競技会開催や参加を円滑に行う組織性を高め、競技者が活動を継続する要因になったと考えられる。1984年から国内で開催されていたプロ選手による国際大会への来場者数は1992年が約21万9千人、賞金総額約24万ドルと最多であった。ウインドサーフィンに関連した企業だけでなく、たばこ、アウトドア、ファッション、トラベル企業がスポンサーとなり、年々競技会の規模を拡大し、プロ登録者も1993年が158名と最多であった。ワールドカップは1994年以降、メインスポンサーの撤退によって国内で開催されなくなるが、こうした競技志向の強まりはレジャー的な活動を求めて競技団体に登録していた者や新規の参加者を減少させたと考えられた。組織化が進むにともない、新規参加者の拡大や活動の継続を促す競技団体の組織的な活動が必要であったと思われた。</p>
+                        <p class="bold text">4)露出性(記事掲載数)</p>
+                        <p>1994年以降、大宅壮一文庫所蔵の雑誌への掲載数は年間で10件に満たない。一方、新聞への掲載数は1990年代後半から2000年代前半に増加しており、1996年から2002年は年間160本以上である。新奇性やニュース性が薄れたことやワールドカップの開催がなくなったことによって大衆雑誌が取り上げなくなったのではないかと推測される。また新聞記事の内容は国民体育大会種目への採用、オリンピックや国体、草レースの競技結果や選手のコメントが主であった。競技団体及び競技主催者のメディア戦略とも考えられるが、競技的な活動がメディアへの露出を持続させたと言える。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">6. 考察</p>
+                      <p class="sublead text">6.1 普及指標の妥当性</p>
+                      <aritcle class="column2">
+                        <p>本研究では、市場性、浸透性、組織性に加え、メディアへの露出性を普及指標とした。露出性については、ロジャース(2007:pp.24-27)も普及の4要素の1つにコミュニケーション・チャネルを挙げており、ウインドサーフィンの普及過程において、導入期では対人チャネルが、成長期以後はマスメディア・チャネルが効果的な普及戦略となっていた。この研究結果は、サーフィンの普及過程の研究結果(小長谷、2005)を支持している。ただし、成熟期以降においては、マスメディアの露出性は小さくなることとマーケットが一部の愛好者に収斂していく傾向があることから、多様なメディアを駆使することが求められよう。なおロジャース(2007)は普及過程におけるインターネットを活用したコミュニケーション・ネットワークの広がりと可能性について言及しており、愛好者というセグメントに対してはマスメディアよりもSNSを用いたパーソナルメディアによる露出性が普及指標になる可能性が高いと考えられる。</p>
+                        <p>Gatignon&Robertson(1985:p.858)は「社会システム内の成員の同質性が高いほど、イノベーションが市場に普及する速度が速く、浸透性が高い」と述べており、組織性が促進されるほど、市場性や浸透性の指標が高まることを示唆している。ウインドサーフィンの普及過程では、導入期から成長期において類似した研究結果が認められたが、飽和期にては市場性が減少しており、普及過程の時期によって指標の説明力が弱くなると考えられる。また、飽和期・衰退期においては、市場性が減少しても浸透性は減少していないことから、これら4指標の関係は単純な比例関係ではないことが明らかになった。</p>
+                      </aritcle>
+                      <p class="sublead text">6.2 普及過程と普及戦略</p>
+                      <aritcle class="column2">
+                        <p>普及過程の各区分において普及戦略を整理すると、導入期には競技者の拡大につながる組織性が普及戦略となっていた。成長期には、用品・用具の販売ルートが確立された市場性と、雑誌や月刊誌のメディアにおける露出性が有効な普及戦略となっていた。成熟期にはシーズン型スポーツから通年型レジャー・スポーツへと移行をしたことから市場性と、スポーツ・レジャー関連企業だけでなく、多数の企業が輸入販売に参入し、用具の種類や用途が多様化したことから浸透性が有効な普及戦略であった。しかしながら、ブームが一段落した後の飽和期には、組織性の指標である競技団体への登録者数がピークを迎えるが、マスマーケットを対象とした統括団体の組織化による普及戦略は有効ではなかった。同時にメディアを当てにした他力本願的な露出性も有効には機能しなかった。衰退・維持期は、ウインドサーフィンの市場規模が横ばいになったため、市場性の普及指標よりも用具・用品の高度化、専門化がさらに進み、一部の愛好者にレジャー・スポーツとして定着しつつあることが窺える。</p>
+                        <p>スクーバ・ダイビングの普及過程(圓田、2009)では、普及初期に指導団体による普及の促進、いわゆる組織化が行われている。またヨットの普及過程(佐藤、2003)においても、導入期には組織性の普及戦略が有効であった。またサーフィンの普及過程(小長谷、2005)は普及の初期にあたる第1期には市場性が、成長期・成熟期に相当する第2期にはマスコミによる露出戦略が有効であった。これらの知見は本研究におけるウインドサーフィンの普及過程及び普及戦略と類似しており、マリンレジャー・スポーツ普及過程の特徴と言える。なお成熟期に見られたシーズン型スポーツから通年型レジャー・スポーツへと移行したこと、飽和期に競技団体への登録者数が最多となったことは、他種目の普及過程では確認できず、ウインドサーフィンの特殊性であると考えられる。一方で、我が国のウインドサーフィンの普及過程では、成長期及び成熟期に市場性の普及戦略が有効であった。諸外国におけるウインドサーフィン普及過程(Krebs、1986;Shah、2006;Bellis、2016)においても製品イノベーションによる用具開発が効果的な普及戦略であり、特許が普及過程に影響を及ぼしていたことでは、我が国と同様であった。ただし、海外におけるウインドサーフィンの普及過程に関する文献が限られており、我が国との類似性や特殊性を検討するには至らなかった。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">7. 結論</p>
+                      <aritcle class="column2">
+                        <p>本稿では、ウインドサーフィンの普及過程についてイノベーション普及理論に依拠し、市場性、浸透性、組織性、露出性の4指標を用いて分析を進めた。マリンレジャー・スポーツの普及過程では、導入期には組織性、成長期には市場性と露出性、成熟期には製品イノベーションによる市場性と浸透性に関する普及戦略が有効であった。ウインドサーフィンにおける普及過程の特殊性として成熟期の通年型レジャー・スポーツへの移行及び飽和期の競技団体登録者数の増加が確認された。また普及の継続には成熟期以降において多様なメディアを駆使する必要があることが推察された。</p>
+                        <p>普及過程を5期に分割することで、普及過程と普及戦略の関係性を検討することが可能となった。さらに4指標の関係性が単純な比例関係ではないことが明らかとなり、レジャー・スポーツの普及過程を分析する上でこれら4指標は有効と言える。</p>
+                      </aritcle>
+                      <p class="lead text mt-4">8. 本研究の意義と今後の課題</p>
+                      <article class="column2">
+                        <p>ウインドサーフィンの普及は、これまで限られた期間や事象についてのみ論じられてきたが、本研究はウインドサーフィンの普及現象を長いタイムスパンで捉えており、普及過程の全体像を明らかにすることができた。レジャー・スポーツが国内に普及し、ブームを迎え、定着した一例を把握できたことで、今後我が国に新しいレジャー・スポーツが導入され、普及を促進する際の普及過程に応じた普及戦略を検討する材料が得られたことなどが意義として挙げられる。</p>
+                        <p>なお、本研究は1つのレジャー・スポーツが普及していく事象を詳しく観察することで新しいレジャー・スポーツが国内に普及する過程を観察する課題を設定した。そのため、レジャー・スポーツの事象をウインドサーフィンだけに限定した。また普及過程において、特に活動が拡大した過程が主であり、飽和し、衰退した原因については詳細に追及できていないという2つの限界を抱えている。今後の課題として他国のレジャー・スポーツの普及過程を観察し、比較することで、より我が国における普及過程の固有性が明確になる。また普及過程の後半に参加者が減少した要因についても検証することでレジャー・スポーツの普及過程がより鮮明になる。さらに、本研究では普及過程を区分する4つの指標にそれぞれ単一のデータを用いたが、複数のデータを用いることでより正確な普及過程の観察が可能であると考える。</p>
+                      </article>
+                      <p class="lead text mt-4">文献
+                        <ul class="column2">
+                          <li>青池愼一(2007)イノベーション普及過程論,慶應義塾大学出版会:東京,pp.156-169.</li>
+                          <li>朝日新聞「風に乗って,水上を滑る」1974.5.10.朝日新聞「サーファー,漂流騒ぎ」1984.10.8.朝日新聞「サーファー,流され不明」1985.4.1.朝日新聞「ロス五輪採用で熱気」1981.9.30.</li>
+                          <li>Bellis,Mary(2016)History of Windsurfing,https://www.thoughtco.com/history-of-windsurfing-1992671.Updated2016,2.3.原著論文:ウインドサーフィンの普及過程と普及戦略,13:103-110.</li>
+                          <li>Hi-wind1982年12月号(1982)「ハイウインドルポタージュ」マリン企画:東京,pp.85-91.</li>
+                          <li>Hi-wind1983年7月号(1983)「島と湖」マリン企画:東京,pp.112-119.</li>
+                          <li>Hi-wind1984年4月号(1984)「日本縦断ポイント膝栗毛」マリン企画:東京,pp.49-55.</li>
+                          <li>Hi-wind1985年3月号(1985)「THERACE」マリン企画:東京,pp.226-240.</li>
+                          <li>Hi-wind1987年4月号(1987)「PRODACTIONBOARD」マリン企画:東京,pp.18-60.</li>
+                          <li>Hi-wind1989年11月号(1989)「ときめきのウインド・タイムトリップ35」マリン企画:東京,pp.54-65.</li>
+                          <li>Hi-wind1991年3月号(1991)「ウインドは旅だ」マリン企画:東京,pp.46-53.</li>
+                          <li>Hi-wind1991年11月号(1991)「FromACUP」マリン企画:東京,pp.80-84.</li>
+                          <li>Hi-wind1991年12月号(1991)「SUBARUCUP1991」マリン企画:東京,pp.134-136.</li>
+                          <li>Hi-wind1992年4月号(1992)「GEARCATALOG1992」マリン企画:東京,pp.17-192.</li>
+                          <li>Hi-wind1992年10月号(1992)「南西諸島」マリン企画:東京,pp.12-31.</li>
+                          <li>近田茂(2006)モータースポーツで育まれ、市販車にフィードバックされた技術-二輪と四輪-.自動車工業,40,東京,pp.10-15.</li>
+                          <li>圓田浩二(2009)日本におけるスクーバ・ダイビングの変容:1950年代から1990年代まで.沖縄大学人文学部紀要11:1-12.</li>
+                          <li>草深直臣(1986)現代日本のスポーツ構造.伊藤高弘・草深直臣・金井淳二「スポーツの自由と現代」上巻,青木書店:東京,pp.29-31.</li>
+                          <li>藤原昌・平野貴也・萩原正大[他](2011)国内における優秀なウインドサーフィン選手の形態および体力特性.九州体育・スポーツ学研究,26(1):9-15.</li>
+                          <li>藤原昌・萩原正大・石井泰光・山本正嘉(2013)ウインドサーフィン選手の帆走能力と技術をディファレンシャル測位GPSを用いて評価する試み-パンピング動作を対象として-.スポーツパフォーマンス研究,5:295-309.</li>
+                          <li>Gatignon,H.A.&Robertson,S.R.(1985)A Propositional Inventory for New Diffusion Research. Journal of Consumer Research,(4):849-867.</li>
+                          <li>原田宗彦・世戸俊男(1987)スポーツ経営へのライフサイクル理論の応用.体育の科学,37(8):629-634.</li>
+                          <li>樋口徹(2012)民生用情報通信機器の普及過程の研究を通じた新たなライフサイクル理論の可能性.日本経営学会誌,(29):3-16.</li>
+                          <li>平野貴也・柳敏晴(2000)ウインドサーフィンにおけるセールの変遷.スポーツ産業学研究,10(1):89-103.</li>
+                          <li>平野貴也(2001)我が国におけるウインドサーフィンの特許とオリンピックへの導入に関する研究.日本スポーツ産業学研究,11(2):23-38.</li>
+                          <li>平野貴也(2004)黎明期におけるウインドサーフィンの普及に関する研究-日本ウインドサーフィン協会の活動を中心に-.レジャー・レクリエーション研究,52:11-22.</li>
+                          <li>平野貴也(2007)ウインドサーフィン競技におけタイムトリップ35」マリン企画:東京,pp.54-65.</li>
+                          <li>Howard,D.R.and Crompton,J.L.(1980)Financing, Managing and Marketing Recreation and Parks.Wm.C.Brown Company Pub:p.377.</li>
+                          <li>報知新聞「ニューヨットの競技会」1974.4.2.報知新聞「風まかせ,波はいらないサーフィン」1975.3.30</li>
+                          <li>James,Ball.,Roberta,Ogletree.,Paul,Asunda.,Kim,Miller&Jurkowski,Elaine(2014)Diffusion of innovation elements that influence the adoption and diffusion of distance educationin health. American Journal of Health Studies.29(3):240-246.</li>
+                          <li>ジョエル・ベスト(2009)「なぜ賢い人も流行にはまるのか」林大訳(株)白揚社,p.43.</li>
+                          <li>春日晃章(2014)幼児期運動指針の普及戦略.体育の科学,64(12):868-872.</li>
+                          <li>Kellison,Timothy&Hong,Sungil(2015)The adoption and diffusion of pro-environmental stadium design. European Sport Management Quarterly Apr2015,15(2):249-269.</li>
+                          <li>桐生習作・村田直樹・藤堂良明(2012)嘉納治五郞の「形」の普及戦略に関する研究:「起倒流の形」から「古式の形」への展開に着目して.武道学研究,45(2):119-133.</li>
+                          <li>Krebs,R.E.(1986)Patents and boardsailing.WindSurf,16(5):20.小林ゆき(2010)社会科学におけるモータースポーツ研究の動向と課題--公道レース・マン島TT研究のための視座.東洋大学大学院紀要,47:1-28.</li>
+                          <li>米谷雅之(1995)製品ライフサイクル・モデルの意義と限界.山口經濟學雜誌,44(1/2):83-111.</li>
+                          <li>小長谷悠紀(2005)日本におけるサーフィンの受容過程.立教大学観光学部紀要,7:1-16.</li>
+                          <li>窪田智史・蒲田和芳(2016)ACL損傷予防のためのアスレティックトレーニング(7)ACL損傷予防プログラム普及戦略.体育の科学,66(9):673-676.</li>
+                          <li>三藤利雄(2005)イノベーション普及過程の二次元平面上でのシミュレーションの試み-情報通信技術に関わる耐久消費財を事例として.日本経営システム学会誌,21(2):17-24.</li>
+                          <li>三藤利雄(2007)イノベーション・プロセスの動力学―共組織化する技術と社会.芙蓉書房出版:東京,pp.91-152.</li>
+                          <li>中島純一(1998)メディアと流行の心理:金子書房,東京,p.9.</li>
+                          <li>中村夏実・太田暁美・千足耕一(2004)一流ボードセーリング選手のレース期における身体組成の維持・向上に関する事例報告.体力科学,53:808.</li>
+                          <li>中西純司(2015)レジャー・スポーツ産業の興隆.中村敏雄・高橋健夫・寒川恒夫・友添秀則(編)「21世紀スポーツ大辞典」,大修館書店;東京,pp.62-63.</li>
+                          <li>日本ボードセーリング協会(1985)日本ボードセーリング協会会報誌,1985年12月号.</li>
+                          <li>日本生産性本部(2008)レジャー白書2008.日本生産性本部:東京,pp.86-87.</li>
+                          <li>日本生産性本部(2015)レジャー白書2015.日本生産性本部:東京,p.112.</li>
+                          <li>日本スポーツ産業新報,(1983)「激変するかWサーフィン市場」,1983年6月20日:p.1.</li>
+                          <li>日本ウインドサーフィン協会(1975)WindsurfingNEWS,1975年10月号:p.1.</li>
+                          <li>日本ウインドサーフィン協会(1976)WindsurfingNEWS,1976年5月号:p.4.</li>
+                          <li>日本ウインドサーフィン協会(1977)WindsurfingNEWS,1977年4月号:pp.1-6.</li>
+                          <li>日本ウインドサーフィン協会(1980)WindsurfingNEWS,1980年9月号:p.4.</li>
+                          <li>日本ウインドサーフィン協会(1982)WindsurfingNEWS,1982年4月号:p.1.</li>
+                          <li>日本ウインドサーフィン協会(1982)WindsurfingNEWS,1982年10月号:p.4.</li>
+                          <li>日本ウインドサーフィン協会(1984)ウインドサーフィンのあゆみ,pp.10-25.</li>
+                          <li>日本ボードセーリング協会(1991)第1回JBSA理事会議事録資料,1991年4月</li>
+                          <li>日本ヨット協会(1988)ボードセーリング対策会議資料,1988年2月.</li>
+                          <li>日経産業新聞「ウインドサーフィン艇の販売『自由化』WSJの特許無効」,1983.6.9.</li>
+                          <li>二宮浩彰,菊池秀夫,守能信次(2005)レクリエーションの専門志向化からみたウインドサーフィン行動-レジャーの社会的世界におけるフィールドワークを通じて-.レジャー・レクリエーション研究,54:1-10.</li>
+                          <li>二宮浩彰,菊池秀夫,守能信次(2006)専門志向化の概念枠組みによるウインドサーファーの類型化とその測定指標.レジャー・レクリエーション研究,56:1-10.</li>
+                          <li>小野晃典(2008)新技術の受容と革新の採用.三田商学研究,51(2):1-20.</li>
+                          <li>Poulos,R.G.&Donaldson,A.(2015)Improving the diffusion of safety initiatives incomm unity sport.</li>
+                          <li>The Journal of Science and Medicine in Sport,18(2):139–144.</li>
+                          <li>Rogers,E.M.(1962)Diffusion of innovations(1sted.).NewYork:FreePress.</li>
+                          <li>ロジャース・エベレット(2007)「イノベーションの普及」三藤利雄訳,翔泳社:東京,p.8,p.16,p.120,pp.228-230.</li>
+                          <li>佐藤大祐(2003)明治・大正期におけるヨットの伝播と受容基盤.地理学評論,76(8):599-615.Sedlaczek,Patrycja(2009)History,Cultural,Context and Terminology of Windsurfing. Studies in Physical Culture & Tourism 2009,16(1):115-123.</li>
+                          <li>Shah,Sonali(2006)From innovationt of information: contributions by sports enthusiaststo the windsurfing, snowboard in gandskateboarding industries. Sports Engineering,9(4):230.</li>
+                          <li>鈴木東英(1982)「MY WINDSURFING MEMORY」</li>
+                          <li>トーマス・バーグ(1969)アメリカにおけるプロダクト・ライフ・サイクル理論の展開.</li>
+                          <li>阿部美紀夫,相田昭治編「商品寿命の実例研究」,日本実業出版社:東京,pp.61-67.</li>
+                          <li>宇野善康(1990)普及学講義-イノベーション時代の最新科学.有斐閣:東京,p.198.</li>
+                          <li>WindsurfCLUB1991年3月号「ウインドサーフィンライフ」エイ出版社:東京,pp.41-42.</li>
+                          <li>Windflash1983年12月号(1983)「風を求めて」山と渓谷社:東京,pp.61-68.</li>
+                          <li>Windflash1983年12月号(1983)「爽快良風のリゾートでリフレッシュタイム」山と渓谷社:東京,pp.102-109.</li>
+                          <li>山下秋二・出村慎一(1987)スポーツ・イノベーションの普及速度を決定する諸変数の検討.体育経営学研究,4(1):1-10.</li>
+                          <li>八代勉・浪越一喜(1989)商業スポーツ施設のライフサイクルと経営戦略に関する研究:特にスイミングスクール施設の経営を中心にして.体育科学系紀要,12:31-38.</li>
+                          <li>余暇開発センター(1984)レジャー白書'84.余暇開発センター:東京,p.6,p65.</li>
+                          <li>余暇開発センター(1991)レジャー白書'91.余暇開発センター:東京,p.66.</li>
+                          <li>余暇開発センター(1998)レジャー白書1998.余暇開発センター:東京,p.84.</li>
+                          <li>横山一郎(1983)「揺れ動くボード問題」,Hi-wind5月号,マリン企画:東京,pp.112-118.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <div class="pt-68" id="about"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned ten wide column">
+        <div class="ui">
+          <h2 class="ui h2 header">伊勢湾カップとは</h2>
+        </div>
+      </div>
+    </div>
+    <div class="ui blue segment mb-0">
+      <p>　伊勢湾カップとは、毎年夏に愛知県知多市新舞子海岸沖で行われる国内有数のウィンドサーフィンの祭典です。<br>　新舞子特有の徐々に強さを増してくるシーブリーズの中、レースを楽しみたいとの思いを共に抱く有志が集まり、昭和58年より始まりました。<br>　伊勢湾DIVやテクノクラス、ウィンドサーファークラスなどを中心に、小中学生からシニア・マスタークラスまで、プロアマ年齢性別を問わずをモットーに、純粋にレースを楽しみたい多くの選手が全国各地から集い、その技を競います。<br>　本年は第40回記念大会として、往年の名艇をお持ちの方にも出場していただけるよう、セールエリア8.0㎡以下、ボード自由のオープンクラスを設ける予定です。新舞子のシーブリーズに抱かれ、歴史と伝統ある大いなる草レースにご参加下さい。</p>
+    </div>
+
+    <div class="ui aligned grid pt-68">
+      <div class="left floated left aligned six wide column">
+        <div class="ui">
+          <h2 class="ui h2 header">歴代優勝者</h2>
+          <p>第一回大会からの栄光ある歴代優勝者の方々です。<small>() 内は大会回数</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="ui blue segment winners">
+      <h3 class="large text mt-2 mb-2">伊勢湾DIV 歴代優勝者</h3>
+      <p class="center aligned large text mb-0">岩橋　修<small>(1)</small></p>
+      <p class="center aligned large text mb-0">佐藤　務<small>(2)</small></p>
+      <p class="center aligned large text mb-0">佐藤　務<small>(3)</small></p>
+      <p class="center aligned large text mb-0">牧野秀紀<small>(4)</small></p>
+      <p class="center aligned large text mb-0">牧野秀紀<small>(5)</small></p>
+      <p class="center aligned large text mb-0">的野昌彦<small>(6)</small></p>
+      <p class="center aligned large text mb-0">野崎道世<small>(7)</small></p>
+      <p class="center aligned large text mb-0">桐谷高史<small>(8)</small></p>
+      <p class="center aligned large text mb-0">浅野則夫<small>(9)</small></p>
+      <p class="center aligned large text mb-0">浅野則夫<small>(10)</small></p>
+      <p class="center aligned large text mb-0">山田昭彦<small>(11)</small></p>
+      <p class="center aligned large text mb-0">湯川雅裕<small>(12)</small></p>
+      <p class="center aligned medium text mb-0">クリスローレンス<small>(13)</small></p>
+      <p class="center aligned large text mb-0">湯川雅裕<small>(14)</small></p>
+      <p class="center aligned large text mb-0">見城元一<small>(15)</small></p>
+      <p class="center aligned large text mb-0">井上幾郎<small>(16)</small></p>
+      <p class="center aligned large text mb-0">井上幾郎<small>(17)</small></p>
+      <p class="center aligned large text mb-0">井上幾郎<small>(18)</small></p>
+      <p class="center aligned large text mb-0">上野一也<small>(19)</small></p>
+      <p class="center aligned large text mb-0">井上幾郎<small>(20)</small></p>
+      <p class="center aligned large text mb-0">上野一也<small>(21)</small></p>
+      <p class="center aligned large text mb-0">井上幾郎<small>(22)</small></p>
+      <p class="center aligned large text mb-0">藤井哲生<small>(23)</small></p>
+      <p class="center aligned large text mb-0">藤井哲生<small>(24)</small></p>
+      <p class="center aligned large text mb-0">見城元一<small>(25)</small></p>
+      <p class="center aligned large text mb-0">松尾康宏<small>(26)</small></p>
+      <p class="center aligned large text mb-0">山崎大輔<small>(27)</small></p>
+      <p class="center aligned large text mb-0">山崎大輔<small>(28)</small></p>
+      <p class="center aligned large text mb-0">鳥取雅嗣<small>(29)</small></p>
+      <p class="center aligned large text mb-0">金子岳司<small>(30)</small></p>
+      <p class="center aligned large text mb-0">山崎大輔<small>(31)</small></p>
+      <p class="center aligned large text mb-0">松尾康宏<small>(32)</small></p>
+      <p class="center aligned large text mb-0">尾川　潤<small>(33)</small></p>
+      <p class="center aligned large text mb-0">尾川　潤<small>(34)</small></p>
+      <p class="center aligned large text mb-0">尾川　潤<small>(35)</small></p>
+      <p class="center aligned large text mb-0">山崎大輔<small>(36)</small></p>
+      <p class="center aligned large text mb-0">尾川　潤<small>(37)</small></p>
+      <p class="center aligned large text mb-0">尾川　潤<small>(38)</small></p>
+      <p class="center aligned large text mb-0">小嶺恵美<small>(39)</small></p>
+      <p class="center aligned large text mb-0">黒石勇次<small>(40)</small></p>
+    </div>
+    <div class="ui blue segment winners">
+      <h3 class="large text mt-2 mb-2">テクノDIV 歴代優勝者</h3>
+      <p class="center aligned large text mb-0">寒河江聡志<small>(28)</small></p>
+      <p class="center aligned large text mb-0">田中章雄<small>(29)</small></p>
+      <p class="center aligned large text mb-0">小森貴裕<small>(30)</small></p>
+      <p class="center aligned large text mb-0">板庇雄馬<small>(31)</small></p>
+      <p class="center aligned large text mb-0">板庇雄馬<small>(32)</small></p>
+      <p class="center aligned large text mb-0">河村真生<small>(33)</small></p>
+      <p class="center aligned large text mb-0">西上実彩子<small>(34)</small></p>
+      <p class="center aligned large text mb-0">小林周平<small>(35)</small></p>
+      <p class="center aligned large text mb-0">深尾圭貴<small>(36)</small></p>
+      <p class="center aligned large text mb-0">森平裕也<small>(37)</small></p>
+      <p class="center aligned large text mb-0">関　港大<small>(38)</small></p>
+      <p class="center aligned large text mb-0">倉鹿野巧<small>(39)</small></p>
+      <p class="center aligned large text mb-0">山口直樹<small>(40)</small></p>
+    </div>
+    <p class="right aligned text"><small>(敬称略)</small></p>
+
+
+    <div class="pt-68" id="gallery"></div>
+    <div class="ui aligned grid">
+      <div class="left floated left aligned six wide column">
+        <div class="ui">
+          <h2 class="ui h2 header">写真</h2>
+        </div>
+      </div>
+      <div class="right floated right aligned six wide column">
+        <div class="ui"></div>
+      </div>
+    </div>
+    <div class="ui blue segment gallery">
+      <h3>第39回 伊勢湾カップ2022(抜粋)</h3>
+      <p>知多市長や県会議員を始めとする来賓の方々をお招きして行われた表彰式の風景です。</p>
+      <a data-group="photo" data-modaal-desc="バックボードには伝統の大カップ" class="photo" href="assets/isewan39/03-46f46a82607e4d3055af6dd78eb3f2844359ff54.webp">
+        <div class="frame"><img alt="バックボードには伝統の大カップ" loading="lazy" src="assets/isewan39/03-46f46a82607e4d3055af6dd78eb3f2844359ff54.webp" width="320" height="240" /></div>
+        <p class="center aligned text">バックボードには伝統の大カップ</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="伊勢湾DIV上位入賞の選手" class="photo" href="assets/isewan39/49-236f73c3892352dcf47b3e81d24379c568d4fa9f.webp">
+        <div class="frame"><img alt="伊勢湾DIV上位入賞の選手" loading="lazy" src="assets/isewan39/49-236f73c3892352dcf47b3e81d24379c568d4fa9f.webp" width="320" height="240" /></div>
+        <p class="center aligned text">伊勢湾DIV上位入賞の選手</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="女子の総合優勝は初めて" class="photo" href="assets/isewan39/53-551b0aa6c1001b74d92f19f2a8f4548ef286c752.webp">
+        <div class="frame"><img alt="女子の総合優勝は初めて" loading="lazy" src="assets/isewan39/53-551b0aa6c1001b74d92f19f2a8f4548ef286c752.webp" width="320" height="240" /></div>
+        <p class="center aligned text">女子の総合優勝は初めて</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="伊勢湾DIV女子表彰" class="photo" href="assets/isewan39/54-75d17fae180c5300c9572a40468257607812df86.webp">
+        <div class="frame"><img alt="伊勢湾DIV女子表彰" loading="lazy" src="assets/isewan39/54-75d17fae180c5300c9572a40468257607812df86.webp" width="320" height="240" /></div>
+        <p class="center aligned text">伊勢湾DIV女子表彰</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="テクノDIV総合表彰" class="photo" href="assets/isewan39/60-623d9a34eb1e223851be5aee525daf8783128ef9.webp">
+        <div class="frame"><img alt="テクノDIV総合表彰" loading="lazy" src="assets/isewan39/60-623d9a34eb1e223851be5aee525daf8783128ef9.webp" width="320" height="240" /></div>
+        <p class="center aligned text">テクノDIV総合表彰</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="喜びの麦酒かけ" class="photo" href="assets/isewan39/64-38b312ff14d3014633c1c769c27cb03fe60c4c33.webp">
+        <div class="frame"><img alt="喜びの麦酒かけ" loading="lazy" src="assets/isewan39/64-38b312ff14d3014633c1c769c27cb03fe60c4c33.webp" width="320" height="240" /></div>
+        <p class="center aligned text">喜びの麦酒かけ</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="テクノDIV女子表彰" class="photo" href="assets/isewan39/68-5aa1ac37fe26a9e2b0aed20d41e4ece14cade20b.webp">
+        <div class="frame"><img alt="テクノDIV女子表彰" loading="lazy" src="assets/isewan39/68-5aa1ac37fe26a9e2b0aed20d41e4ece14cade20b.webp" width="320" height="240" /></div>
+        <p class="center aligned text">テクノDIV女子表彰</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="U-17 一位" class="photo" href="assets/isewan39/69-55d4e267b71fd82499baf71e40580722f33a44a0.webp">
+        <div class="frame"><img alt="U-17 一位" loading="lazy" src="assets/isewan39/69-55d4e267b71fd82499baf71e40580722f33a44a0.webp" width="320" height="240" /></div>
+        <p class="center aligned text">U-17 一位</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="U-15 一位" class="photo" href="assets/isewan39/70-dce3f499ce6e4643039c90e28332dd9feded6083.webp">
+        <div class="frame"><img alt="U-15 一位" loading="lazy" src="assets/isewan39/70-dce3f499ce6e4643039c90e28332dd9feded6083.webp" width="320" height="240" /></div>
+        <p class="center aligned text">U-15 一位</p>
+      </a>
+      <a data-group="photo" data-modaal-desc="集合写真" class="photo" href="assets/isewan39/79-eed2ea83f9b966a69e0ff2db62a1f78356c07b17.webp">
+        <div class="frame"><img alt="集合写真" loading="lazy" src="assets/isewan39/79-eed2ea83f9b966a69e0ff2db62a1f78356c07b17.webp" width="320" height="240" /></div>
+        <p class="center aligned text">集合写真</p>
+      </a>
+    </div>
+    <div class="ui blue segment gallery">
+      <h3>第38回 伊勢湾カップ2021(抜粋)</h3><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/61-06e44da09f9558f37328706e36a366f4ba2b04bc.webp"><img loading="lazy" src="assets/isewan38/61_s-12e0fe289d5f9499268dc0c7cda9a7760035cf1a.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/64-53acdcb1752efdc3c1c19a9e915ef8026acb77d6.webp"><img loading="lazy" src="assets/isewan38/64_s-48207319cfa93da6d8d865d7113178a98ee8a881.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/67-3b2c1cb8273a0a900849738f697823fdff04d30c.webp"><img loading="lazy" src="assets/isewan38/67_s-cfc526d6c6b7779306ee1cb63de398b8489a8508.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/68-b4f90ee3f51f6cf2940a1fa24f623d1ab2546784.webp"><img loading="lazy" src="assets/isewan38/68_s-3d420ce9e48273df1d07621e742abc3bf9235f75.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/71-0a3d869916181b81dd8c28edf2d9e105c0388b2e.webp"><img loading="lazy" src="assets/isewan38/71_s-1e8cbe279d71b1830bb6e7b7b24eb4d824b90421.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/73-b53baf864f3c348b8a324d890dc6dac3d7ca40f2.webp"><img loading="lazy" src="assets/isewan38/73_s-6a8bced5194d6d96ae6b5f31f6b1e8e1bfc8dd7d.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/76-9f1db5bdff5c746631aeab9c43eae924beebaa43.webp"><img loading="lazy" src="assets/isewan38/76_s-8dfa813f5761fa82b3894e082ff7acce587cd862.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/77-aa036cc84a02f4f02901f12d4911b02c0d8e2bba.webp"><img loading="lazy" src="assets/isewan38/77_s-ffc918459b3a411f67d353bc5e1fcbe0dffec3bb.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/83-4fd5b4b3c1fef98c1ccc8f7fcad07d694b413835.webp"><img loading="lazy" src="assets/isewan38/83_s-ef8be60ec48b0ee39c464504665dc38d28f221ea.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/isewan38/87-444231131f7ed94e503622d4dfd276136834bc2e.webp"><img loading="lazy" src="assets/isewan38/87_s-07355e70807f3e033978b1d2ccdf18008c4037b7.webp" width="320" height="213" /><p class="center aligned text">表彰式</p></a></div>
+    <div class="ui blue segment gallery">
+      <h3>第37回 伊勢湾カップ2019(抜粋)</h3><a data-group="photo" data-modaal-desc="第37回伊勢湾カップ2019" class="photo" href="assets/01-9e75d7d8746c11b116b8f53fe18900c8dd4ad879.webp"><img alt="第37回伊勢湾カップ2019" loading="lazy" src="assets/01_s-04116480f4b321da760e958f18f803946fefa3ab.webp" width="320" height="240" /><p class="center aligned text">第37回伊勢湾カップ2019</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/21-11dad79abc3b0ad2d3a511c44d24a0e2e5f859d4.webp"><img alt="表彰式" loading="lazy" src="assets/21_s-e54e1d8a3a47e8f0d207512c4621d7bb3475ea44.webp" width="320" height="240" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/22-626b3a9153f4561bca20690e641a0d2c45fdce89.webp"><img alt="表彰式" loading="lazy" src="assets/22_s-739db2d152820d1cf682d7bed7bc7c450a8668e2.webp" width="320" height="240" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/23-3a699ec5fea849ec2a2c33850661855fceeda238.webp"><img alt="表彰式" loading="lazy" src="assets/23_s-9c581407a6f62da558ce77e43b416e0adab328da.webp" width="320" height="240" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="表彰式" class="photo" href="assets/24-17961324d27ff4bf959f74f926b33191f3c8cfcd.webp"><img alt="表彰式" loading="lazy" src="assets/24_s-80d491347ad8ffc50b23d6dafa4f7281cd81fc88.webp" width="320" height="240" /><p class="center aligned text">表彰式</p></a><a data-group="photo" data-modaal-desc="知多市長挨拶" class="photo" href="assets/25-c923bc7954371f195455d475ca03ad0c11c84854.webp"><img alt="知多市長挨拶" loading="lazy" src="assets/25_s-25f2534cf78324f7377c82172bb93691553bc286.webp" width="320" height="240" /><p class="center aligned text">知多市長挨拶</p></a><a data-group="photo" data-modaal-desc="県会議員挨拶" class="photo" href="assets/26-49e59bce6fa503cadb850006825f5e9de9dda0fb.webp"><img alt="県会議員挨拶" loading="lazy" src="assets/26_s-a4f4438e6dafd0b73adcfda6dbb92e6b3d4e1635.webp" width="320" height="240" /><p class="center aligned text">県会議員挨拶</p></a><a data-group="photo" data-modaal-desc="来賓の方々" class="photo" href="assets/27-72fae28cc90ce5198817d273e37f79a3a10c66ec.webp"><img alt="来賓の方々" loading="lazy" src="assets/27_s-da72f9c70fa307130e7c853911de892c350b26ad.webp" width="320" height="240" /><p class="center aligned text">来賓の方々</p></a><a data-group="photo" data-modaal-desc="大会会長挨拶" class="photo" href="assets/28-4bb596ee6917666936568251a5ed9e99eb1d0fcf.webp"><img alt="大会会長挨拶" loading="lazy" src="assets/28_s-c1b200dc1f32d64e3b449aa8ab2605ebd4faba48.webp" width="320" height="240" /><p class="center aligned text">大会会長挨拶</p></a><a data-group="photo" data-modaal-desc="集合写真" class="photo" href="assets/29-48e9074c45fc87ee7249f419fd9b3544af97c074.webp"><img alt="集合写真" loading="lazy" src="assets/29_s-d06560fe1a69a67a1ef10603e6cd46d3a0712f91.webp" width="320" height="240" /><p class="center aligned text">集合写真</p></a></div>
+    <div class="ui blue segment">
+      <p>その他の写真はこちら</p>
+      <a href="https://photos.app.goo.gl/VbJ5UYsoh9zncNDc9">
+        <div class="ui blue tertiary button">2023年大会</div>
+      </a>
+      <a href="https://photos.app.goo.gl/Rmwt5SEYhwkm5YYA6">
+        <div class="ui blue tertiary button">2022年大会</div>
+      </a>
+      <a href="https://photos.app.goo.gl/wBY5KPXsQZyUcmM38">
+        <div class="ui blue tertiary button">2021年大会</div>
+      </a>
+      <a href="https://photos.app.goo.gl/cK6MRBDCAZbTq6jp8">
+        <div class="ui blue tertiary button">2019年大会開会式/一日目/二日目</div>
+      </a>
+      <a href="https://photos.app.goo.gl/h3VMKmWfXDFSnR9F8">
+        <div class="ui blue tertiary button">2019年大会表彰式/閉会式/清掃</div>
+      </a>
+      <a href="https://photos.app.goo.gl/PgLR3QhrkDh5tsr3A">
+        <div class="ui blue tertiary button">2018年大会一日目</div>
+      </a>
+      <a href="https://photos.app.goo.gl/vjarmKNHnezUEWox7">
+        <div class="ui blue tertiary button">2018年大会二日目</div>
+      </a>
+      <a href="https://goo.gl/photos/8Uj1DRundNEQY4yD8">
+        <div class="ui blue tertiary button">2017年大会一日目</div>
+      </a>
+      <a href="https://goo.gl/photos/MMiVSti97ryxy2K18">
+        <div class="ui blue tertiary button">2017年大会二日目その1</div>
+      </a>
+      <a href="https://goo.gl/photos/QTG2YZAMqs6HS9sM7">
+        <div class="ui blue tertiary button">2017年大会二日目その2</div>
+      </a>
+      <a href="https://goo.gl/photos/wqRxLkjxEqF9w8XNA">
+        <div class="ui blue tertiary button">2017年大会表彰式/閉会式</div>
+      </a>
+      <a href="https://goo.gl/photos/TdR1iG2KjVD4Ph118">
+        <div class="ui blue tertiary button">2016年大会一日目</div>
+      </a>
+      <a href="https://goo.gl/photos/RQivEBh4cyCApP39A">
+        <div class="ui blue tertiary button">2016年大会二日目</div>
+      </a>
+      <a href="https://goo.gl/photos/xkW6DT6KwF16SfC56">
+        <div class="ui blue tertiary button">2015年大会一日目</div>
+      </a>
+      <a href="https://goo.gl/photos/bNjkcT8gpAsuWZgi8">
+        <div class="ui blue tertiary button">2015年大会二日目</div>
+      </a>
+      <a href="https://goo.gl/photos/fKJJEA7DWFz148a59">
+        <div class="ui blue tertiary button">2015年大会表彰式/閉会式</div>
+      </a>
+    </div>
+    <h2 class="ui header mt-3">動画</h2>
+    <div class="ui blue segment gallery"><a data-group="movie" class="movie" href="https://player.vimeo.com/video/354152854"><img alt="2019年大会" loading="lazy" src="assets/2019_s-1c9a4f0d9a2fa69e449aea30d143b3deedcd4fe2.webp" width="320" height="240" /><p class="center aligned text">2019年大会</p></a><a data-group="movie" class="movie" href="https://player.vimeo.com/video/289058532"><img alt="2018年大会" loading="lazy" src="assets/2018_s-a8edc0814a04bfc4ccb8830dec9978ae687c6e59.webp" width="320" height="240" /><p class="center aligned text">2018年大会</p></a><a data-group="movie" class="movie" href="https://player.vimeo.com/video/228689575"><img alt="2017年大会一日目" loading="lazy" src="assets/2017day1_s-429b399b3c7f8286b7dacb45c9cf21bda181b904.webp" width="320" height="240" /><p class="center aligned text">2017年大会一日目</p></a><a data-group="movie" class="movie" href="https://www.youtube.com/embed/e-djU8JIetg"><img alt="2017年大会二日目" loading="lazy" src="assets/2017day2_s-40bed4997f55970aa32f3a39bfde8b5f20089ee4.webp" width="320" height="240" /><p class="center aligned text">2017年大会二日目</p></a><a data-group="movie" class="movie" href="https://player.vimeo.com/video/179582374"><img alt="2016年大会" loading="lazy" src="assets/2016_s-c7e6705fda3d40e29d012be544b68334e383ab0e.webp" width="320" height="240" /><p class="center aligned text">2016年大会</p></a><a data-group="movie" class="movie" href="https://www.youtube.com/embed/wKy-RSIdEWw"><img alt="2015年大会" loading="lazy" src="assets/2015_s-2e7213a4cdf7fdc2d4eafdfd95847fcd3cd565cb.webp" width="320" height="240" /><p class="center aligned text">2015年大会</p></a></div>
+    <style>
+      .modaal-wrapper.modaal-video  .modaal-inner-wrapper {
+        padding: 0 !important;
+      }
+      .modaal-wrapper.modaal-video .modaal-video-wrap {
+        margin: 10px !important;
+      }
+    </style>
+    <script>
+      $('.photo').modaal({
+        type: 'image'
+      });
+      $('.movie').modaal({
+        type: 'video',
+        width: 700,
+          height: 500
+      });
+    </script>
+  </div>
+  <div class="ui container">
+    <footer class="ui blue segment footer bg-sakurairo mt-5">
+      <p class="ui center aligned header">Copyright © 1983-2023 <br class='mobile only'>伊勢湾カップ実行委員会<br class='mobile only'> All rights reserved.</p>
+      <p class="ui center aligned small header" style="font-weight: normal;">連絡先:&nbsp;<a href="mailto:ayf-wind@sd5.so-net.ne.jp">ayf-wind@sd5.so-net.ne.jp</a></p><a id="page_top" href="#"><span><i class="fa-solid fa-angles-up fa-lg"></i></span><span class="hidden">PageTop</span></a></footer>
+  </div>
+</body>
+<script>
+  new SmoothScroll('a[href*="#"]', {
+    easing:'easeInOutQuint'
+  })
+</script>
+</html>

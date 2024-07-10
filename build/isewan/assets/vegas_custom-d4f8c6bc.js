@@ -1,0 +1,1 @@
+alert("vegas"),$("#vegas-slider").vegas({overlay:!0,transition:"blur",transitionDuration:2e3,delay:1e4,animationDuration:2e4,animation:"kenburns",slides:[{src:"vegas1-2b0a3c62.webp"},{src:"vegas2-7516295f.webp"},{src:"vegas3-4fc5a0d0.webp"},{src:"vegas4-777cb333.webp"},{src:"vegas5-0ab4fcdf.webp"}]});
