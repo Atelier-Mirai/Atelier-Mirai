@@ -24,3 +24,7 @@ gem "nokogiri"
 
 # img タグに width属性, height属性を付与する為に
 gem "fastimage"
+
+gem "rack", "2.2.10"
+gem "tilt", "2.0.11"
+gem "activesupport", "7.0.8.6"

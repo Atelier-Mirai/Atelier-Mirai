@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.8.4)
+    activesupport (7.0.8.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -96,7 +96,7 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
-    minitest (5.24.1)
+    minitest (5.25.1)
     nokogiri (1.16.6-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.6-arm-linux)
@@ -118,7 +118,7 @@ GEM
     parslet (2.0.0)
     public_suffix (6.0.0)
     racc (1.8.0)
-    rack (2.2.9)
+    rack (2.2.10)
     rack-livereload (0.3.17)
       rack
     rb-fsevent (0.11.2)
@@ -161,13 +161,16 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  activesupport (= 7.0.8.6)
   fastimage
   middleman
   middleman-autoprefixer
   middleman-livereload
   middleman-minify-html
   nokogiri
+  rack (= 2.2.10)
   slim (= 4.1.0)
+  tilt (= 2.0.11)
   webrick
 
 RUBY VERSION

@@ -74,6 +74,10 @@ isbns = %w(
   4297122677
 )
 
+isbns = %w(
+  4295015687
+)
+
 isbns.each do |isbn|
   system("curl https://images-na.ssl-images-amazon.com/images/P/#{isbn}.09.LZZZZZZZ.jpg -o #{isbn}.jpg")
 end
