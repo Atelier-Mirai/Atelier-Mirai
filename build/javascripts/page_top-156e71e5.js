@@ -1,1 +1,1 @@
-const o=()=>{let o=$(window).scrollTop();o>=200?($("#page_top").removeClass("downward"),$("#page_top").addClass("upward")):$("#page_top").hasClass("upward")&&($("#page_top").removeClass("upward"),$("#page_top").addClass("downward"))};$(window).scroll(()=>{o()}),$(window).on("load",()=>{o()});
+const a=()=>{$(window).scrollTop()>=200?($("#page_top").removeClass("downward"),$("#page_top").addClass("upward")):$("#page_top").hasClass("upward")&&($("#page_top").removeClass("upward"),$("#page_top").addClass("downward"))};$(window).scroll(()=>{a()}),$(window).on("load",()=>{a()});
